@@ -23,8 +23,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Install Rust stable
-        uses: dtolnay/rust-toolchain@stable
+      - name: Install Rust 1.77 (compatível com dependências Tauri v1)
+        uses: dtolnay/rust-toolchain@1.77
 
       - name: Rust cache
         uses: Swatinem/rust-cache@v2
