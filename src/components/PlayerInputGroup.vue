@@ -51,7 +51,7 @@ defineProps({
         }"
         class="text-2xl text-center w-6 cursor-pointer select-none absolute inset-y-0 right-1 flex justify-center items-center"
         @click="player.initiativeAdvantage = !player.initiativeAdvantage"
-        title="Advantage on Initiative"
+        title="Vantagem em Iniciativa"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

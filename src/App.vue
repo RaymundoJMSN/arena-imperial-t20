@@ -3,9 +3,9 @@ import { RouterView } from "vue-router";
 import HeaderNav from "./components/HeaderNav.vue";
 
 import ImporterModal from "./components/ImporterModal.vue";
+import DoacaoModal from "./components/DoacaoModal.vue";
 import KeyboardModal from "./components/KeyboardModal.vue";
 import SourcesModal from "./components/SourcesModal.vue";
-import StrategyModal from "./components/StrategyModal.vue";
 import PartyModal from "./components/PartyModal.vue";
 import EncounterModal from "./components/EncounterModal.vue";
 import NewsSlideover from "./components/NewsSlideover.vue";
@@ -44,7 +44,7 @@ onMounted(async () => {
 
   hotkeys.register(
     "ctrl+shift+\\, command+shift+\\",
-    "Toggles light/dark theme",
+    "Alternar tema claro/escuro",
     () => {
       toggleTheme();
       return false;
@@ -54,7 +54,7 @@ onMounted(async () => {
 
   hotkeys.register(
     "esc",
-    "Closes any open dialogs",
+    "Fecha todos os diálogos abertos",
     () => {
       modals.closeAll();
       notifications.dismissAll();
@@ -74,8 +74,8 @@ onMounted(async () => {
     <RouterView />
 
     <ImporterModal />
+    <DoacaoModal />
     <KeyboardModal />
-    <StrategyModal />
     <SourcesModal />
     <PartyModal />
     <EncounterModal />

@@ -1,0 +1,7877 @@
+[
+  {
+    "name": "Água-viva",
+    "nd": 1,
+    "type": "Animal",
+    "tags": "",
+    "size": "Pequeno",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 5,
+    "defense": 15,
+    "resistances": "imunidade a ácido, resistência a impacto 5",
+    "hp": 9,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Asa-Assassina",
+    "nd": 1,
+    "type": "Animal",
+    "tags": "",
+    "size": "Minúsculo",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 8,
+    "defense": 15,
+    "resistances": "",
+    "hp": 10,
+    "sources": "Ameaças de Arton: 198"
+  },
+  {
+    "name": "Bandido Selvagem",
+    "nd": 1,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 4,
+    "defense": 16,
+    "resistances": "",
+    "hp": 12,
+    "sources": "Ameaças de Arton: 42"
+  },
+  {
+    "name": "Capivara",
+    "nd": 1,
+    "type": "Animal",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 1,
+    "defense": 16,
+    "resistances": "",
+    "hp": 35,
+    "sources": "Ameaças de Arton: 211"
+  },
+  {
+    "name": "Carcaju",
+    "nd": 1,
+    "type": "Animal",
+    "tags": "",
+    "size": "Pequeno",
+    "role": [
+      "Solo"
+    ],
+    "init": 8,
+    "defense": 17,
+    "resistances": "",
+    "hp": 26,
+    "sources": "Ameaças de Arton: 348"
+  },
+  {
+    "name": "Carniçal",
+    "nd": 1,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 5,
+    "defense": 15,
+    "resistances": "",
+    "hp": 33,
+    "sources": "Ameaças de Arton: 228"
+  },
+  {
+    "name": "Cavalo de Guerra",
+    "nd": 1,
+    "type": "Animal",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 3,
+    "defense": 14,
+    "resistances": "",
+    "hp": 33,
+    "sources": "Ameaças de Arton: 212"
+  },
+  {
+    "name": "Cavalo Esqueleto",
+    "nd": 1,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 3,
+    "defense": 16,
+    "resistances": "redução de corte, frio e perfuração 5",
+    "hp": 30,
+    "sources": "Ameaças de Arton: 229"
+  },
+  {
+    "name": "Centauro Combatente",
+    "nd": 1,
+    "type": "Humanoide",
+    "tags": "centauro",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 3,
+    "defense": 16,
+    "resistances": "",
+    "hp": 35,
+    "sources": "Livro Básico: 290"
+  },
+  {
+    "name": "Chefe Bandido",
+    "nd": 1,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 4,
+    "defense": 16,
+    "resistances": "",
+    "hp": 30,
+    "sources": "Livro Básico"
+  },
+  {
+    "name": "Chefe Bandido",
+    "nd": 1,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 4,
+    "defense": 16,
+    "resistances": "",
+    "hp": 30,
+    "sources": "Ameaças de Arton: 42"
+  },
+  {
+    "name": "Devoto de Hyninn Simão",
+    "nd": 1,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 6,
+    "defense": 15,
+    "resistances": "imunidade a efeitos de movimento",
+    "hp": 26,
+    "sources": "Ameaças de Arton: 47"
+  },
+  {
+    "name": "Dromedário",
+    "nd": 1,
+    "type": "Animal",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 15,
+    "resistances": "resistência a efeitos metabólicos e de clima +5",
+    "hp": 36,
+    "sources": "Ameaças de Arton: 215"
+  },
+  {
+    "name": "Enxame de Gali-Gali",
+    "nd": 1,
+    "type": "Animal",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 3,
+    "defense": 15,
+    "resistances": "",
+    "hp": 30,
+    "sources": "Ameaças de Arton: 247"
+  },
+  {
+    "name": "Enxame Larval",
+    "nd": 1,
+    "type": "Monstro",
+    "tags": "Kobold",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 16,
+    "resistances": "imunidade a corte, imunidade a perfuração",
+    "hp": 30,
+    "sources": "Ameaças de Arton: 180"
+  },
+  {
+    "name": "Estirge",
+    "nd": 1,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Minúsculo",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 7,
+    "defense": 16,
+    "resistances": "",
+    "hp": 9,
+    "sources": "Ameaças de Arton: 107"
+  },
+  {
+    "name": "Gatuno",
+    "nd": 1,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 7,
+    "defense": 14,
+    "resistances": "",
+    "hp": 25,
+    "sources": "Ameaças de Arton: 48"
+  },
+  {
+    "name": "Gnoll Saqueador",
+    "nd": 1,
+    "type": "Humanoide",
+    "tags": "gnoll",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 5,
+    "defense": 15,
+    "resistances": "",
+    "hp": 15,
+    "sources": "Livro Básico: 290"
+  },
+  {
+    "name": "Gnoll Saqueador",
+    "nd": 1,
+    "type": "Humanoide",
+    "tags": "Gnoll",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 5,
+    "defense": 15,
+    "resistances": "",
+    "hp": 15,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Golem de Nor Médio",
+    "nd": 1,
+    "type": "Construto",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 2,
+    "defense": 17,
+    "resistances": "imunidade a frio, redução de fogo 10",
+    "hp": 35,
+    "sources": "Ameaças de Arton: 348"
+  },
+  {
+    "name": "Gorlogg",
+    "nd": 1,
+    "type": "Animal",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 4,
+    "defense": 16,
+    "resistances": "",
+    "hp": 36,
+    "sources": "Livro Básico: 291"
+  },
+  {
+    "name": "Hiena",
+    "nd": 1,
+    "type": "Animal",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 5,
+    "defense": 14,
+    "resistances": "",
+    "hp": 17,
+    "sources": "Ameaças de Arton: 119"
+  },
+  {
+    "name": "Homúnculo",
+    "nd": 1,
+    "type": "Construto",
+    "tags": "",
+    "size": "Minúsculo",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 6,
+    "defense": 14,
+    "resistances": "",
+    "hp": 11,
+    "sources": "Ameaças de Arton: 193"
+  },
+  {
+    "name": "Kappa Brigão",
+    "nd": 1,
+    "type": "Espírito",
+    "tags": "Kappa",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 5,
+    "defense": 17,
+    "resistances": "não pode ser flanqueado",
+    "hp": 30,
+    "sources": "Ameaças de Arton: 158"
+  },
+  {
+    "name": "Ko-Kabuto",
+    "nd": 1,
+    "type": "Animal",
+    "tags": "",
+    "size": "Pequeno",
+    "role": [
+      "Solo"
+    ],
+    "init": 4,
+    "defense": 17,
+    "resistances": "",
+    "hp": 38,
+    "sources": "Ameaças de Arton: 154"
+  },
+  {
+    "name": "Kobold Explosivo",
+    "nd": 1,
+    "type": "Monstro",
+    "tags": "kobold",
+    "size": "Pequeno",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 4,
+    "defense": 15,
+    "resistances": "",
+    "hp": 9,
+    "sources": "Ameaças de Arton: 184"
+  },
+  {
+    "name": "Legionário",
+    "nd": 1,
+    "type": "Humanoide",
+    "tags": "minotauro",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 3,
+    "defense": 19,
+    "resistances": "",
+    "hp": 12,
+    "sources": "Ameaças de Arton: 172"
+  },
+  {
+    "name": "Meio-Orc Bandoleiro",
+    "nd": 1,
+    "type": "Humanoide",
+    "tags": "meio-orc",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 5,
+    "defense": 15,
+    "resistances": "",
+    "hp": 15,
+    "sources": "Ameaças de Arton: 32"
+  },
+  {
+    "name": "Meio-Orc Capanga",
+    "nd": 1,
+    "type": "Humanoide",
+    "tags": "meio-orc",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 6,
+    "defense": 16,
+    "resistances": "",
+    "hp": 12,
+    "sources": "Ameaças de Arton: 43"
+  },
+  {
+    "name": "Naja",
+    "nd": 1,
+    "type": "Animal",
+    "tags": "",
+    "size": "Pequeno",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 8,
+    "defense": 17,
+    "resistances": "",
+    "hp": 13,
+    "sources": "Livro Básico: 304"
+  },
+  {
+    "name": "Nezumi Capanga",
+    "nd": 1,
+    "type": "Humanoide",
+    "tags": "Nezumi",
+    "size": "Pequeno",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 4,
+    "defense": 15,
+    "resistances": "resistência a medo de criaturas maiores +5",
+    "hp": 9,
+    "sources": "Ameaças de Arton: 160"
+  },
+  {
+    "name": "Orc Veterano",
+    "nd": 1,
+    "type": "Humanoide",
+    "tags": "orc",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 4,
+    "defense": 16,
+    "resistances": "",
+    "hp": 14,
+    "sources": "Ameaças de Arton: 32"
+  },
+  {
+    "name": "Pakk",
+    "nd": 1,
+    "type": "Espírito",
+    "tags": "elemental",
+    "size": "Minúsculo",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 7,
+    "defense": 15,
+    "resistances": "imunidade a acertos críticos, vulnerabilidade a frio",
+    "hp": 9,
+    "sources": "Ameaças de Arton: 94"
+  },
+  {
+    "name": "Perdigueiro Troll",
+    "nd": 1,
+    "type": "Animal",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 6,
+    "defense": 17,
+    "resistances": "natureza vegetal",
+    "hp": 10,
+    "sources": "Ameaças de Arton: 343"
+  },
+  {
+    "name": "Sahuagin Predador",
+    "nd": 1,
+    "type": "Humanoide",
+    "tags": "Sahuagin",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 5,
+    "defense": 14,
+    "resistances": "",
+    "hp": 15,
+    "sources": "Ameaças de Arton: 261"
+  },
+  {
+    "name": "Sargento da Guarda",
+    "nd": 1,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 5,
+    "defense": 12,
+    "resistances": "",
+    "hp": 28,
+    "sources": "Livro Básico: 292"
+  },
+  {
+    "name": "Slark",
+    "nd": 1,
+    "type": "Humanoide",
+    "tags": "Slark",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 7,
+    "defense": 12,
+    "resistances": "resistência a ácido 5",
+    "hp": 15,
+    "sources": "Ameaças de Arton: 205"
+  },
+  {
+    "name": "Soldado Purista",
+    "nd": 1,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 4,
+    "defense": 11,
+    "resistances": "",
+    "hp": 20,
+    "sources": "Livro Básico: 294"
+  },
+  {
+    "name": "T’Peel",
+    "nd": 1,
+    "type": "Espírito",
+    "tags": "elemental",
+    "size": "Minúsculo",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 5,
+    "defense": 10,
+    "resistances": "imunidade a acertos críticos, vulnerabilidade a ácido",
+    "hp": 12,
+    "sources": "Ameaças de Arton: 91"
+  },
+  {
+    "name": "Tabrachi Soldado",
+    "nd": 1,
+    "type": "Humanoide",
+    "tags": "tabrachi",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 5,
+    "defense": 16,
+    "resistances": "",
+    "hp": 12,
+    "sources": "Ameaças de Arton: 36"
+  },
+  {
+    "name": "Terrier",
+    "nd": 1,
+    "type": "Espírito",
+    "tags": "elemental",
+    "size": "Pequeno",
+    "role": [
+      "Solo"
+    ],
+    "init": 0,
+    "defense": 16,
+    "resistances": "imunidade a acertos críticos, vulnerabilidade a eletricidade, redução de dano 5",
+    "hp": 35,
+    "sources": "Ameaças de Arton: 96"
+  },
+  {
+    "name": "Trobo",
+    "nd": 1,
+    "type": "Animal",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 4,
+    "defense": 14,
+    "resistances": "resistência a magia +5",
+    "hp": 15,
+    "sources": "Ameaças de Arton: 220"
+  },
+  {
+    "name": "Trog",
+    "nd": 1,
+    "type": "Humanoide",
+    "tags": "trog",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 3,
+    "defense": 16,
+    "resistances": "",
+    "hp": 11,
+    "sources": "Livro Básico: 293"
+  },
+  {
+    "name": "Trog Anão Bruto",
+    "nd": 1,
+    "type": "Monstro",
+    "tags": "trog",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 1,
+    "defense": 19,
+    "resistances": "",
+    "hp": 35,
+    "sources": "Ameaças de Arton: 39"
+  },
+  {
+    "name": "Trog Combatente",
+    "nd": 1,
+    "type": "Monstro",
+    "tags": "Trog",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 3,
+    "defense": 16,
+    "resistances": "",
+    "hp": 11,
+    "sources": "Ameaças de Arton: 106"
+  },
+  {
+    "name": "Urso Panda",
+    "nd": 1,
+    "type": "Animal",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 3,
+    "defense": 15,
+    "resistances": "",
+    "hp": 28,
+    "sources": "Ameaças de Arton: 223"
+  },
+  {
+    "name": "Vagalhão Kobold",
+    "nd": 1,
+    "type": "Humanoide",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 0,
+    "defense": 10,
+    "resistances": "",
+    "hp": 0,
+    "sources": "Ameaças de Arton: 188"
+  },
+  {
+    "name": "Zumbi Peçonha",
+    "nd": 1,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 0,
+    "defense": 15,
+    "resistances": "",
+    "hp": 21,
+    "sources": "Ameaças de Arton: 335"
+  },
+  {
+    "name": "Aquin’ne",
+    "nd": 2,
+    "type": "Espírito",
+    "tags": "elemental",
+    "size": "Pequeno",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 4,
+    "defense": 18,
+    "resistances": "imunidade a acertos críticos,, vulnerabilidade a fogo",
+    "hp": 21,
+    "sources": "Ameaças de Arton: 88"
+  },
+  {
+    "name": "Aranha Gigante",
+    "nd": 2,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 19,
+    "resistances": "",
+    "hp": 77,
+    "sources": "Livro Básico: 286"
+  },
+  {
+    "name": "Búfalo-de-Guerra",
+    "nd": 2,
+    "type": "Animal",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 3,
+    "defense": 18,
+    "resistances": "",
+    "hp": 80,
+    "sources": "Ameaças de Arton: 296"
+  },
+  {
+    "name": "Bugbear Sentinela",
+    "nd": 2,
+    "type": "Humanoide",
+    "tags": "bugbear",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 8,
+    "defense": 17,
+    "resistances": "resistência a medo +2",
+    "hp": 18,
+    "sources": "Ameaças de Arton: 78"
+  },
+  {
+    "name": "Cão de Kally",
+    "nd": 2,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 5,
+    "defense": 18,
+    "resistances": "",
+    "hp": 21,
+    "sources": "Ameaças de Arton: 179"
+  },
+  {
+    "name": "Cavalo de Namalkah",
+    "nd": 2,
+    "type": "Animal",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 18,
+    "resistances": "resistência a medo +2",
+    "hp": 60,
+    "sources": "Ameaças de Arton: 213"
+  },
+  {
+    "name": "Cavalo Glacial",
+    "nd": 2,
+    "type": "Animal",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 4,
+    "defense": 19,
+    "resistances": "redução de frio 5",
+    "hp": 60,
+    "sources": "Ameaças de Arton: 213"
+  },
+  {
+    "name": "Chacal-Zumbi",
+    "nd": 2,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 6,
+    "defense": 19,
+    "resistances": "",
+    "hp": 35,
+    "sources": "Ameaças de Arton: 286"
+  },
+  {
+    "name": "Chefe de Gangue",
+    "nd": 2,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 6,
+    "defense": 19,
+    "resistances": "resistência a medo +5",
+    "hp": 63,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Corcel de Kally",
+    "nd": 2,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 6,
+    "defense": 20,
+    "resistances": "imunidade a fogo",
+    "hp": 72,
+    "sources": "Ameaças de Arton: 147"
+  },
+  {
+    "name": "Corcel do Deserto",
+    "nd": 2,
+    "type": "Animal",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 5,
+    "defense": 21,
+    "resistances": "resistência a fogo 5",
+    "hp": 55,
+    "sources": "Ameaças de Arton: 214"
+  },
+  {
+    "name": "Diabrete",
+    "nd": 2,
+    "type": "Espírito",
+    "tags": "Abissal",
+    "size": "Minúsculo",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 5,
+    "defense": 17,
+    "resistances": "imunidade a ácido e veneno",
+    "hp": 20,
+    "sources": "Deuses de Arton"
+  },
+  {
+    "name": "Elemental do Veneno Pequeno",
+    "nd": 2,
+    "type": "Espírito",
+    "tags": "Elemental",
+    "size": "Pequeno",
+    "role": [
+      "Solo"
+    ],
+    "init": 3,
+    "defense": 17,
+    "resistances": "imunidade a acertos críticos",
+    "hp": 49,
+    "sources": "Ameaças de Arton: 328"
+  },
+  {
+    "name": "Elfo-do-Mar Pescador",
+    "nd": 2,
+    "type": "Humanoide",
+    "tags": "Elfo-do-Mar",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 7,
+    "defense": 18,
+    "resistances": "",
+    "hp": 14,
+    "sources": "Ameaças de Arton: 315"
+  },
+  {
+    "name": "Enxame Kobold",
+    "nd": 2,
+    "type": "Humanoide",
+    "tags": "kobold",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 6,
+    "defense": 17,
+    "resistances": "",
+    "hp": 60,
+    "sources": "Livro Básico"
+  },
+  {
+    "name": "Esqueleto",
+    "nd": 2,
+    "type": "Humanoide",
+    "tags": "Morto-vivo",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 7,
+    "defense": 17,
+    "resistances": "redução de corte, frio e perfuração 5",
+    "hp": 14,
+    "sources": "Livro Básico: 297"
+  },
+  {
+    "name": "Finntroll Caçador",
+    "nd": 2,
+    "type": "Humanoide",
+    "tags": "finntroll",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 19,
+    "resistances": "imunidade a atordoamento e metamorfose, resistência a magia +2",
+    "hp": 65,
+    "sources": "Livro Básico: 307"
+  },
+  {
+    "name": "Finntroll Caçador",
+    "nd": 2,
+    "type": "Monstro",
+    "tags": "finntroll",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 9,
+    "defense": 19,
+    "resistances": "",
+    "hp": 65,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Galhada Fêmea",
+    "nd": 2,
+    "type": "Construto",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 4,
+    "defense": 19,
+    "resistances": "resistência a magia +2, vulnerabilidade a fogo, redução de dano 2",
+    "hp": 17,
+    "sources": "Ameaças de Arton: 246"
+  },
+  {
+    "name": "Galhada Macho",
+    "nd": 2,
+    "type": "Construto",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 4,
+    "defense": 19,
+    "resistances": "resistência a magia +2, vulnerabilidade a fogo, redução de dano 2",
+    "hp": 17,
+    "sources": "Ameaças de Arton: 246"
+  },
+  {
+    "name": "Gárgula",
+    "nd": 2,
+    "type": "Construto",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 3,
+    "defense": 19,
+    "resistances": "imunidade a condição petrificado, redução de dano 5",
+    "hp": 65,
+    "sources": "Livro Básico: 286"
+  },
+  {
+    "name": "Gárgula",
+    "nd": 2,
+    "type": "Construto",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 3,
+    "defense": 19,
+    "resistances": "redução de dano 5",
+    "hp": 65,
+    "sources": "Ameaças de Arton: 124"
+  },
+  {
+    "name": "Garra-Zumbi Ogro",
+    "nd": 2,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 4,
+    "defense": 16,
+    "resistances": "",
+    "hp": 35,
+    "sources": "Ameaças de Arton: 233"
+  },
+  {
+    "name": "Glooop",
+    "nd": 2,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 0,
+    "defense": 20,
+    "resistances": "imunidade a ácido",
+    "hp": 68,
+    "sources": "Ameaças de Arton: 201"
+  },
+  {
+    "name": "Gnoll Filibusteiro",
+    "nd": 2,
+    "type": "Humanoide",
+    "tags": "gnoll",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 9,
+    "defense": 19,
+    "resistances": "",
+    "hp": 60,
+    "sources": "Livro Básico: 290"
+  },
+  {
+    "name": "Gnoll Filibusteiro",
+    "nd": 2,
+    "type": "Humanoide",
+    "tags": "Gnoll",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 9,
+    "defense": 19,
+    "resistances": "",
+    "hp": 60,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Gnoll Xamã de Allihanna",
+    "nd": 2,
+    "type": "Humanoide",
+    "tags": "Gnoll",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 2,
+    "defense": 17,
+    "resistances": "",
+    "hp": 50,
+    "sources": "Ameaças de Arton: 118"
+  },
+  {
+    "name": "Goblin de Sombreiro",
+    "nd": 2,
+    "type": "Humanoide",
+    "tags": "Goblin",
+    "size": "Pequeno",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 9,
+    "defense": 18,
+    "resistances": "resistência a condições de sentidos +2",
+    "hp": 16,
+    "sources": "Ameaças de Arton: 256"
+  },
+  {
+    "name": "Hiena Rainha",
+    "nd": 2,
+    "type": "Animal",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 6,
+    "defense": 18,
+    "resistances": "resistência a medo +5",
+    "hp": 68,
+    "sources": "Ameaças de Arton: 119"
+  },
+  {
+    "name": "Hobgoblin Soldado",
+    "nd": 2,
+    "type": "Humanoide",
+    "tags": "hobgoblin",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 4,
+    "defense": 13,
+    "resistances": "",
+    "hp": 18,
+    "sources": "Livro Básico: 303"
+  },
+  {
+    "name": "Homem-Piranha",
+    "nd": 2,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 5,
+    "defense": 17,
+    "resistances": "",
+    "hp": 68,
+    "sources": "Ameaças de Arton: 256"
+  },
+  {
+    "name": "Jagunço",
+    "nd": 2,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 7,
+    "defense": 18,
+    "resistances": "imunidade a medo",
+    "hp": 21,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Kobold Veterano",
+    "nd": 2,
+    "type": "Monstro",
+    "tags": "Kobold",
+    "size": "Pequeno",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 5,
+    "defense": 19,
+    "resistances": "",
+    "hp": 13,
+    "sources": "Ameaças de Arton: 180"
+  },
+  {
+    "name": "Lacedon",
+    "nd": 2,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 5,
+    "defense": 18,
+    "resistances": "",
+    "hp": 65,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Lagarto Perseguidor",
+    "nd": 2,
+    "type": "Animal",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 7,
+    "defense": 18,
+    "resistances": "resistência a fogo 5, vulnerabilidade a frio",
+    "hp": 16,
+    "sources": "Ameaças de Arton: 110"
+  },
+  {
+    "name": "Leão",
+    "nd": 2,
+    "type": "Animal",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 8,
+    "defense": 17,
+    "resistances": "",
+    "hp": 68,
+    "sources": "Ameaças de Arton: 217"
+  },
+  {
+    "name": "Lobo-das-Cavernas",
+    "nd": 2,
+    "type": "Animal",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 5,
+    "defense": 19,
+    "resistances": "",
+    "hp": 73,
+    "sources": "Livro Básico: 292"
+  },
+  {
+    "name": "Mamãe Glop",
+    "nd": 2,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 2,
+    "defense": 17,
+    "resistances": "imunidade a ácido",
+    "hp": 70,
+    "sources": "Ameaças de Arton: 202"
+  },
+  {
+    "name": "Maníaco Lefou",
+    "nd": 2,
+    "type": "Humanoide",
+    "tags": "lefou",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 4,
+    "defense": 18,
+    "resistances": "",
+    "hp": 25,
+    "sources": "Livro Básico: 315"
+  },
+  {
+    "name": "Minotauro da Manada",
+    "nd": 2,
+    "type": "Humanoide",
+    "tags": "minotauro",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 8,
+    "defense": 16,
+    "resistances": "resistência a frio 5",
+    "hp": 16,
+    "sources": "Ameaças de Arton: 351"
+  },
+  {
+    "name": "Mycotann Labutador",
+    "nd": 2,
+    "type": "Monstro",
+    "tags": "mycotann",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 3,
+    "defense": 17,
+    "resistances": "natureza vegetal",
+    "hp": 15,
+    "sources": "Ameaças de Arton: 340"
+  },
+  {
+    "name": "Orc chefe",
+    "nd": 2,
+    "type": "Humanoide",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 5,
+    "defense": 19,
+    "resistances": "",
+    "hp": 66,
+    "sources": "Ameaças de Arton: 32"
+  },
+  {
+    "name": "Orc Chefe",
+    "nd": 2,
+    "type": "Humanoide",
+    "tags": "orc",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 5,
+    "defense": 19,
+    "resistances": "",
+    "hp": 66,
+    "sources": "Livro Básico: 287"
+  },
+  {
+    "name": "Oxxdon",
+    "nd": 2,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 20,
+    "resistances": "",
+    "hp": 72,
+    "sources": "Ameaças de Arton: 308"
+  },
+  {
+    "name": "Pantera",
+    "nd": 2,
+    "type": "Animal",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 16,
+    "resistances": "",
+    "hp": 55,
+    "sources": "Ameaças de Arton: 218"
+  },
+  {
+    "name": "Pistoleiro",
+    "nd": 2,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 8,
+    "defense": 18,
+    "resistances": "",
+    "hp": 63,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Platan",
+    "nd": 2,
+    "type": "Animal",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 6,
+    "defense": 18,
+    "resistances": "",
+    "hp": 30,
+    "sources": "Ameaças de Arton: 322"
+  },
+  {
+    "name": "Pteros Ceifador",
+    "nd": 2,
+    "type": "Humanoide",
+    "tags": "Pteros",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 6,
+    "defense": 16,
+    "resistances": "evasão",
+    "hp": 21,
+    "sources": "Ameaças de Arton: 265"
+  },
+  {
+    "name": "Purificado",
+    "nd": 2,
+    "type": "Humanoide",
+    "tags": "Hynne",
+    "size": "Pequeno",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 5,
+    "defense": 10,
+    "resistances": "",
+    "hp": 9,
+    "sources": "Ameaças de Arton: 279"
+  },
+  {
+    "name": "Raposa Bucaneira",
+    "nd": 2,
+    "type": "Humanoide",
+    "tags": "Moreau",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 7,
+    "defense": 22,
+    "resistances": "evasão",
+    "hp": 46,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Sacerdote de Hyninn",
+    "nd": 2,
+    "type": "Humanoide",
+    "tags": "Goblin",
+    "size": "Pequeno",
+    "role": [
+      "Especial"
+    ],
+    "init": 6,
+    "defense": 13,
+    "resistances": "imunidade a efeitosmentais",
+    "hp": 49,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Sapo Atroz",
+    "nd": 2,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 6,
+    "defense": 16,
+    "resistances": "",
+    "hp": 95,
+    "sources": "Ameaças de Arton: 35"
+  },
+  {
+    "name": "Selako",
+    "nd": 2,
+    "type": "Animal",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 18,
+    "resistances": "",
+    "hp": 90,
+    "sources": "Ameaças de Arton: 322"
+  },
+  {
+    "name": "Soterrado vagante",
+    "nd": 2,
+    "type": "Morto-Vivo",
+    "tags": "Morto-vivo",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 8,
+    "defense": 20,
+    "resistances": "resistência a corte 5, resistência a frio 10, resistência a perfuração 5",
+    "hp": 21,
+    "sources": "Ameaças de Arton: 353"
+  },
+  {
+    "name": "Trog Caçador",
+    "nd": 2,
+    "type": "Humanoide",
+    "tags": "Trog",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 6,
+    "defense": 18,
+    "resistances": "",
+    "hp": 14,
+    "sources": "Ameaças de Arton: 37"
+  },
+  {
+    "name": "Tropa de Tentacutes",
+    "nd": 2,
+    "type": "Animal",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 10,
+    "defense": 19,
+    "resistances": "",
+    "hp": 17,
+    "sources": "Ameaças de Arton: 194"
+  },
+  {
+    "name": "Turba Zumbi",
+    "nd": 2,
+    "type": "Humanoide",
+    "tags": "bando",
+    "size": "Grande",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 1,
+    "defense": 11,
+    "resistances": "",
+    "hp": 100,
+    "sources": "Livro Básico"
+  },
+  {
+    "name": "Yidishan Bugbear",
+    "nd": 2,
+    "type": "Humanoide",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 3,
+    "defense": 21,
+    "resistances": "",
+    "hp": 70,
+    "sources": "Ameaças de Arton: 299"
+  },
+  {
+    "name": "Acólito de Kally",
+    "nd": 3,
+    "type": "Humanoide",
+    "tags": "Humano",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 4,
+    "defense": 19,
+    "resistances": "",
+    "hp": 60,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Baleote",
+    "nd": 3,
+    "type": "Animal",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 3,
+    "defense": 21,
+    "resistances": "imunidade a eletricidade",
+    "hp": 110,
+    "sources": "Ameaças de Arton: 210"
+  },
+  {
+    "name": "Canceronte",
+    "nd": 3,
+    "type": "Animal",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 8,
+    "defense": 21,
+    "resistances": "fortificação 25%",
+    "hp": 110,
+    "sources": "Ameaças de Arton: 314"
+  },
+  {
+    "name": "Cão do Inferno",
+    "nd": 3,
+    "type": "Espírito",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 6,
+    "defense": 21,
+    "resistances": "imunidade a fogo, redução de dano 10/mágico, vulnerabilidade a frio",
+    "hp": 95,
+    "sources": "Livro Básico: 289"
+  },
+  {
+    "name": "Capanga Minotauro",
+    "nd": 3,
+    "type": "Humanoide",
+    "tags": "Minotauro",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 3,
+    "defense": 22,
+    "resistances": "",
+    "hp": 35,
+    "sources": "Ameaças de Arton: 43"
+  },
+  {
+    "name": "Centauro Xamã",
+    "nd": 3,
+    "type": "Humanoide",
+    "tags": "centauro",
+    "size": "Grande",
+    "role": [
+      "Especial"
+    ],
+    "init": 4,
+    "defense": 21,
+    "resistances": "",
+    "hp": 35,
+    "sources": "Livro Básico: 290"
+  },
+  {
+    "name": "Centurião",
+    "nd": 3,
+    "type": "Humanoide",
+    "tags": "minotauro",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 4,
+    "defense": 23,
+    "resistances": "",
+    "hp": 100,
+    "sources": "Ameaças de Arton: 169"
+  },
+  {
+    "name": "Ceratops Guerreiro",
+    "nd": 3,
+    "type": "Humanoide",
+    "tags": "Ceratops",
+    "size": "Grande",
+    "role": [
+      "Especial"
+    ],
+    "init": 0,
+    "defense": 21,
+    "resistances": "redução de dano 2",
+    "hp": 33,
+    "sources": "Ameaças de Arton: 264"
+  },
+  {
+    "name": "Cocatriz",
+    "nd": 3,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Pequeno",
+    "role": [
+      "Solo"
+    ],
+    "init": 10,
+    "defense": 22,
+    "resistances": "",
+    "hp": 98,
+    "sources": "Ameaças de Arton: 199"
+  },
+  {
+    "name": "Corcel de Comando",
+    "nd": 3,
+    "type": "Construto",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Especial"
+    ],
+    "init": 5,
+    "defense": 19,
+    "resistances": "resistência a corte 5, resistência a impacto 5, resistência a perfuração 5",
+    "hp": 82,
+    "sources": "Ameaças de Arton: 32"
+  },
+  {
+    "name": "Dragão Filhote",
+    "nd": 3,
+    "type": "Monstro",
+    "tags": "dragão",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 8,
+    "defense": 22,
+    "resistances": "resistência a magia +1, imunidade a fogo, vulnerabilidade a frio",
+    "hp": 140,
+    "sources": "Livro Básico: 310"
+  },
+  {
+    "name": "Dragão Filhote do Bosque",
+    "nd": 3,
+    "type": "Monstro",
+    "tags": "dragão",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 8,
+    "defense": 21,
+    "resistances": "resistência a magia +1, imunidade a ácido, vulnerabilidade a eletricidade",
+    "hp": 120,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Dragão Filhote dos Rios",
+    "nd": 3,
+    "type": "Monstro",
+    "tags": "dragão",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 9,
+    "defense": 22,
+    "resistances": "resistência a magia +1, vulnerabilidade a ácido, imunidade a eletricidade",
+    "hp": 120,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Espada-da-Floresta",
+    "nd": 3,
+    "type": "Construto",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 8,
+    "defense": 22,
+    "resistances": "vulnerabilidade a fogo",
+    "hp": 108,
+    "sources": "Ameaças de Arton: 245"
+  },
+  {
+    "name": "Fera-Vassalo",
+    "nd": 3,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 3,
+    "defense": 21,
+    "resistances": "vulnerabilidade a frio",
+    "hp": 22,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Garra-Zumbi Enxame",
+    "nd": 3,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 6,
+    "defense": 19,
+    "resistances": "",
+    "hp": 40,
+    "sources": "Ameaças de Arton: 233"
+  },
+  {
+    "name": "Gatuno Mestre",
+    "nd": 3,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 8,
+    "defense": 19,
+    "resistances": "resistência a efeitos de movimento +3",
+    "hp": 68,
+    "sources": "Ameaças de Arton: 48"
+  },
+  {
+    "name": "Goblin Engenhoqueiro",
+    "nd": 3,
+    "type": "Humanoide",
+    "tags": "goblin",
+    "size": "Pequeno",
+    "role": [
+      "Especial"
+    ],
+    "init": 5,
+    "defense": 19,
+    "resistances": "",
+    "hp": 74,
+    "sources": "Livro Básico: 301"
+  },
+  {
+    "name": "Goblin-Bomba",
+    "nd": 3,
+    "type": "Humanoide",
+    "tags": "goblin",
+    "size": "Pequeno",
+    "role": [
+      "Especial"
+    ],
+    "init": 12,
+    "defense": 19,
+    "resistances": "redução de ácido e fogo  5, resistência a veneno +5",
+    "hp": 74,
+    "sources": "Ameaças de Arton: 81"
+  },
+  {
+    "name": "Grifo",
+    "nd": 3,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 9,
+    "defense": 19,
+    "resistances": "imunidade a medo",
+    "hp": 110,
+    "sources": "Livro Básico: 291"
+  },
+  {
+    "name": "Guerreiro de Chifres",
+    "nd": 3,
+    "type": "Espírito",
+    "tags": "demônio",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 6,
+    "defense": 21,
+    "resistances": "imunidade a ácido e venenos, redução de dano 5, redução de fogo e frio 10.",
+    "hp": 100,
+    "sources": "Livro Básico: 287"
+  },
+  {
+    "name": "Hienodonte",
+    "nd": 3,
+    "type": "Animal",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 5,
+    "defense": 20,
+    "resistances": "",
+    "hp": 38,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Hippossauro",
+    "nd": 3,
+    "type": "Animal",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 4,
+    "defense": 20,
+    "resistances": "resistência a perfuração 10",
+    "hp": 100,
+    "sources": "Ameaças de Arton: 297"
+  },
+  {
+    "name": "Horda de Ko-Kabuto",
+    "nd": 3,
+    "type": "Animal",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 5,
+    "defense": 22,
+    "resistances": "",
+    "hp": 112,
+    "sources": "Ameaças de Arton: 154"
+  },
+  {
+    "name": "Infecto",
+    "nd": 3,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 12,
+    "defense": 20,
+    "resistances": "redução de dano 5",
+    "hp": 30,
+    "sources": "Ameaças de Arton: 22"
+  },
+  {
+    "name": "Iniciada de Sszzaas",
+    "nd": 3,
+    "type": "Humanoide",
+    "tags": "Medusa",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 7,
+    "defense": 19,
+    "resistances": "resistência a veneno +5",
+    "hp": 69,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Iniciado da Agonia",
+    "nd": 3,
+    "type": "Humanoide",
+    "tags": "Humano",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 8,
+    "defense": 20,
+    "resistances": "Resistência a magia divina +5",
+    "hp": 28,
+    "sources": "Ameaças de Arton: 162"
+  },
+  {
+    "name": "Kappa Yokozuna",
+    "nd": 3,
+    "type": "Espírito",
+    "tags": "Kappa",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 6,
+    "defense": 20,
+    "resistances": "não pode ser flanqueado",
+    "hp": 105,
+    "sources": "Ameaças de Arton: 158"
+  },
+  {
+    "name": "Kobold Xamã",
+    "nd": 3,
+    "type": "Monstro",
+    "tags": "Kobold",
+    "size": "Pequeno",
+    "role": [
+      "Especial"
+    ],
+    "init": 5,
+    "defense": 20,
+    "resistances": "resistência a magia +1",
+    "hp": 69,
+    "sources": "Ameaças de Arton: 185"
+  },
+  {
+    "name": "Lívido",
+    "nd": 3,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 3,
+    "defense": 19,
+    "resistances": "vulnerabilidade a luz",
+    "hp": 70,
+    "sources": "Ameaças de Arton: 234"
+  },
+  {
+    "name": "Mashin Monge",
+    "nd": 3,
+    "type": "Construto",
+    "tags": "Golem",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 22,
+    "resistances": "imunidade a frio",
+    "hp": 135,
+    "sources": "Ameaças de Arton: 159"
+  },
+  {
+    "name": "Mercenário de Aslothia",
+    "nd": 3,
+    "type": "Monstro",
+    "tags": "Lefou",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 1,
+    "defense": 20,
+    "resistances": "resistência a magia e medo +5",
+    "hp": 21,
+    "sources": "Ameaças de Arton: 288"
+  },
+  {
+    "name": "Minauro Arcanista",
+    "nd": 3,
+    "type": "Humanoide",
+    "tags": "minauro",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 5,
+    "defense": 17,
+    "resistances": "",
+    "hp": 64,
+    "sources": "Ameaças de Arton: 174"
+  },
+  {
+    "name": "Nagah Dormente",
+    "nd": 3,
+    "type": "Humanoide",
+    "tags": "Nagah",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 7,
+    "defense": 22,
+    "resistances": "resistência a veneno +5",
+    "hp": 27,
+    "sources": "Ameaças de Arton: 331"
+  },
+  {
+    "name": "Nagah Guardião",
+    "nd": 3,
+    "type": "Humanoide",
+    "tags": "nagah",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 6,
+    "defense": 21,
+    "resistances": "resistência a veneno +5",
+    "hp": 45,
+    "sources": "Livro Básico: 306"
+  },
+  {
+    "name": "Nezumi Ninja",
+    "nd": 3,
+    "type": "Humanoide",
+    "tags": "Nezumi",
+    "size": "Pequeno",
+    "role": [
+      "Especial"
+    ],
+    "init": 7,
+    "defense": 19,
+    "resistances": "resistência a medo de criaturas maiores +5",
+    "hp": 74,
+    "sources": "Ameaças de Arton: 160"
+  },
+  {
+    "name": "Ogro Esqueleto",
+    "nd": 3,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 2,
+    "defense": 19,
+    "resistances": "redução de corte, frio e perfuração 5",
+    "hp": 99,
+    "sources": "Ameaças de Arton: 229"
+  },
+  {
+    "name": "Sahuagin Metamorfo",
+    "nd": 3,
+    "type": "Humanoide",
+    "tags": "Sahuagin",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 20,
+    "resistances": "",
+    "hp": 108,
+    "sources": "Ameaças de Arton: 261"
+  },
+  {
+    "name": "Sargento-mor",
+    "nd": 3,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 4,
+    "defense": 13,
+    "resistances": "",
+    "hp": 105,
+    "sources": "Livro Básico: 294"
+  },
+  {
+    "name": "Soldado Mecânico",
+    "nd": 3,
+    "type": "Construto",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 2,
+    "defense": 20,
+    "resistances": "imunidade a fogo",
+    "hp": 23,
+    "sources": "Ameaças de Arton: 133"
+  },
+  {
+    "name": "Stagh",
+    "nd": 3,
+    "type": "Espírito",
+    "tags": "elemental",
+    "size": "Pequeno",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 10,
+    "defense": 22,
+    "resistances": "vulnerabilidade a fogo, imunidade a frio",
+    "hp": 35,
+    "sources": "Ameaças de Arton: 354"
+  },
+  {
+    "name": "Sucuri",
+    "nd": 3,
+    "type": "Animal",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 5,
+    "defense": 19,
+    "resistances": "",
+    "hp": 88,
+    "sources": "Livro Básico: 290"
+  },
+  {
+    "name": "Tabrachi Campeão",
+    "nd": 3,
+    "type": "Humanoide",
+    "tags": "Tabrachi",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 21,
+    "resistances": "",
+    "hp": 105,
+    "sources": "Ameaças de Arton: 36"
+  },
+  {
+    "name": "Tigre",
+    "nd": 3,
+    "type": "Animal",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 12,
+    "defense": 18,
+    "resistances": "",
+    "hp": 95,
+    "sources": "Ameaças de Arton: 218"
+  },
+  {
+    "name": "Uktril",
+    "nd": 3,
+    "type": "Monstro",
+    "tags": "lefeu",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 9,
+    "defense": 22,
+    "resistances": "redução de dano 10, imunidade a ácido, imunidade a eletricidade, imunidade a fogo, imunidade a frio, imunidade a luz, imunidade a trevas",
+    "hp": 45,
+    "sources": "Livro Básico: 314"
+  },
+  {
+    "name": "Urso Pardo",
+    "nd": 3,
+    "type": "Animal",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 4,
+    "defense": 19,
+    "resistances": "",
+    "hp": 95,
+    "sources": "Ameaças de Arton: 223"
+  },
+  {
+    "name": "Warg",
+    "nd": 3,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 6,
+    "defense": 21,
+    "resistances": "",
+    "hp": 110,
+    "sources": "Ameaças de Arton: 224"
+  },
+  {
+    "name": "Arauto de Thwor",
+    "nd": 4,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 5,
+    "defense": 23,
+    "resistances": "",
+    "hp": 135,
+    "sources": "Livro Básico: 300"
+  },
+  {
+    "name": "Arcano de Guerra Adepto",
+    "nd": 4,
+    "type": "Humanoide",
+    "tags": "Humano",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 7,
+    "defense": 22,
+    "resistances": "resistência a magia +2",
+    "hp": 82,
+    "sources": "Ameaças de Arton: 274"
+  },
+  {
+    "name": "Basilisco",
+    "nd": 4,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 6,
+    "defense": 23,
+    "resistances": "redução de dano 5",
+    "hp": 145,
+    "sources": "Livro Básico: 289"
+  },
+  {
+    "name": "Burafonte",
+    "nd": 4,
+    "type": "Animal",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 3,
+    "defense": 25,
+    "resistances": "",
+    "hp": 120,
+    "sources": "Ameaças de Arton: 242"
+  },
+  {
+    "name": "Capelão de Guerra",
+    "nd": 4,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 4,
+    "defense": 10,
+    "resistances": "imunidade a medo",
+    "hp": 105,
+    "sources": "Livro Básico: 295"
+  },
+  {
+    "name": "Capelão de Guerra",
+    "nd": 4,
+    "type": "Humanoide",
+    "tags": "Humano",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 4,
+    "defense": 21,
+    "resistances": "imunidade a medo",
+    "hp": 105,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Cerianthar",
+    "nd": 4,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 9,
+    "defense": 22,
+    "resistances": "",
+    "hp": 140,
+    "sources": "Ameaças de Arton: 306"
+  },
+  {
+    "name": "Chefe de Quadrilha",
+    "nd": 4,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 8,
+    "defense": 22,
+    "resistances": "resistência a medo +5",
+    "hp": 120,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Dai-Kabuto",
+    "nd": 4,
+    "type": "Animal",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 5,
+    "defense": 25,
+    "resistances": "redução de dano 2",
+    "hp": 155,
+    "sources": "Ameaças de Arton: 154"
+  },
+  {
+    "name": "Dançarino de Guerra",
+    "nd": 4,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 11,
+    "defense": 24,
+    "resistances": "resistência a efeitos de movimento +2",
+    "hp": 110,
+    "sources": "Ameaças de Arton: 278"
+  },
+  {
+    "name": "Deinonico",
+    "nd": 4,
+    "type": "Animal",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 23,
+    "resistances": "",
+    "hp": 140,
+    "sources": "Ameaças de Arton: 244"
+  },
+  {
+    "name": "Devoto de Hyninn Velhaco",
+    "nd": 4,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 9,
+    "defense": 22,
+    "resistances": "imunidade a efeitos de movimento e surpreendido",
+    "hp": 88,
+    "sources": "Ameaças de Arton: 47"
+  },
+  {
+    "name": "Diabrete Negociante",
+    "nd": 4,
+    "type": "Espírito",
+    "tags": "Abissal",
+    "size": "Pequeno",
+    "role": [
+      "Especial"
+    ],
+    "init": 7,
+    "defense": 21,
+    "resistances": "imunidade a ácido e veneno, redução de fogo e frio 5",
+    "hp": 120,
+    "sources": "Deuses de Arton"
+  },
+  {
+    "name": "Duplo",
+    "nd": 4,
+    "type": "Humanoide",
+    "tags": "duplo",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 9,
+    "defense": 21,
+    "resistances": "cura acelerada 5",
+    "hp": 143,
+    "sources": "Ameaças de Arton: 50"
+  },
+  {
+    "name": "Esqueleto de Elite",
+    "nd": 4,
+    "type": "Humanoide",
+    "tags": "Morto-vivo",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 10,
+    "defense": 19,
+    "resistances": "redução de corte, frio e perfuração 5",
+    "hp": 60,
+    "sources": "Livro Básico: 297"
+  },
+  {
+    "name": "Fúria de Tauron",
+    "nd": 4,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Pequeno",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 14,
+    "defense": 20,
+    "resistances": "vulnerabilidade a frio",
+    "hp": 30,
+    "sources": "Ameaças de Arton: 170"
+  },
+  {
+    "name": "Gárgula Assassina",
+    "nd": 4,
+    "type": "Construto",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 6,
+    "defense": 25,
+    "resistances": "redução de dano 5",
+    "hp": 140,
+    "sources": "Ameaças de Arton: 124"
+  },
+  {
+    "name": "Harpia Saqueadora",
+    "nd": 4,
+    "type": "Monstro",
+    "tags": "Harpia",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 13,
+    "defense": 18,
+    "resistances": "",
+    "hp": 32,
+    "sources": "Ameaças de Arton: 200"
+  },
+  {
+    "name": "Homem-Piranha Imediato",
+    "nd": 4,
+    "type": "Humanoide",
+    "tags": "Humano",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 5,
+    "defense": 20,
+    "resistances": "",
+    "hp": 98,
+    "sources": "Ameaças de Arton: 256"
+  },
+  {
+    "name": "Imediato",
+    "nd": 4,
+    "type": "Morto-Vivo",
+    "tags": "Osteon",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 10,
+    "defense": 22,
+    "resistances": "resistência a corte 5, resistência a frio 5, resistência a perfuração 5",
+    "hp": 120,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Irukanjin",
+    "nd": 4,
+    "type": "Humanoide",
+    "tags": "Irukanjin",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 6,
+    "defense": 20,
+    "resistances": "resistência a ácido 5, resistência a impacto 5",
+    "hp": 126,
+    "sources": "Ameaças de Arton: 318"
+  },
+  {
+    "name": "Kobold Bruto",
+    "nd": 4,
+    "type": "Monstro",
+    "tags": "Kobold",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 5,
+    "defense": 23,
+    "resistances": "",
+    "hp": 120,
+    "sources": "Ameaças de Arton: 184"
+  },
+  {
+    "name": "Líder Pistoleiro",
+    "nd": 4,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 10,
+    "defense": 22,
+    "resistances": "",
+    "hp": 120,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Nezumi Brutamontes",
+    "nd": 4,
+    "type": "Humanoide",
+    "tags": "Nezumi",
+    "size": "Pequeno",
+    "role": [
+      "Solo"
+    ],
+    "init": 5,
+    "defense": 23,
+    "resistances": "resistência a medo de criaturas maiores +5",
+    "hp": 140,
+    "sources": "Ameaças de Arton: 160"
+  },
+  {
+    "name": "Ogro",
+    "nd": 4,
+    "type": "Humanoide",
+    "tags": "gigante",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 3,
+    "defense": 23,
+    "resistances": "",
+    "hp": 130,
+    "sources": "Livro Básico: 292"
+  },
+  {
+    "name": "Ogro",
+    "nd": 4,
+    "type": "Humanoide",
+    "tags": "Gigante",
+    "size": "Grande",
+    "role": [
+      "Especial"
+    ],
+    "init": 3,
+    "defense": 23,
+    "resistances": "",
+    "hp": 130,
+    "sources": "Ameaças de Arton: 40"
+  },
+  {
+    "name": "Patrulha Kobold",
+    "nd": 4,
+    "type": "Monstro",
+    "tags": "Kobold",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 6,
+    "defense": 23,
+    "resistances": "",
+    "hp": 30,
+    "sources": "Ameaças de Arton: 180"
+  },
+  {
+    "name": "Rinoceronte",
+    "nd": 4,
+    "type": "Animal",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 4,
+    "defense": 23,
+    "resistances": "redução de dano 5",
+    "hp": 130,
+    "sources": "Ameaças de Arton: 219"
+  },
+  {
+    "name": "Tatu-Montanha",
+    "nd": 4,
+    "type": "Animal",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 4,
+    "defense": 25,
+    "resistances": "imunidade a ácido, resistência a corte 5, resistência a impacto 5, resistência a perfuração 5",
+    "hp": 125,
+    "sources": "Ameaças de Arton: 220"
+  },
+  {
+    "name": "Tumarkhân",
+    "nd": 4,
+    "type": "Animal",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 2,
+    "defense": 25,
+    "resistances": "",
+    "hp": 130,
+    "sources": "Ameaças de Arton: 221"
+  },
+  {
+    "name": "Unicórnio",
+    "nd": 4,
+    "type": "Espírito",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 12,
+    "defense": 21,
+    "resistances": "",
+    "hp": 99,
+    "sources": "Ameaças de Arton: 226"
+  },
+  {
+    "name": "Urso Pardo Esqueleto",
+    "nd": 4,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 3,
+    "defense": 19,
+    "resistances": "redução de corte, frio e perfuração 5",
+    "hp": 180,
+    "sources": "Ameaças de Arton: 229"
+  },
+  {
+    "name": "Urso-Coruja",
+    "nd": 4,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 23,
+    "resistances": "",
+    "hp": 145,
+    "sources": "Livro Básico: 293"
+  },
+  {
+    "name": "Velocis Caçador",
+    "nd": 4,
+    "type": "Humanoide",
+    "tags": "Velocis",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 7,
+    "defense": 21,
+    "resistances": "resistência a corte 2, resistência a perfuração 2",
+    "hp": 25,
+    "sources": "Ameaças de Arton: 267"
+  },
+  {
+    "name": "Aparição",
+    "nd": 5,
+    "type": "Humanoide",
+    "tags": "Morto-vivo",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 10,
+    "defense": 23,
+    "resistances": "incorpóreo",
+    "hp": 110,
+    "sources": "Livro Básico: 297"
+  },
+  {
+    "name": "Arqueiro Escravo",
+    "nd": 5,
+    "type": "Humanoide",
+    "tags": "elfo",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 12,
+    "defense": 24,
+    "resistances": "",
+    "hp": 36,
+    "sources": "Ameaças de Arton: 168"
+  },
+  {
+    "name": "Capitão-Baluarte",
+    "nd": 5,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 4,
+    "defense": 21,
+    "resistances": "",
+    "hp": 115,
+    "sources": "Livro Básico: 295"
+  },
+  {
+    "name": "Carruagem de Comando",
+    "nd": 5,
+    "type": "Construto",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Especial"
+    ],
+    "init": 6,
+    "defense": 22,
+    "resistances": "resistência a corte 5, resistência a impacto 5, resistência a perfuração 5",
+    "hp": 190,
+    "sources": "Ameaças de Arton: 276"
+  },
+  {
+    "name": "Decúria",
+    "nd": 5,
+    "type": "Humanoide",
+    "tags": "minotauro",
+    "size": "Grande",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 5,
+    "defense": 22,
+    "resistances": "",
+    "hp": 60,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Dracomante do Fogo",
+    "nd": 5,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 8,
+    "defense": 18,
+    "resistances": "resistência a fogo 10",
+    "hp": 112,
+    "sources": "Ameaças de Arton: 148"
+  },
+  {
+    "name": "Enxame Estirge",
+    "nd": 5,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 9,
+    "defense": 23,
+    "resistances": "",
+    "hp": 40,
+    "sources": "Ameaças de Arton: 107"
+  },
+  {
+    "name": "Fanático Lefou",
+    "nd": 5,
+    "type": "Humanoide",
+    "tags": "Lefou",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 5,
+    "defense": 23,
+    "resistances": "resistência a efeitos mentais +3, resistência a efeitos lefeu e da Tormenta +5",
+    "hp": 55,
+    "sources": "Ameaças de Arton: 55"
+  },
+  {
+    "name": "Fera-Líder",
+    "nd": 5,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 4,
+    "defense": 25,
+    "resistances": "vulnerabilidade a frio",
+    "hp": 195,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Ganchador",
+    "nd": 5,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 26,
+    "resistances": "",
+    "hp": 210,
+    "sources": "Livro Básico: 308"
+  },
+  {
+    "name": "Gangue Goblin",
+    "nd": 5,
+    "type": "Humanoide",
+    "tags": "goblin",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 5,
+    "defense": 20,
+    "resistances": "",
+    "hp": 171,
+    "sources": "Ameaças de Arton: 80"
+  },
+  {
+    "name": "Garra-Zumbi Gigante",
+    "nd": 5,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 4,
+    "defense": 25,
+    "resistances": "",
+    "hp": 200,
+    "sources": "Ameaças de Arton: 233"
+  },
+  {
+    "name": "Ghillanin",
+    "nd": 5,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 4,
+    "defense": 25,
+    "resistances": "cura acelerada 15/ácido ou fogo",
+    "hp": 165,
+    "sources": "Livro Básico"
+  },
+  {
+    "name": "Gigante Esqueleto",
+    "nd": 5,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 3,
+    "defense": 24,
+    "resistances": "redução de corte, frio e perfuração 5",
+    "hp": 210,
+    "sources": "Ameaças de Arton: 229"
+  },
+  {
+    "name": "Glacioll",
+    "nd": 5,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 4,
+    "defense": 23,
+    "resistances": "cura acelerada 15/ácido ou fogo",
+    "hp": 165,
+    "sources": "Livro Básico"
+  },
+  {
+    "name": "Gnoll Líder de Alcateia",
+    "nd": 5,
+    "type": "Humanoide",
+    "tags": "Gnoll",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 8,
+    "defense": 24,
+    "resistances": "",
+    "hp": 200,
+    "sources": "Ameaças de Arton: 116"
+  },
+  {
+    "name": "Gnoll Xamã de Megalokk",
+    "nd": 5,
+    "type": "Humanoide",
+    "tags": "Gnoll",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 7,
+    "defense": 25,
+    "resistances": "imunidade a medo",
+    "hp": 170,
+    "sources": "Ameaças de Arton: 118"
+  },
+  {
+    "name": "Goblin de Ferro",
+    "nd": 5,
+    "type": "Humanoide",
+    "tags": "goblin",
+    "size": "Pequeno",
+    "role": [
+      "Especial"
+    ],
+    "init": 18,
+    "defense": 28,
+    "resistances": "redução de corte, impacto  e perfuração 10",
+    "hp": 150,
+    "sources": "Ameaças de Arton: 82"
+  },
+  {
+    "name": "Gorlogg Alfa",
+    "nd": 5,
+    "type": "Animal",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 5,
+    "defense": 24,
+    "resistances": "",
+    "hp": 206,
+    "sources": "Ameaças de Arton: 216"
+  },
+  {
+    "name": "Hobgoblin Atirador",
+    "nd": 5,
+    "type": "Humanoide",
+    "tags": "hobgoblin",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 18,
+    "defense": 22,
+    "resistances": "imunidade a ofuscado",
+    "hp": 38,
+    "sources": "Ameaças de Arton: 83"
+  },
+  {
+    "name": "Hobgoblin Mago de Batalha",
+    "nd": 5,
+    "type": "Humanoide",
+    "tags": "hobgoblin",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 5,
+    "defense": 17,
+    "resistances": "",
+    "hp": 120,
+    "sources": "Livro Básico: 303"
+  },
+  {
+    "name": "Hynne Dormente",
+    "nd": 5,
+    "type": "Humanoide",
+    "tags": "Hynne",
+    "size": "Pequeno",
+    "role": [
+      "Especial"
+    ],
+    "init": 14,
+    "defense": 22,
+    "resistances": "",
+    "hp": 99,
+    "sources": "Ameaças de Arton: 106"
+  },
+  {
+    "name": "Líder Mercenário de Aslothia",
+    "nd": 5,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 5,
+    "defense": 24,
+    "resistances": "resistência a magia +5",
+    "hp": 200,
+    "sources": "Ameaças de Arton: 288"
+  },
+  {
+    "name": "Mantor",
+    "nd": 5,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 11,
+    "defense": 24,
+    "resistances": "resistência a trevas 5",
+    "hp": 200,
+    "sources": "Ameaças de Arton: 203"
+  },
+  {
+    "name": "Mashin Samurai",
+    "nd": 5,
+    "type": "Construto",
+    "tags": "Mashin",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 12,
+    "defense": 25,
+    "resistances": "imunidade a fogo",
+    "hp": 221,
+    "sources": "Ameaças de Arton: 159"
+  },
+  {
+    "name": "Meio-Orc Chefe",
+    "nd": 5,
+    "type": "Humanoide",
+    "tags": "meio-orc",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 6,
+    "defense": 24,
+    "resistances": "",
+    "hp": 190,
+    "sources": "Ameaças de Arton: 32"
+  },
+  {
+    "name": "Múmia",
+    "nd": 5,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 3,
+    "defense": 22,
+    "resistances": "vulnerabilidade a fogo, redução de dano 5",
+    "hp": 192,
+    "sources": "Ameaças de Arton: 236"
+  },
+  {
+    "name": "Mycotann Druida",
+    "nd": 5,
+    "type": "Monstro",
+    "tags": "mycotann",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 20,
+    "defense": 22,
+    "resistances": "",
+    "hp": 143,
+    "sources": "Ameaças de Arton: 340"
+  },
+  {
+    "name": "Nagah Sacerdotisa",
+    "nd": 5,
+    "type": "Humanoide",
+    "tags": "Nagah",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 6,
+    "defense": 23,
+    "resistances": "resistência a veneno +5",
+    "hp": 140,
+    "sources": "Ameaças de Arton: 334"
+  },
+  {
+    "name": "Ninhada de Dragões Filhotes",
+    "nd": 5,
+    "type": "Monstro",
+    "tags": "Dragão",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 9,
+    "defense": 25,
+    "resistances": "resistência a magia +1, imunidade a fogo, vulnerabilidade a frio",
+    "hp": 240,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Ogro Furioso",
+    "nd": 5,
+    "type": "Humanoide",
+    "tags": "gigante",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 14,
+    "defense": 24,
+    "resistances": "redução de frio 5",
+    "hp": 222,
+    "sources": "Ameaças de Arton: 352"
+  },
+  {
+    "name": "Oni",
+    "nd": 5,
+    "type": "Espírito",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 5,
+    "defense": 24,
+    "resistances": "imunidade a fogo, redução de dano 5",
+    "hp": 200,
+    "sources": "Ameaças de Arton: 162"
+  },
+  {
+    "name": "Orc Mutante",
+    "nd": 5,
+    "type": "Humanoide",
+    "tags": "orc",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 8,
+    "defense": 22,
+    "resistances": "",
+    "hp": 55,
+    "sources": "Livro Básico: 287"
+  },
+  {
+    "name": "Orc Mutante",
+    "nd": 5,
+    "type": "Humanoide",
+    "tags": "orc",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 8,
+    "defense": 22,
+    "resistances": "",
+    "hp": 55,
+    "sources": "Ameaças de Arton: 33"
+  },
+  {
+    "name": "Orc Rei",
+    "nd": 5,
+    "type": "Humanoide",
+    "tags": "orc",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 25,
+    "resistances": "imunidade a atordoado e cansaço",
+    "hp": 210,
+    "sources": "Ameaças de Arton: 32"
+  },
+  {
+    "name": "Otyugh",
+    "nd": 5,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 3,
+    "defense": 24,
+    "resistances": "imunidade a doenças e venenos, redução de dano 5",
+    "hp": 213,
+    "sources": "Livro Básico: 315"
+  },
+  {
+    "name": "Otyugh",
+    "nd": 5,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 3,
+    "defense": 24,
+    "resistances": "redução de dano 5",
+    "hp": 213,
+    "sources": "Ameaças de Arton: 299"
+  },
+  {
+    "name": "Pliorex",
+    "nd": 5,
+    "type": "Humanoide",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 6,
+    "defense": 24,
+    "resistances": "",
+    "hp": 200,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Protetor-Refém",
+    "nd": 5,
+    "type": "Humanoide",
+    "tags": "Anão",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 5,
+    "defense": 23,
+    "resistances": "resistência a efeitos mentais +2, redução de dano 5",
+    "hp": 40,
+    "sources": "Ameaças de Arton: 344"
+  },
+  {
+    "name": "Pteros do Céu Infinito",
+    "nd": 5,
+    "type": "Humanoide",
+    "tags": "Pteros",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 7,
+    "defense": 20,
+    "resistances": "",
+    "hp": 140,
+    "sources": "Ameaças de Arton: 265"
+  },
+  {
+    "name": "Serpe",
+    "nd": 5,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 5,
+    "defense": 24,
+    "resistances": "imunidade a paralisia",
+    "hp": 200,
+    "sources": "Livro Básico: 293"
+  },
+  {
+    "name": "Serpe",
+    "nd": 5,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 5,
+    "defense": 24,
+    "resistances": "",
+    "hp": 200,
+    "sources": "Ameaças de Arton: 310"
+  },
+  {
+    "name": "Soldado Blindado",
+    "nd": 5,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 5,
+    "defense": 32,
+    "resistances": "redução de dano 5/mágico",
+    "hp": 135,
+    "sources": "Ameaças de Arton: 280"
+  },
+  {
+    "name": "Súcubo",
+    "nd": 5,
+    "type": "Espírito",
+    "tags": "Abissal",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 7,
+    "defense": 21,
+    "resistances": "imunidade a ácido, encantamento e veneno, redução de fogo, frio e trevas 10, vulnerabilidade a luz",
+    "hp": 140,
+    "sources": "Deuses de Arton"
+  },
+  {
+    "name": "Tigre-de-Hyninn",
+    "nd": 5,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 10,
+    "defense": 25,
+    "resistances": "resistência a devotos de Khalmyr +5",
+    "hp": 165,
+    "sources": "Ameaças de Arton: 218"
+  },
+  {
+    "name": "Trog Rei dos Túneis",
+    "nd": 5,
+    "type": "Humanoide",
+    "tags": "Trog",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 5,
+    "defense": 25,
+    "resistances": "",
+    "hp": 226,
+    "sources": "Ameaças de Arton: 37"
+  },
+  {
+    "name": "Troll",
+    "nd": 5,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 4,
+    "defense": 23,
+    "resistances": "cura acelerada 15/ ácido ou fogo",
+    "hp": 165,
+    "sources": "Livro Básico: 309"
+  },
+  {
+    "name": "Uraghian Jovem",
+    "nd": 5,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 3,
+    "defense": 24,
+    "resistances": "resistência a fogo 20",
+    "hp": 200,
+    "sources": "Ameaças de Arton: 311"
+  },
+  {
+    "name": "Urso das Neves",
+    "nd": 5,
+    "type": "Animal",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 5,
+    "defense": 22,
+    "resistances": "resistência a frio 5, redução de dano 5",
+    "hp": 220,
+    "sources": "Ameaças de Arton: 354"
+  },
+  {
+    "name": "Vrakoll",
+    "nd": 5,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 4,
+    "defense": 23,
+    "resistances": "cura acelerada 15/ácido ou fogo",
+    "hp": 165,
+    "sources": "Livro Básico: 309"
+  },
+  {
+    "name": "Zyrrinaz",
+    "nd": 5,
+    "type": "Monstro",
+    "tags": "lefeu",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 10,
+    "defense": 24,
+    "resistances": "redução de dano 5",
+    "hp": 41,
+    "sources": "Ameaças de Arton: 58"
+  },
+  {
+    "name": "Armeiro de Tenebra Devoto",
+    "nd": 6,
+    "type": "Humanoide",
+    "tags": "Anão",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 26,
+    "resistances": "imunidade a trevas",
+    "hp": 220,
+    "sources": "Ameaças de Arton: 253"
+  },
+  {
+    "name": "Aucharai",
+    "nd": 6,
+    "type": "Espírito",
+    "tags": "Abissal",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 10,
+    "defense": 26,
+    "resistances": "evasão, imunidade a ácido e veneno, redução de dano 5",
+    "hp": 240,
+    "sources": "Deuses de Arton"
+  },
+  {
+    "name": "Bando Pirata",
+    "nd": 6,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Grande",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 10,
+    "defense": 27,
+    "resistances": "",
+    "hp": 54,
+    "sources": "Ameaças de Arton: 258"
+  },
+  {
+    "name": "Bruxo da Tormenta",
+    "nd": 6,
+    "type": "Humanoide",
+    "tags": "Humano",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 16,
+    "defense": 27,
+    "resistances": "",
+    "hp": 142,
+    "sources": "Ameaças de Arton: 20"
+  },
+  {
+    "name": "Búfalo Paladino de Bullton",
+    "nd": 6,
+    "type": "Humanoide",
+    "tags": "Moreau",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 3,
+    "defense": 28,
+    "resistances": "",
+    "hp": 250,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Bugbear Guarda-Costas",
+    "nd": 6,
+    "type": "Humanoide",
+    "tags": "bugbear",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 16,
+    "defense": 26,
+    "resistances": "resistência a medo +2",
+    "hp": 48,
+    "sources": "Ameaças de Arton: 78"
+  },
+  {
+    "name": "Carrasco de Lena",
+    "nd": 6,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 6,
+    "defense": 27,
+    "resistances": "",
+    "hp": 180,
+    "sources": "Ameaças de Arton: 103"
+  },
+  {
+    "name": "Dançarino de Guerra Veterano",
+    "nd": 6,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 13,
+    "defense": 28,
+    "resistances": "resistência a efeitos de movimento +5",
+    "hp": 175,
+    "sources": "Ameaças de Arton: 278"
+  },
+  {
+    "name": "Defeituoso",
+    "nd": 6,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 16,
+    "defense": 26,
+    "resistances": "cura acelerada 15/especial",
+    "hp": 235,
+    "sources": "Ameaças de Arton: 339"
+  },
+  {
+    "name": "Elfo-do-Mar Chefe",
+    "nd": 6,
+    "type": "Humanoide",
+    "tags": "Elfo-do-Mar",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 12,
+    "defense": 29,
+    "resistances": "",
+    "hp": 230,
+    "sources": "Ameaças de Arton: 315"
+  },
+  {
+    "name": "Engenho de Guerra Goblin",
+    "nd": 6,
+    "type": "Construto",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 3,
+    "defense": 25,
+    "resistances": "redução de dano 10",
+    "hp": 246,
+    "sources": "Livro Básico: 301"
+  },
+  {
+    "name": "Enxame de Águas-vivas",
+    "nd": 6,
+    "type": "Animal",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 9,
+    "defense": 27,
+    "resistances": "imunidade a ácido, resistência a impacto 5",
+    "hp": 255,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Finntroll Feitor",
+    "nd": 6,
+    "type": "Humanoide",
+    "tags": "finntroll",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 9,
+    "defense": 20,
+    "resistances": "imunidade a atordoamento e metamorfose, resistência a magia +2",
+    "hp": 155,
+    "sources": "Livro Básico: 307"
+  },
+  {
+    "name": "Finntroll Feitor",
+    "nd": 6,
+    "type": "Monstro",
+    "tags": "finntroll",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 17,
+    "defense": 20,
+    "resistances": "",
+    "hp": 155,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Geraktril",
+    "nd": 6,
+    "type": "Monstro",
+    "tags": "lefeu",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 13,
+    "defense": 30,
+    "resistances": "redução de dano 10",
+    "hp": 240,
+    "sources": "Livro Básico: 314"
+  },
+  {
+    "name": "Gnoll Xamã de Marah",
+    "nd": 6,
+    "type": "Humanoide",
+    "tags": "Gnoll",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 6,
+    "defense": 25,
+    "resistances": "",
+    "hp": 180,
+    "sources": "Ameaças de Arton: 118"
+  },
+  {
+    "name": "Górgona",
+    "nd": 6,
+    "type": "Monstro",
+    "tags": "Medusa",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 16,
+    "defense": 26,
+    "resistances": "resistência a veneno +5",
+    "hp": 231,
+    "sources": "Ameaças de Arton: 329"
+  },
+  {
+    "name": "Governador Corrupto",
+    "nd": 6,
+    "type": "Humanoide",
+    "tags": "minotauro",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 5,
+    "defense": 18,
+    "resistances": "",
+    "hp": 122,
+    "sources": "Ameaças de Arton: 176"
+  },
+  {
+    "name": "Kaijin Capanga",
+    "nd": 6,
+    "type": "Monstro",
+    "tags": "Kaijin",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 5,
+    "defense": 26,
+    "resistances": "fortificação 50%, resistência a lefeu e Tormenta +5, redução de dano 5",
+    "hp": 60,
+    "sources": "Ameaças de Arton: 156"
+  },
+  {
+    "name": "Kallyanach Bárbaro",
+    "nd": 6,
+    "type": "Monstro",
+    "tags": "Kallyanach",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 8,
+    "defense": 24,
+    "resistances": "resistência a fogo 5, redução de dano 5",
+    "hp": 224,
+    "sources": "Ameaças de Arton: 150"
+  },
+  {
+    "name": "Líder Goblin de Sombreiro",
+    "nd": 6,
+    "type": "Humanoide",
+    "tags": "Goblin",
+    "size": "Pequeno",
+    "role": [
+      "Solo"
+    ],
+    "init": 12,
+    "defense": 28,
+    "resistances": "resistência a condições de sentidos +2",
+    "hp": 190,
+    "sources": "Ameaças de Arton: 256"
+  },
+  {
+    "name": "Mantícora",
+    "nd": 6,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 26,
+    "resistances": "",
+    "hp": 240,
+    "sources": "Livro Básico: 287"
+  },
+  {
+    "name": "Mantícora",
+    "nd": 6,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 26,
+    "resistances": "",
+    "hp": 240,
+    "sources": "Ameaças de Arton: 298"
+  },
+  {
+    "name": "Mímico",
+    "nd": 6,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 9,
+    "defense": 26,
+    "resistances": "imunidade a ácido, redução de dano 5",
+    "hp": 220,
+    "sources": "Ameaças de Arton: 203"
+  },
+  {
+    "name": "Minauro Ladino",
+    "nd": 6,
+    "type": "Humanoide",
+    "tags": "minauro",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 11,
+    "defense": 25,
+    "resistances": "",
+    "hp": 147,
+    "sources": "Ameaças de Arton: 174"
+  },
+  {
+    "name": "Minotauro Chefe da Manada",
+    "nd": 6,
+    "type": "Humanoide",
+    "tags": "minotauro",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 18,
+    "defense": 26,
+    "resistances": "redução de frio 5",
+    "hp": 232,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Nagah Mística",
+    "nd": 6,
+    "type": "Humanoide",
+    "tags": "nagah",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 8,
+    "defense": 20,
+    "resistances": "resistência a veneno +5",
+    "hp": 160,
+    "sources": "Livro Básico: 306"
+  },
+  {
+    "name": "Nagah Mística",
+    "nd": 6,
+    "type": "Humanoide",
+    "tags": "Nagah",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 8,
+    "defense": 20,
+    "resistances": "resistência a veneno +5",
+    "hp": 160,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Peixe-Recife",
+    "nd": 6,
+    "type": "Animal",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 6,
+    "defense": 29,
+    "resistances": "redução de dano 10",
+    "hp": 250,
+    "sources": "Ameaças de Arton: 321"
+  },
+  {
+    "name": "Rinoceronte Lanoso",
+    "nd": 6,
+    "type": "Animal",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 6,
+    "defense": 24,
+    "resistances": "resistência a frio 5, redução de dano 5",
+    "hp": 260,
+    "sources": "Ameaças de Arton: 219"
+  },
+  {
+    "name": "Sacerdote Finntroll",
+    "nd": 6,
+    "type": "Monstro",
+    "tags": "finntroll",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 18,
+    "defense": 25,
+    "resistances": "",
+    "hp": 162,
+    "sources": "Ameaças de Arton: 346"
+  },
+  {
+    "name": "Selako-Tigre",
+    "nd": 6,
+    "type": "Animal",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 14,
+    "defense": 25,
+    "resistances": "redução de dano 5",
+    "hp": 260,
+    "sources": "Ameaças de Arton: 322"
+  },
+  {
+    "name": "Tendrículo",
+    "nd": 6,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 9,
+    "defense": 25,
+    "resistances": "",
+    "hp": 210,
+    "sources": "Ameaças de Arton: 111"
+  },
+  {
+    "name": "Tengu Bandoleiro",
+    "nd": 6,
+    "type": "Espírito",
+    "tags": "Tengu",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 9,
+    "defense": 25,
+    "resistances": "",
+    "hp": 51,
+    "sources": "Ameaças de Arton: 163"
+  },
+  {
+    "name": "Xamã de Sarana",
+    "nd": 6,
+    "type": "Humanoide",
+    "tags": "Velocis",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 7,
+    "defense": 24,
+    "resistances": "resistência a corte 2, resistência a perfuração 2",
+    "hp": 168,
+    "sources": "Ameaças de Arton: 271"
+  },
+  {
+    "name": "Afogado",
+    "nd": 7,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 9,
+    "defense": 29,
+    "resistances": "",
+    "hp": 60,
+    "sources": "Ameaças de Arton: 252"
+  },
+  {
+    "name": "Alma Acorrentada",
+    "nd": 7,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 18,
+    "defense": 26,
+    "resistances": "incorpóreo",
+    "hp": 56,
+    "sources": "Ameaças de Arton: 18"
+  },
+  {
+    "name": "Bulette",
+    "nd": 7,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 9,
+    "defense": 32,
+    "resistances": "redução de dano 5/adamante, resistência a ácido 10, resistência a fogo 10",
+    "hp": 310,
+    "sources": "Ameaças de Arton: 102"
+  },
+  {
+    "name": "Capitão Pirata",
+    "nd": 7,
+    "type": "Morto-Vivo",
+    "tags": "Osteon",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 16,
+    "defense": 31,
+    "resistances": "resistência a corte 5, resistência a frio 5, resistência a perfuração 5",
+    "hp": 265,
+    "sources": "Ameaças de Arton: 258"
+  },
+  {
+    "name": "Cavaleiro Finntroll",
+    "nd": 7,
+    "type": "Monstro",
+    "tags": "finntroll",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 18,
+    "defense": 30,
+    "resistances": "",
+    "hp": 252,
+    "sources": "Ameaças de Arton: 344"
+  },
+  {
+    "name": "Centopeia-dragão",
+    "nd": 7,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 10,
+    "defense": 27,
+    "resistances": "imunidade a condição caído, redução de fogo 10",
+    "hp": 275,
+    "sources": "Livro Básico: 286"
+  },
+  {
+    "name": "Centurião de Elite",
+    "nd": 7,
+    "type": "Humanoide",
+    "tags": "minotauro",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 9,
+    "defense": 32,
+    "resistances": "redução de dano 5",
+    "hp": 250,
+    "sources": "Ameaças de Arton: 169"
+  },
+  {
+    "name": "Ceratops Chefe da Tribo",
+    "nd": 7,
+    "type": "Humanoide",
+    "tags": "Ceratops",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 32,
+    "resistances": "redução de dano 5",
+    "hp": 280,
+    "sources": "Ameaças de Arton: 264"
+  },
+  {
+    "name": "Cocatriz-Real",
+    "nd": 7,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Especial"
+    ],
+    "init": 17,
+    "defense": 32,
+    "resistances": "",
+    "hp": 250,
+    "sources": "Ameaças de Arton: 199"
+  },
+  {
+    "name": "Cultista de Sszzaas",
+    "nd": 7,
+    "type": "Humanoide",
+    "tags": "medusa",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 11,
+    "defense": 23,
+    "resistances": "resistência a veneno +5",
+    "hp": 160,
+    "sources": "Livro Básico: 305"
+  },
+  {
+    "name": "Cultista de Sszzaas",
+    "nd": 7,
+    "type": "Monstro",
+    "tags": "Medusa",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 11,
+    "defense": 29,
+    "resistances": "resistência a veneno +5",
+    "hp": 160,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Dragão Jovem",
+    "nd": 7,
+    "type": "Monstro",
+    "tags": "dragão",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 11,
+    "defense": 32,
+    "resistances": "imunidade a fogo, redução de dano 5, resistência a magia +2, vulnerabilidade a frio",
+    "hp": 320,
+    "sources": "Livro Básico: 310"
+  },
+  {
+    "name": "Dragão Jovem da Proteção",
+    "nd": 7,
+    "type": "Monstro",
+    "tags": "dragão",
+    "size": "Grande",
+    "role": [
+      "Especial"
+    ],
+    "init": 11,
+    "defense": 32,
+    "resistances": "fortificação 25%, resistência a magia +2, vulnerabilidade a ácido, imunidade a eletricidade, redução de dano 5",
+    "hp": 320,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Dragão Jovem do Ocaso",
+    "nd": 7,
+    "type": "Monstro",
+    "tags": "dragão",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 11,
+    "defense": 31,
+    "resistances": "resistência a magia +2, vulnerabilidade a fogo, imunidade a frio, redução de dano 5",
+    "hp": 320,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Elefante",
+    "nd": 7,
+    "type": "Animal",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 6,
+    "defense": 32,
+    "resistances": "redução de dano 5",
+    "hp": 260,
+    "sources": "Ameaças de Arton: 216"
+  },
+  {
+    "name": "Fantasma",
+    "nd": 7,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 10,
+    "defense": 29,
+    "resistances": "incorpóreo",
+    "hp": 190,
+    "sources": "Ameaças de Arton: 231"
+  },
+  {
+    "name": "Golem de Carne",
+    "nd": 7,
+    "type": "Construto",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 6,
+    "defense": 31,
+    "resistances": "imunidade a trevas, redução de dano 5",
+    "hp": 300,
+    "sources": "Ameaças de Arton: 127"
+  },
+  {
+    "name": "Guerreiro Perpétuo",
+    "nd": 7,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 9,
+    "defense": 33,
+    "resistances": "incorpóreo, redução de dano 5",
+    "hp": 265,
+    "sources": "Ameaças de Arton: 139"
+  },
+  {
+    "name": "Homem-Piranha Capitão",
+    "nd": 7,
+    "type": "Monstro",
+    "tags": "Lefou",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 12,
+    "defense": 29,
+    "resistances": "fortificação 50%, resistência a efeitos lefeu e da Tormenta +5, resistência a ácido 10, resistência a eletricidade 10, resistência a fogo 10, resistência a frio 10, resistência a luz 10, resistência a trevas 10",
+    "hp": 290,
+    "sources": "Ameaças de Arton: 256"
+  },
+  {
+    "name": "Instrumento Divino",
+    "nd": 7,
+    "type": "Construto",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 8,
+    "defense": 33,
+    "resistances": "resistência a trevas 10",
+    "hp": 266,
+    "sources": "Ameaças de Arton: 132"
+  },
+  {
+    "name": "Nagah Defensor",
+    "nd": 7,
+    "type": "Humanoide",
+    "tags": "Nagah",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 12,
+    "defense": 34,
+    "resistances": "resistência a veneno +5, redução de dano 5",
+    "hp": 82,
+    "sources": "Ameaças de Arton: 332"
+  },
+  {
+    "name": "Nagah Encantadora",
+    "nd": 7,
+    "type": "Humanoide",
+    "tags": "Nagah",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 10,
+    "defense": 29,
+    "resistances": "resistência a veneno +5",
+    "hp": 197,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Necromante",
+    "nd": 7,
+    "type": "Humanoide",
+    "tags": "elfo",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 9,
+    "defense": 23,
+    "resistances": "",
+    "hp": 180,
+    "sources": "Livro Básico: 298"
+  },
+  {
+    "name": "Ogro Caçador",
+    "nd": 7,
+    "type": "Humanoide",
+    "tags": "Gigante",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 29,
+    "resistances": "",
+    "hp": 265,
+    "sources": "Ameaças de Arton: 40"
+  },
+  {
+    "name": "Orc Xamã",
+    "nd": 7,
+    "type": "Humanoide",
+    "tags": "orc",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 4,
+    "defense": 29,
+    "resistances": "resistência a veneno +5",
+    "hp": 196,
+    "sources": "Ameaças de Arton: 35"
+  },
+  {
+    "name": "Pamgra",
+    "nd": 7,
+    "type": "Espírito",
+    "tags": "elemental",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 31,
+    "resistances": "imunidade a acertos críticos, vulnerabilidade a eletricidade, redução de dano 10",
+    "hp": 280,
+    "sources": "Ameaças de Arton: 97"
+  },
+  {
+    "name": "Rarvnaak",
+    "nd": 7,
+    "type": "Espírito",
+    "tags": "elemental",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 14,
+    "defense": 29,
+    "resistances": "imunidade a acertos críticos, vulnerabilidade a ácido",
+    "hp": 280,
+    "sources": "Ameaças de Arton: 92"
+  },
+  {
+    "name": "Rhayrivel",
+    "nd": 7,
+    "type": "Espírito",
+    "tags": "Abissal",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 9,
+    "defense": 31,
+    "resistances": "imunidade a ácido e veneno, redução de dano 5, redução de fogo e frio 10",
+    "hp": 280,
+    "sources": "Deuses de Arton"
+  },
+  {
+    "name": "Turba de Infectos",
+    "nd": 7,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 6,
+    "defense": 30,
+    "resistances": "redução de dano 5/corte",
+    "hp": 80,
+    "sources": "Ameaças de Arton: 22"
+  },
+  {
+    "name": "Água-viva Gigante",
+    "nd": 8,
+    "type": "Animal",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 11,
+    "defense": 33,
+    "resistances": "imunidade a ácido, resistência a impacto 5",
+    "hp": 320,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Alto Sacerdote de Hyninn",
+    "nd": 8,
+    "type": "Humanoide",
+    "tags": "goblin",
+    "size": "Pequeno",
+    "role": [
+      "Especial"
+    ],
+    "init": 13,
+    "defense": 30,
+    "resistances": "imunidade a efeitos mentais",
+    "hp": 175,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Armeiro de Tenebra Clérigo",
+    "nd": 8,
+    "type": "Humanoide",
+    "tags": "Anão",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 10,
+    "defense": 31,
+    "resistances": "imunidade a trevas",
+    "hp": 210,
+    "sources": "Ameaças de Arton: 253"
+  },
+  {
+    "name": "Armento de Burafontes",
+    "nd": 8,
+    "type": "Animal",
+    "tags": "",
+    "size": "Colossal",
+    "role": [
+      "Especial"
+    ],
+    "init": 5,
+    "defense": 35,
+    "resistances": "",
+    "hp": 310,
+    "sources": "Ameaças de Arton: 242"
+  },
+  {
+    "name": "Bando de Deinonicos",
+    "nd": 8,
+    "type": "Animal",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Especial"
+    ],
+    "init": 9,
+    "defense": 23,
+    "resistances": "",
+    "hp": 700,
+    "sources": "Ameaças de Arton: 244"
+  },
+  {
+    "name": "Ber-baram",
+    "nd": 8,
+    "type": "Espírito",
+    "tags": "elemental",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 9,
+    "defense": 30,
+    "resistances": "imunidade a acertos críticos, atordoado, cansaço, efeitos de metabolismo, fogo e paralisia, vulnerabilidade a frio",
+    "hp": 320,
+    "sources": "Ameaças de Arton: 95"
+  },
+  {
+    "name": "Bispo de Guerra",
+    "nd": 8,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 8,
+    "defense": 28,
+    "resistances": "imunidade a medo, redução de dano 5",
+    "hp": 230,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Brontotério",
+    "nd": 8,
+    "type": "Animal",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 8,
+    "defense": 34,
+    "resistances": "redução de dano 5",
+    "hp": 310,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Caçador de Impuros",
+    "nd": 8,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 18,
+    "defense": 34,
+    "resistances": "",
+    "hp": 290,
+    "sources": "Ameaças de Arton: 275"
+  },
+  {
+    "name": "Capitão do Conclave Pirata",
+    "nd": 8,
+    "type": "Humanoide",
+    "tags": "Humano",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 16,
+    "defense": 33,
+    "resistances": "",
+    "hp": 290,
+    "sources": "Ameaças de Arton: 258"
+  },
+  {
+    "name": "Cavaleiro de Kally",
+    "nd": 8,
+    "type": "Humanoide",
+    "tags": "Humano",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 12,
+    "defense": 35,
+    "resistances": "resistência a magia +5, resistência a fogo 20, redução de dano 5",
+    "hp": 250,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Centauro Chefe",
+    "nd": 8,
+    "type": "Humanoide",
+    "tags": "Centauro",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 10,
+    "defense": 33,
+    "resistances": "resistência a efeitos mentais, medo e veneno +5",
+    "hp": 320,
+    "sources": "Ameaças de Arton: 104"
+  },
+  {
+    "name": "Clérigo de Kally",
+    "nd": 8,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 9,
+    "defense": 29,
+    "resistances": "",
+    "hp": 224,
+    "sources": "Ameaças de Arton: 145"
+  },
+  {
+    "name": "Corgann",
+    "nd": 8,
+    "type": "Espírito",
+    "tags": "elemental",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 14,
+    "defense": 30,
+    "resistances": "imunidade a acertos críticos e paralisia, vulnerabilidade a fogo",
+    "hp": 61,
+    "sources": "Ameaças de Arton: 89"
+  },
+  {
+    "name": "Daitengu",
+    "nd": 8,
+    "type": "Espírito",
+    "tags": "Tengu",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 14,
+    "defense": 32,
+    "resistances": "",
+    "hp": 222,
+    "sources": "Ameaças de Arton: 163"
+  },
+  {
+    "name": "Devorador de Medos",
+    "nd": 8,
+    "type": "Humanoide",
+    "tags": "bugbear",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 11,
+    "defense": 31,
+    "resistances": "imunidade a medo",
+    "hp": 325,
+    "sources": "Livro Básico: 300"
+  },
+  {
+    "name": "Elemental do Veneno Médio",
+    "nd": 8,
+    "type": "Espírito",
+    "tags": "Elemental",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 5,
+    "defense": 31,
+    "resistances": "imunidade a acertos críticos",
+    "hp": 280,
+    "sources": "Ameaças de Arton: 328"
+  },
+  {
+    "name": "Ente",
+    "nd": 8,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 34,
+    "resistances": "fortificação 25%, natureza vegetal, redução de dano 10/corte, vulnerabilidade a fogo",
+    "hp": 310,
+    "sources": "Ameaças de Arton: 106"
+  },
+  {
+    "name": "Enxame Infernal",
+    "nd": 8,
+    "type": "Monstro",
+    "tags": "Lefeu",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 9,
+    "defense": 33,
+    "resistances": "Imunidade a Acertos Críticos",
+    "hp": 350,
+    "sources": "Ameaças de Arton: 21"
+  },
+  {
+    "name": "Estouro de Fúrias de Tauron",
+    "nd": 8,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 16,
+    "defense": 30,
+    "resistances": "vulnerabilidade a frio",
+    "hp": 76,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Falange",
+    "nd": 8,
+    "type": "Humanoide",
+    "tags": "bando",
+    "size": "Grande",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 12,
+    "defense": 19,
+    "resistances": "redução de corte, frio e perfuração 5",
+    "hp": 300,
+    "sources": "Livro Básico: 297"
+  },
+  {
+    "name": "Gnoll Caçador de Cabeças",
+    "nd": 8,
+    "type": "Humanoide",
+    "tags": "Gnoll",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 12,
+    "defense": 33,
+    "resistances": "",
+    "hp": 320,
+    "sources": "Ameaças de Arton: 114"
+  },
+  {
+    "name": "Goblin de Ferro Mark II",
+    "nd": 8,
+    "type": "Humanoide",
+    "tags": "goblin",
+    "size": "Pequeno",
+    "role": [
+      "Solo"
+    ],
+    "init": 25,
+    "defense": 36,
+    "resistances": "redução de corte,  impacto e perfuração 20",
+    "hp": 300,
+    "sources": "Ameaças de Arton: 82"
+  },
+  {
+    "name": "Golem de Nor Grande",
+    "nd": 8,
+    "type": "Construto",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 8,
+    "defense": 32,
+    "resistances": "imunidade a frio, redução de fogo 15",
+    "hp": 290,
+    "sources": "Ameaças de Arton: 348"
+  },
+  {
+    "name": "Lefeu, Veridak",
+    "nd": 8,
+    "type": "Monstro",
+    "tags": "Lefeu",
+    "size": "Grande",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 12,
+    "defense": 34,
+    "resistances": "redução de dano 5, imunidade a ácido, imunidade a eletricidade, imunidade a fogo, imunidade a frio, imunidade a luz, imunidade a trevas",
+    "hp": 64,
+    "sources": "Ameaças de Arton: 24"
+  },
+  {
+    "name": "Legionário Insano",
+    "nd": 8,
+    "type": "Humanoide",
+    "tags": "minotauro",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 10,
+    "defense": 30,
+    "resistances": "resistência a magia +5",
+    "hp": 80,
+    "sources": "Ameaças de Arton: 173"
+  },
+  {
+    "name": "Líder Fanático Lefou",
+    "nd": 8,
+    "type": "Humanoide",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 9,
+    "defense": 33,
+    "resistances": "imunidade a acertos críticos, resistência a efeitos lefeu, da Tormenta e mentais +5",
+    "hp": 90,
+    "sources": "Ameaças de Arton: 55"
+  },
+  {
+    "name": "Mamute",
+    "nd": 8,
+    "type": "Animal",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 20,
+    "defense": 33,
+    "resistances": "redução de dano 5",
+    "hp": 310,
+    "sources": "Ameaças de Arton: 350"
+  },
+  {
+    "name": "Mamute Esqueleto",
+    "nd": 8,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 8,
+    "defense": 33,
+    "resistances": "redução de corte, frio e perfuração 5",
+    "hp": 340,
+    "sources": "Ameaças de Arton: 350"
+  },
+  {
+    "name": "Quimera",
+    "nd": 8,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Especial"
+    ],
+    "init": 7,
+    "defense": 33,
+    "resistances": "",
+    "hp": 333,
+    "sources": "Ameaças de Arton: 204"
+  },
+  {
+    "name": "Raagoran",
+    "nd": 8,
+    "type": "Animal",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 33,
+    "resistances": "redução de dano 10",
+    "hp": 320,
+    "sources": "Ameaças de Arton: 248"
+  },
+  {
+    "name": "Reishid",
+    "nd": 8,
+    "type": "Monstro",
+    "tags": "lefeu",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 17,
+    "defense": 37,
+    "resistances": "redução de dano 10",
+    "hp": 295,
+    "sources": "Livro Básico"
+  },
+  {
+    "name": "Reishid",
+    "nd": 8,
+    "type": "Monstro",
+    "tags": "lefeu",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 17,
+    "defense": 37,
+    "resistances": "redução de dano 10, imunidade a ácido, imunidade a eletricidade, imunidade a fogo, imunidade a frio, imunidade a luz, imunidade a trevas",
+    "hp": 295,
+    "sources": "Ameaças de Arton: 56"
+  },
+  {
+    "name": "Serpe Anciã",
+    "nd": 8,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 8,
+    "defense": 33,
+    "resistances": "",
+    "hp": 320,
+    "sources": "Ameaças de Arton: 310"
+  },
+  {
+    "name": "Trio de Carvarel",
+    "nd": 8,
+    "type": "Espírito",
+    "tags": "Abissal",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 33,
+    "resistances": "imunidade a ácido e venenos, redução de dano 5, redução de fogo e frio 10",
+    "hp": 305,
+    "sources": "Deuses de Arton"
+  },
+  {
+    "name": "Trog Anão Eremita",
+    "nd": 8,
+    "type": "Monstro",
+    "tags": "Trog",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 7,
+    "defense": 33,
+    "resistances": "",
+    "hp": 330,
+    "sources": "Ameaças de Arton: 39"
+  },
+  {
+    "name": "Uraghian Adulto",
+    "nd": 8,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 33,
+    "resistances": "resistência a fogo 20",
+    "hp": 330,
+    "sources": "Ameaças de Arton: 311"
+  },
+  {
+    "name": "Urso das Cavernas",
+    "nd": 8,
+    "type": "Animal",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 9,
+    "defense": 31,
+    "resistances": "redução de dano 5",
+    "hp": 300,
+    "sources": "Ameaças de Arton: 224"
+  },
+  {
+    "name": "Voracis Caçadora",
+    "nd": 8,
+    "type": "Humanoide",
+    "tags": "Voracis",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 15,
+    "defense": 30,
+    "resistances": "",
+    "hp": 64,
+    "sources": "Ameaças de Arton: 269"
+  },
+  {
+    "name": "Wisphago",
+    "nd": 8,
+    "type": "Humanoide",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Especial"
+    ],
+    "init": 12,
+    "defense": 33,
+    "resistances": "resistência a magia +5",
+    "hp": 344,
+    "sources": "Ameaças de Arton: 290"
+  },
+  {
+    "name": "Aka Oni",
+    "nd": 9,
+    "type": "Espírito",
+    "tags": "Lefeu",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 9,
+    "defense": 35,
+    "resistances": "redução de dano 10",
+    "hp": 360,
+    "sources": "Ameaças de Arton: 162"
+  },
+  {
+    "name": "Cardume de Selakos",
+    "nd": 9,
+    "type": "Humanoide",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Especial"
+    ],
+    "init": 12,
+    "defense": 18,
+    "resistances": "",
+    "hp": 390,
+    "sources": "Ameaças de Arton: 322"
+  },
+  {
+    "name": "Cavaleiro do Leopardo Sargento",
+    "nd": 9,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 17,
+    "defense": 28,
+    "resistances": "",
+    "hp": 270,
+    "sources": "Livro Básico: 295"
+  },
+  {
+    "name": "Companhia Blindada de Elite",
+    "nd": 9,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 41,
+    "resistances": "redução de dano 5",
+    "hp": 275,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Forjador Litúrgico",
+    "nd": 9,
+    "type": "Humanoide",
+    "tags": "Humano",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 9,
+    "defense": 33,
+    "resistances": "imunidade a medo, redução de dano 5",
+    "hp": 230,
+    "sources": "Ameaças de Arton: 137"
+  },
+  {
+    "name": "Golem de Bronze",
+    "nd": 9,
+    "type": "Construto",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 4,
+    "defense": 34,
+    "resistances": "redução de dano 10",
+    "hp": 350,
+    "sources": "Ameaças de Arton: 126"
+  },
+  {
+    "name": "Golem de Espelhos",
+    "nd": 9,
+    "type": "Construto",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 9,
+    "defense": 32,
+    "resistances": "",
+    "hp": 350,
+    "sources": "Ameaças de Arton: 128"
+  },
+  {
+    "name": "Kallyanach Morte Glacial",
+    "nd": 9,
+    "type": "Monstro",
+    "tags": "Kallyanach",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 14,
+    "defense": 32,
+    "resistances": "resistência a frio 10",
+    "hp": 340,
+    "sources": "Ameaças de Arton: 150"
+  },
+  {
+    "name": "Keylor",
+    "nd": 9,
+    "type": "Humanoide",
+    "tags": "gigante",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 22,
+    "defense": 34,
+    "resistances": "resistência a frio 10",
+    "hp": 360,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Lefeu, Hurobakk",
+    "nd": 9,
+    "type": "Monstro",
+    "tags": "Lefeu",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 16,
+    "defense": 35,
+    "resistances": "redução de dano 10, imunidade a ácido, imunidade a eletricidade, imunidade a fogo, imunidade a frio, imunidade a luz, imunidade a trevas",
+    "hp": 380,
+    "sources": "Ameaças de Arton: 24"
+  },
+  {
+    "name": "Morgue’raz",
+    "nd": 9,
+    "type": "Morto-Vivo",
+    "tags": "Criar",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 11,
+    "defense": 34,
+    "resistances": "",
+    "hp": 378,
+    "sources": "Ameaças de Arton: 289"
+  },
+  {
+    "name": "Sacerdote da Agonia",
+    "nd": 9,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 15,
+    "defense": 32,
+    "resistances": "Fortificação 25%, Resistência a magia divina +5",
+    "hp": 192,
+    "sources": "Ameaças de Arton: 162"
+  },
+  {
+    "name": "Senhor do Gigante Rubro Forma Inicial",
+    "nd": 9,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Especial"
+    ],
+    "init": 13,
+    "defense": 33,
+    "resistances": "imunidade a acertos críticos, resistência a magia +5, resistência a ácido 10, resistência a eletricidade 10, resistência a fogo 10, resistência a frio 10, resistência a luz 10, resistência a trevas 10",
+    "hp": 340,
+    "sources": "Ameaças de Arton: 57"
+  },
+  {
+    "name": "Sombra de Thwor",
+    "nd": 9,
+    "type": "Humanoide",
+    "tags": "hobgoblin",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 17,
+    "defense": 30,
+    "resistances": "",
+    "hp": 295,
+    "sources": "Livro Básico: 303"
+  },
+  {
+    "name": "Troll das Cavernas",
+    "nd": 9,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 29,
+    "resistances": "cura acelerada 20/ ácido ou fogo",
+    "hp": 345,
+    "sources": "Livro Básico: 309"
+  },
+  {
+    "name": "Aspecto de Aharadak",
+    "nd": 10,
+    "type": "Monstro",
+    "tags": "Lefeu",
+    "size": "Grande",
+    "role": [
+      "Especial"
+    ],
+    "init": 10,
+    "defense": 38,
+    "resistances": "redução de dano 10, imunidade a ácido, imunidade a eletricidade, imunidade a fogo, imunidade a frio, imunidade a luz, imunidade a trevas",
+    "hp": 472,
+    "sources": "Ameaças de Arton: 53"
+  },
+  {
+    "name": "Capitão Afogado",
+    "nd": 10,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 11,
+    "defense": 35,
+    "resistances": "redução de dano 5",
+    "hp": 380,
+    "sources": "Ameaças de Arton: 252"
+  },
+  {
+    "name": "Capitão da Frota Áurea",
+    "nd": 10,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 18,
+    "defense": 36,
+    "resistances": "redução de dano 5",
+    "hp": 360,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Centauro Xamã de Megalokk",
+    "nd": 10,
+    "type": "Humanoide",
+    "tags": "Centauro",
+    "size": "Grande",
+    "role": [
+      "Especial"
+    ],
+    "init": 12,
+    "defense": 31,
+    "resistances": "",
+    "hp": 260,
+    "sources": "Ameaças de Arton: 105"
+  },
+  {
+    "name": "Coletor de Arsenal",
+    "nd": 10,
+    "type": "Humanoide",
+    "tags": "Humano",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 15,
+    "defense": 33,
+    "resistances": "resistência a magia +5",
+    "hp": 280,
+    "sources": "Ameaças de Arton: 136"
+  },
+  {
+    "name": "Coruja Druida",
+    "nd": 10,
+    "type": "Humanoide",
+    "tags": "Moreau",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 12,
+    "defense": 33,
+    "resistances": "",
+    "hp": 284,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Dragão Celestial Jovem",
+    "nd": 10,
+    "type": "Espírito",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 12,
+    "defense": 35,
+    "resistances": "resistência a magia +2, vulnerabilidade a ácido, imunidade a eletricidade, redução de dano 5",
+    "hp": 450,
+    "sources": "Ameaças de Arton: 165"
+  },
+  {
+    "name": "Dragão Feral",
+    "nd": 10,
+    "type": "Monstro",
+    "tags": "dragão",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 13,
+    "defense": 38,
+    "resistances": "resistência a magia +3, vulnerabilidade a fogo, imunidade a frio, redução de dano 10",
+    "hp": 495,
+    "sources": "Ameaças de Arton: 72"
+  },
+  {
+    "name": "Elfo-do-Mar Druida",
+    "nd": 10,
+    "type": "Humanoide",
+    "tags": "Elfo-do-mar",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 14,
+    "defense": 31,
+    "resistances": "",
+    "hp": 250,
+    "sources": "Ameaças de Arton: 315"
+  },
+  {
+    "name": "Gladiador Táurico",
+    "nd": 10,
+    "type": "Humanoide",
+    "tags": "minotauro",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 12,
+    "defense": 34,
+    "resistances": "redução de dano 5",
+    "hp": 390,
+    "sources": "Ameaças de Arton: 171"
+  },
+  {
+    "name": "Golem de Barro",
+    "nd": 10,
+    "type": "Humanoide",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Especial"
+    ],
+    "init": 9,
+    "defense": 36,
+    "resistances": "",
+    "hp": 400,
+    "sources": "Ameaças de Arton: 125"
+  },
+  {
+    "name": "Golem de Ferro",
+    "nd": 10,
+    "type": "Construto",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 4,
+    "defense": 36,
+    "resistances": "redução de dano 10",
+    "hp": 400,
+    "sources": "Livro Básico: 287"
+  },
+  {
+    "name": "Golem de Ferro",
+    "nd": 10,
+    "type": "Construto",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 4,
+    "defense": 35,
+    "resistances": "redução de dano 10",
+    "hp": 400,
+    "sources": "Ameaças de Arton: 129"
+  },
+  {
+    "name": "Golem de Nor Enorme",
+    "nd": 10,
+    "type": "Construto",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 9,
+    "defense": 35,
+    "resistances": "imunidade a frio, redução de fogo 15",
+    "hp": 370,
+    "sources": "Ameaças de Arton: 348"
+  },
+  {
+    "name": "Jhumariel",
+    "nd": 10,
+    "type": "Espírito",
+    "tags": "Abissal",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 36,
+    "resistances": "imunidade a ácido, fogo e veneno, redução de dano 10",
+    "hp": 400,
+    "sources": "Deuses de Arton"
+  },
+  {
+    "name": "Jhumariel",
+    "nd": 10,
+    "type": "Espírito",
+    "tags": "Abissal",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 36,
+    "resistances": "imunidade a ácido, fogo e veneno, redução de dano 10",
+    "hp": 400,
+    "sources": "Deuses de Arton"
+  },
+  {
+    "name": "Orc Mutante Superior",
+    "nd": 10,
+    "type": "Humanoide",
+    "tags": "orc",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 9,
+    "defense": 34,
+    "resistances": "",
+    "hp": 372,
+    "sources": "Ameaças de Arton: 33"
+  },
+  {
+    "name": "Oxxdon Imenso",
+    "nd": 10,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 18,
+    "defense": 36,
+    "resistances": "",
+    "hp": 400,
+    "sources": "Ameaças de Arton: 308"
+  },
+  {
+    "name": "Pliorex Abissal",
+    "nd": 10,
+    "type": "Animal",
+    "tags": "",
+    "size": "Colossal",
+    "role": [
+      "Especial"
+    ],
+    "init": 11,
+    "defense": 36,
+    "resistances": "",
+    "hp": 400,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Sacerdote de Aharadak",
+    "nd": 10,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 17,
+    "defense": 38,
+    "resistances": "imunidade a confusão, redução de ácido, eletricidade, fogo, frio, luz e trevas 10, resistência a magia divina +5",
+    "hp": 315,
+    "sources": "Livro Básico: 316"
+  },
+  {
+    "name": "Tirano do Terceiro",
+    "nd": 10,
+    "type": "Humanoide",
+    "tags": "Humano",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 9,
+    "defense": 37,
+    "resistances": "resistência a magia +2, redução de dano 5",
+    "hp": 370,
+    "sources": "Livro Básico: 313"
+  },
+  {
+    "name": "Totem de Sarana (Aspecto de Marah)",
+    "nd": 10,
+    "type": "Espírito",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Especial"
+    ],
+    "init": 21,
+    "defense": 34,
+    "resistances": "cura acelerada 10/trevas, resistência a magia +2, redução de dano 10",
+    "hp": 420,
+    "sources": "Ameaças de Arton: 271"
+  },
+  {
+    "name": "Tuntram",
+    "nd": 10,
+    "type": "Animal",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 9,
+    "defense": 36,
+    "resistances": "redução de dano 5",
+    "hp": 450,
+    "sources": "Ameaças de Arton: 249"
+  },
+  {
+    "name": "Verme do Gelo Larva",
+    "nd": 10,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 24,
+    "defense": 36,
+    "resistances": "vulnerabilidade a fogo, imunidade a frio, redução de dano 5",
+    "hp": 400,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Alzeras",
+    "nd": 11,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 18,
+    "defense": 29,
+    "resistances": "resistência a magia +5",
+    "hp": 385,
+    "sources": "Ameaças de Arton: 284"
+  },
+  {
+    "name": "Arcano de Guerra Veterano",
+    "nd": 11,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 14,
+    "defense": 41,
+    "resistances": "resistência a magia +5",
+    "hp": 360,
+    "sources": "Ameaças de Arton: 274"
+  },
+  {
+    "name": "Bando de Pamgras",
+    "nd": 11,
+    "type": "Espírito",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 9,
+    "defense": 41,
+    "resistances": "imunidade a acertos críticos, ácido, atordoado, cansaço, efeitos de metabolismo e paralisia, redução de dano 10/impacto, vulnerabilidade a eletricidade",
+    "hp": 550,
+    "sources": "Ameaças de Arton: 97"
+  },
+  {
+    "name": "Bruxa Goblin",
+    "nd": 11,
+    "type": "Humanoide",
+    "tags": "goblin",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 25,
+    "defense": 37,
+    "resistances": "resistência a magia +2",
+    "hp": 370,
+    "sources": "Ameaças de Arton: 79"
+  },
+  {
+    "name": "Dragão Adulto",
+    "nd": 11,
+    "type": "Monstro",
+    "tags": "dragão",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 12,
+    "defense": 42,
+    "resistances": "imunidade a fogo, redução de dano 10, resistência a magia +3, vulnerabilidade a frio",
+    "hp": 600,
+    "sources": "Livro Básico: 310"
+  },
+  {
+    "name": "Dragão Adulto da Tirania",
+    "nd": 11,
+    "type": "Monstro",
+    "tags": "dragão",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 12,
+    "defense": 42,
+    "resistances": "rresistência a magia +3, imunidade a luz, vulnerabilidade a trevas, redução de dano 10",
+    "hp": 614,
+    "sources": "Ameaças de Arton: 67"
+  },
+  {
+    "name": "Dragão Adulto dos Segredos",
+    "nd": 11,
+    "type": "Monstro",
+    "tags": "dragão",
+    "size": "Enorme",
+    "role": [
+      "Especial"
+    ],
+    "init": 14,
+    "defense": 40,
+    "resistances": "resistência a magia +3, vulnerabilidade a luz, imunidade a trevas, redução de dano 10",
+    "hp": 522,
+    "sources": "Ameaças de Arton: 67"
+  },
+  {
+    "name": "Hidra",
+    "nd": 11,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 9,
+    "defense": 35,
+    "resistances": "cura acelerada 100",
+    "hp": 550,
+    "sources": "Livro Básico: 305"
+  },
+  {
+    "name": "Hidra Esqueleto",
+    "nd": 11,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 9,
+    "defense": 39,
+    "resistances": "cura acelerada 100, redução de corte, frio e perfuração 10",
+    "hp": 550,
+    "sources": "Ameaças de Arton: 229"
+  },
+  {
+    "name": "Hobgoblin Comandante Tático",
+    "nd": 11,
+    "type": "Humanoide",
+    "tags": "hobgoblin",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 41,
+    "defense": 40,
+    "resistances": "imunidade a confusão,  redução de dano 5",
+    "hp": 425,
+    "sources": "Ameaças de Arton: 84"
+  },
+  {
+    "name": "Kaijin Bruto",
+    "nd": 11,
+    "type": "Monstro",
+    "tags": "Kaijin",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 42,
+    "resistances": "fortificação 50%, resistência a lefeu e Tormenta +5, redução de dano 10",
+    "hp": 600,
+    "sources": "Ameaças de Arton: 156"
+  },
+  {
+    "name": "Lefeu, Burodron",
+    "nd": 11,
+    "type": "Monstro",
+    "tags": "Lefeu",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 9,
+    "defense": 42,
+    "resistances": "redução de dano 10, imunidade a ácido, imunidade a eletricidade, imunidade a fogo, imunidade a frio, imunidade a luz, imunidade a trevas",
+    "hp": 550,
+    "sources": "Ameaças de Arton: 25"
+  },
+  {
+    "name": "Matrona Gnoll",
+    "nd": 11,
+    "type": "Humanoide",
+    "tags": "Gnoll",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 11,
+    "defense": 39,
+    "resistances": "redução de dano 5",
+    "hp": 390,
+    "sources": "Ameaças de Arton: 120"
+  },
+  {
+    "name": "Mortalha",
+    "nd": 11,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 19,
+    "defense": 38,
+    "resistances": "incorpóreo",
+    "hp": 475,
+    "sources": "Ameaças de Arton: 235"
+  },
+  {
+    "name": "Ogro Capanga",
+    "nd": 11,
+    "type": "Humanoide",
+    "tags": "Gigante",
+    "size": "Grande",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 9,
+    "defense": 36,
+    "resistances": "imunidade a enfeitiçado",
+    "hp": 111,
+    "sources": "Ameaças de Arton: 43"
+  },
+  {
+    "name": "Tigre-de-Hyninn Primordial",
+    "nd": 11,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 17,
+    "defense": 42,
+    "resistances": "resistência a devotos de Khalmyr +5",
+    "hp": 480,
+    "sources": "Ameaças de Arton: 218"
+  },
+  {
+    "name": "Voracis Rainha",
+    "nd": 11,
+    "type": "Humanoide",
+    "tags": "voracis",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 16,
+    "defense": 41,
+    "resistances": "redução de dano 5",
+    "hp": 530,
+    "sources": "Ameaças de Arton: 269"
+  },
+  {
+    "name": "Alto Sacerdote Finntroll",
+    "nd": 12,
+    "type": "Monstro",
+    "tags": "finntroll",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 31,
+    "defense": 42,
+    "resistances": "redução de dano 5",
+    "hp": 413,
+    "sources": "Ameaças de Arton: 346"
+  },
+  {
+    "name": "Chapéu-Preto",
+    "nd": 12,
+    "type": "Humanoide",
+    "tags": "Meio-Orc",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 20,
+    "defense": 42,
+    "resistances": "",
+    "hp": 480,
+    "sources": "Ameaças de Arton: 262"
+  },
+  {
+    "name": "Demônio da Pólvora",
+    "nd": 12,
+    "type": "Espírito",
+    "tags": "demônio",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 23,
+    "defense": 42,
+    "resistances": "imunidade a ácido, armas de fogo, frio, fogo, ofuscado e veneno, redução de dano 10",
+    "hp": 580,
+    "sources": "Ameaças de Arton: 255"
+  },
+  {
+    "name": "Elemental do Veneno Grande",
+    "nd": 12,
+    "type": "Espírito",
+    "tags": "Elemental",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 8,
+    "defense": 43,
+    "resistances": "imunidade a acertos críticos",
+    "hp": 550,
+    "sources": "Ameaças de Arton: 328"
+  },
+  {
+    "name": "Finntroll Senhor de Estábulo",
+    "nd": 12,
+    "type": "Monstro",
+    "tags": "finntroll",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 26,
+    "defense": 39,
+    "resistances": "",
+    "hp": 380,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Golem de Pedra",
+    "nd": 12,
+    "type": "Construto",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 4,
+    "defense": 43,
+    "resistances": "redução de dano 20",
+    "hp": 575,
+    "sources": "Ameaças de Arton: 131"
+  },
+  {
+    "name": "Grande Battham",
+    "nd": 12,
+    "type": "Animal",
+    "tags": "",
+    "size": "Colossal",
+    "role": [
+      "Solo"
+    ],
+    "init": 9,
+    "defense": 38,
+    "resistances": "",
+    "hp": 800,
+    "sources": "Ameaças de Arton: 247"
+  },
+  {
+    "name": "Horda Mycotann",
+    "nd": 12,
+    "type": "Monstro",
+    "tags": "mycotann",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 31,
+    "defense": 33,
+    "resistances": "",
+    "hp": 612,
+    "sources": "Ameaças de Arton: 340"
+  },
+  {
+    "name": "Kobold-Mãe",
+    "nd": 12,
+    "type": "Monstro",
+    "tags": "Kobold",
+    "size": "Grande",
+    "role": [
+      "Especial"
+    ],
+    "init": 9,
+    "defense": 41,
+    "resistances": "",
+    "hp": 550,
+    "sources": "Ameaças de Arton: 186"
+  },
+  {
+    "name": "Mega-Selako",
+    "nd": 12,
+    "type": "Animal",
+    "tags": "",
+    "size": "Colossal",
+    "role": [
+      "Solo"
+    ],
+    "init": 20,
+    "defense": 38,
+    "resistances": "redução de dano 10",
+    "hp": 630,
+    "sources": "Ameaças de Arton: 322"
+  },
+  {
+    "name": "Nagah Retalhador",
+    "nd": 12,
+    "type": "Humanoide",
+    "tags": "Nagah",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 20,
+    "defense": 43,
+    "resistances": "resistência a veneno +5",
+    "hp": 600,
+    "sources": "Ameaças de Arton: 332"
+  },
+  {
+    "name": "Necrodraco Esqueleto",
+    "nd": 12,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 13,
+    "defense": 44,
+    "resistances": "resistência a corte 10, resistência a frio 10, resistência a perfuração 10",
+    "hp": 610,
+    "sources": "Ameaças de Arton: 238"
+  },
+  {
+    "name": "Nereida",
+    "nd": 12,
+    "type": "Espírito",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 13,
+    "defense": 41,
+    "resistances": "imunidade a frio",
+    "hp": 412,
+    "sources": "Ameaças de Arton: 320"
+  },
+  {
+    "name": "Rei-Tirano Esqueleto",
+    "nd": 12,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 10,
+    "defense": 43,
+    "resistances": "redução de corte, frio e perfuração 10",
+    "hp": 625,
+    "sources": "Ameaças de Arton: 250"
+  },
+  {
+    "name": "Reishid Líder de Culto",
+    "nd": 12,
+    "type": "Monstro",
+    "tags": "Lefeu",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 19,
+    "defense": 47,
+    "resistances": "redução de dano 10, imunidade a ácido, imunidade a eletricidade, imunidade a fogo, imunidade a frio, imunidade a luz, imunidade a trevas",
+    "hp": 483,
+    "sources": "Ameaças de Arton: 56"
+  },
+  {
+    "name": "Totem do Pai-de-Tudo (Aspecto de Azgher)",
+    "nd": 12,
+    "type": "Espírito",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Especial"
+    ],
+    "init": 16,
+    "defense": 41,
+    "resistances": "resistência a magia +2, imunidade a fogo, imunidade a luz, imunidade a trevas, redução de dano 10",
+    "hp": 700,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Vampiro",
+    "nd": 12,
+    "type": "Humanoide",
+    "tags": "Morto-vivo",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 15,
+    "defense": 40,
+    "resistances": "cura acelerada 10, redução de dano 10/luz.",
+    "hp": 550,
+    "sources": "Livro Básico: 298"
+  },
+  {
+    "name": "Alto Clérigo de Kally",
+    "nd": 13,
+    "type": "Monstro",
+    "tags": "Kallyanach",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 10,
+    "defense": 40,
+    "resistances": "",
+    "hp": 455,
+    "sources": "Ameaças de Arton: 145"
+  },
+  {
+    "name": "Árvore-Matilha",
+    "nd": 13,
+    "type": "Construto",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 44,
+    "resistances": "natureza vegetal, resistência a magia +5, vulnerabilidade a fogo, redução de dano 10",
+    "hp": 700,
+    "sources": "Ameaças de Arton: 242"
+  },
+  {
+    "name": "Concílio Forjador",
+    "nd": 13,
+    "type": "Humanoide",
+    "tags": "Humano",
+    "size": "Grande",
+    "role": [
+      "Especial"
+    ],
+    "init": 11,
+    "defense": 41,
+    "resistances": "imunidade a medo, redução de dano 5",
+    "hp": 430,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Fera-Mãe",
+    "nd": 13,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 7,
+    "defense": 45,
+    "resistances": "redução de dano 15/corte mágico, vulnerabilidade a frio",
+    "hp": 685,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Kaijin Ninja",
+    "nd": 13,
+    "type": "Monstro",
+    "tags": "Kaijin",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 17,
+    "defense": 36,
+    "resistances": "resistência a lefeu e Tormenta +5, redução de dano 5",
+    "hp": 450,
+    "sources": "Ameaças de Arton: 156"
+  },
+  {
+    "name": "Kishin",
+    "nd": 13,
+    "type": "Humanoide",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Especial"
+    ],
+    "init": 16,
+    "defense": 46,
+    "resistances": "imunidade a medo, resistência a magia +2, redução de dano 15",
+    "hp": 617,
+    "sources": "Ameaças de Arton: 139"
+  },
+  {
+    "name": "Lagash",
+    "nd": 13,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 19,
+    "defense": 41,
+    "resistances": "imunidade a efeitos de movimento e veneno",
+    "hp": 660,
+    "sources": "Livro Básico: 306"
+  },
+  {
+    "name": "Lefeu, Morgadrel",
+    "nd": 13,
+    "type": "Monstro",
+    "tags": "Lefeu",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 10,
+    "defense": 47,
+    "resistances": "redução de dano 10, imunidade a ácido, imunidade a eletricidade, imunidade a fogo, imunidade a frio, imunidade a luz, imunidade a trevas",
+    "hp": 670,
+    "sources": "Ameaças de Arton: 26"
+  },
+  {
+    "name": "Tanaloom",
+    "nd": 13,
+    "type": "Espírito",
+    "tags": "elemental",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 10,
+    "defense": 44,
+    "resistances": "imunidade a acertos críticos, vulnerabilidade a eletricidade, redução de dano 15",
+    "hp": 650,
+    "sources": "Ameaças de Arton: 98"
+  },
+  {
+    "name": "Arcanista Finntroll",
+    "nd": 14,
+    "type": "Monstro",
+    "tags": "finntroll",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 34,
+    "defense": 43,
+    "resistances": "",
+    "hp": 423,
+    "sources": "Ameaças de Arton: 338"
+  },
+  {
+    "name": "Arquibruxo da Tormenta",
+    "nd": 14,
+    "type": "Monstro",
+    "tags": "Lefou",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 15,
+    "defense": 45,
+    "resistances": "resistência a magia +2",
+    "hp": 486,
+    "sources": "Ameaças de Arton: 20"
+  },
+  {
+    "name": "Brawar",
+    "nd": 14,
+    "type": "Construto",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 6,
+    "defense": 46,
+    "resistances": "redução de dano 25",
+    "hp": 700,
+    "sources": "Ameaças de Arton: 208"
+  },
+  {
+    "name": "Colosso Supremo",
+    "nd": 14,
+    "type": "Construto",
+    "tags": "",
+    "size": "Colossal",
+    "role": [
+      "Solo"
+    ],
+    "init": 8,
+    "defense": 46,
+    "resistances": "cura acelerada 20, redução de dano 10, resistência a magia +5",
+    "hp": 675,
+    "sources": "Livro Básico"
+  },
+  {
+    "name": "Dracomante Superior do Fogo",
+    "nd": 14,
+    "type": "Humanoide",
+    "tags": "Elfo",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 18,
+    "defense": 33,
+    "resistances": "redução de fogo 15",
+    "hp": 500,
+    "sources": "Ameaças de Arton: 148"
+  },
+  {
+    "name": "Fantasma Ancestral",
+    "nd": 14,
+    "type": "Humanoide",
+    "tags": "Morto-vivo",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 16,
+    "defense": 40,
+    "resistances": "incorpóreo",
+    "hp": 410,
+    "sources": "Ameaças de Arton: 231"
+  },
+  {
+    "name": "Górgona Matriarca",
+    "nd": 14,
+    "type": "Monstro",
+    "tags": "Medusa",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 22,
+    "defense": 43,
+    "resistances": "resistência a magia +2, resistência a veneno +5",
+    "hp": 498,
+    "sources": "Ameaças de Arton: 329"
+  },
+  {
+    "name": "Horda Goblin",
+    "nd": 14,
+    "type": "Humanoide",
+    "tags": "goblin",
+    "size": "Colossal",
+    "role": [
+      "Solo"
+    ],
+    "init": 28,
+    "defense": 42,
+    "resistances": "",
+    "hp": 666,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Lyuba",
+    "nd": 14,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 28,
+    "defense": 45,
+    "resistances": "vulnerabilidade a fogo, redução de dano 10",
+    "hp": 715,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Mantícora Primal",
+    "nd": 14,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 14,
+    "defense": 44,
+    "resistances": "",
+    "hp": 655,
+    "sources": "Ameaças de Arton: 298"
+  },
+  {
+    "name": "Margharon",
+    "nd": 14,
+    "type": "Espírito",
+    "tags": "Abissal",
+    "size": "Enorme",
+    "role": [
+      "Especial"
+    ],
+    "init": 7,
+    "defense": 44,
+    "resistances": "fortificação 50%, imunidade a ácido, atordoamento, eletricidade e veneno, redução de dano 20, resistência a magia +4",
+    "hp": 490,
+    "sources": "Deuses de Arton"
+  },
+  {
+    "name": "Namasqall",
+    "nd": 14,
+    "type": "Espírito",
+    "tags": "elemental",
+    "size": "Colossal",
+    "role": [
+      "Solo"
+    ],
+    "init": 18,
+    "defense": 42,
+    "resistances": "imunidade a acertos críticos, vulnerabilidade a fogo",
+    "hp": 700,
+    "sources": "Ameaças de Arton: 90"
+  },
+  {
+    "name": "Necrodraco Zumbi",
+    "nd": 14,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 14,
+    "defense": 47,
+    "resistances": "",
+    "hp": 720,
+    "sources": "Ameaças de Arton: 238"
+  },
+  {
+    "name": "Rei-Tirano",
+    "nd": 14,
+    "type": "Animal",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 12,
+    "defense": 47,
+    "resistances": "redução de dano 5",
+    "hp": 725,
+    "sources": "Ameaças de Arton: 250"
+  },
+  {
+    "name": "Serpentaar",
+    "nd": 14,
+    "type": "Espírito",
+    "tags": "elemental",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 9,
+    "defense": 47,
+    "resistances": "imunidade a acertos críticos, vulnerabilidade a frio",
+    "hp": 700,
+    "sources": "Ameaças de Arton: 310"
+  },
+  {
+    "name": "Totem da Divina Serpente (Aspecto de Allihanna)",
+    "nd": 14,
+    "type": "Espírito",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 20,
+    "defense": 42,
+    "resistances": "resistência a magia +2, imunidade a fogo, redução de dano 15",
+    "hp": 700,
+    "sources": "Ameaças de Arton: 310"
+  },
+  {
+    "name": "Dragão Celestial Adulto",
+    "nd": 15,
+    "type": "Espírito",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Especial"
+    ],
+    "init": 16,
+    "defense": 50,
+    "resistances": "resistência a magia +3, vulnerabilidade a ácido, imunidade a eletricidade, redução de dano 10",
+    "hp": 825,
+    "sources": "Ameaças de Arton: 165"
+  },
+  {
+    "name": "Dragão Venerável",
+    "nd": 15,
+    "type": "Monstro",
+    "tags": "dragão",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 16,
+    "defense": 52,
+    "resistances": "imunidade a fogo, redução de dano 15, resistência a magia +4, vulnerabilidade a frio",
+    "hp": 800,
+    "sources": "Livro Básico: 310"
+  },
+  {
+    "name": "Dragão Venerável da Equidade",
+    "nd": 15,
+    "type": "Monstro",
+    "tags": "dragão",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 16,
+    "defense": 52,
+    "resistances": "resistência a magia +4, imunidade a luz, vulnerabilidade a trevas, redução de dano 15",
+    "hp": 800,
+    "sources": "Ameaças de Arton: 69"
+  },
+  {
+    "name": "Dragão Venerável dos Recifes",
+    "nd": 15,
+    "type": "Monstro",
+    "tags": "dragão",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 19,
+    "defense": 48,
+    "resistances": "resistência a magia +4, vulnerabilidade a ácido, imunidade a eletricidade, redução de dano 15",
+    "hp": 790,
+    "sources": "Ameaças de Arton: 69"
+  },
+  {
+    "name": "Esmagador Coletivo",
+    "nd": 15,
+    "type": "Construto",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 29,
+    "defense": 46,
+    "resistances": "Não pode ser flanqueado, imunidade a acertos críticos, redução de dano 15",
+    "hp": 800,
+    "sources": "Ameaças de Arton: 22"
+  },
+  {
+    "name": "Golem de Ferro Superior",
+    "nd": 15,
+    "type": "Construto",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 8,
+    "defense": 55,
+    "resistances": "redução de dano 15",
+    "hp": 760,
+    "sources": "Ameaças de Arton: 129"
+  },
+  {
+    "name": "Hallus’tir",
+    "nd": 15,
+    "type": "Espírito",
+    "tags": "elemental",
+    "size": "Colossal",
+    "role": [
+      "Solo"
+    ],
+    "init": 29,
+    "defense": 49,
+    "resistances": "imunidade a acertos críticos, vulnerabilidade a ácido",
+    "hp": 718,
+    "sources": "Ameaças de Arton: 93"
+  },
+  {
+    "name": "Lich",
+    "nd": 15,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 14,
+    "defense": 48,
+    "resistances": "redução de dano 20/mágico, resistência a magia +5, imunidade a eletricidade, imunidade a frio",
+    "hp": 560,
+    "sources": "Ameaças de Arton: 291"
+  },
+  {
+    "name": "Senhor das Múmias",
+    "nd": 15,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 14,
+    "defense": 48,
+    "resistances": "resistência a efeitos divinos +5, redução de dano 10",
+    "hp": 532,
+    "sources": "Ameaças de Arton: 236"
+  },
+  {
+    "name": "Totem do Rei-Tirano (Aspecto de Megalokk)",
+    "nd": 15,
+    "type": "Espírito",
+    "tags": "",
+    "size": "Colossal",
+    "role": [
+      "Solo"
+    ],
+    "init": 16,
+    "defense": 50,
+    "resistances": "cura acelerada 15, resistência a veneno +5, redução de dano 15",
+    "hp": 750,
+    "sources": "Ameaças de Arton: 250"
+  },
+  {
+    "name": "Canceronte de Guerra",
+    "nd": 16,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Colossal",
+    "role": [
+      "Solo"
+    ],
+    "init": 10,
+    "defense": 53,
+    "resistances": "fortificação 25%, redução de dano 15",
+    "hp": 825,
+    "sources": "Ameaças de Arton: 314"
+  },
+  {
+    "name": "Elemental Corrompido",
+    "nd": 16,
+    "type": "Espírito",
+    "tags": "elemental",
+    "size": "Colossal",
+    "role": [
+      "Solo"
+    ],
+    "init": 19,
+    "defense": 53,
+    "resistances": "imunidade a acertos críticos",
+    "hp": 800,
+    "sources": "Ameaças de Arton: 100"
+  },
+  {
+    "name": "Gnoll Vuul’rak",
+    "nd": 16,
+    "type": "Humanoide",
+    "tags": "Gnoll",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 14,
+    "defense": 51,
+    "resistances": "redução de dano 10",
+    "hp": 900,
+    "sources": "Ameaças de Arton: 122"
+  },
+  {
+    "name": "Grande Tachygloss",
+    "nd": 16,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 14,
+    "defense": 53,
+    "resistances": "redução de dano 20",
+    "hp": 800,
+    "sources": "Ameaças de Arton: 307"
+  },
+  {
+    "name": "Hobgoblin Gladiador",
+    "nd": 16,
+    "type": "Humanoide",
+    "tags": "hobgoblin",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 35,
+    "defense": 46,
+    "resistances": "imunidade a medo,  resistência a magia +5",
+    "hp": 1000,
+    "sources": "Ameaças de Arton: 85"
+  },
+  {
+    "name": "Horda de Otyughs",
+    "nd": 16,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Colossal",
+    "role": [
+      "Solo"
+    ],
+    "init": 10,
+    "defense": 53,
+    "resistances": "redução de dano 20",
+    "hp": 800,
+    "sources": "Ameaças de Arton: 299"
+  },
+  {
+    "name": "Lobo do Mar",
+    "nd": 16,
+    "type": "Humanoide",
+    "tags": "Humano",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 23,
+    "defense": 54,
+    "resistances": "resistência a efeitos mentais e de movimento e magia +5",
+    "hp": 690,
+    "sources": "Ameaças de Arton: 263"
+  },
+  {
+    "name": "Nuvem de Estirges",
+    "nd": 16,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 19,
+    "defense": 51,
+    "resistances": "",
+    "hp": 180,
+    "sources": "Ameaças de Arton: 107"
+  },
+  {
+    "name": "Senhor do Gigante Rubro Forma Final",
+    "nd": 16,
+    "type": "Monstro",
+    "tags": "Lefeu",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 20,
+    "defense": 54,
+    "resistances": "imunidade a acertos críticos, resistência a magia +5, redução de dano 15",
+    "hp": 850,
+    "sources": "Ameaças de Arton: 57"
+  },
+  {
+    "name": "Sszzaazita Celebrante",
+    "nd": 16,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 23,
+    "defense": 51,
+    "resistances": "evasão",
+    "hp": 571,
+    "sources": "Ameaças de Arton: 336"
+  },
+  {
+    "name": "Thuwarokk",
+    "nd": 16,
+    "type": "Monstro",
+    "tags": "lefeu",
+    "size": "Colossal",
+    "role": [
+      "Solo"
+    ],
+    "init": 11,
+    "defense": 50,
+    "resistances": "redução de dano 10",
+    "hp": 900,
+    "sources": "Livro Básico: 315"
+  },
+  {
+    "name": "Cemitério Vivo",
+    "nd": 17,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Colossal",
+    "role": [
+      "Solo"
+    ],
+    "init": 13,
+    "defense": 54,
+    "resistances": "resistência a magia +5, redução de dano 10",
+    "hp": 1125,
+    "sources": "Ameaças de Arton: 285"
+  },
+  {
+    "name": "Lefeu, Ezzayn",
+    "nd": 17,
+    "type": "Monstro",
+    "tags": "Lefeu",
+    "size": "Enorme",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 15,
+    "defense": 46,
+    "resistances": "redução de dano 10, imunidade a ácido, imunidade a eletricidade, imunidade a fogo, imunidade a frio, imunidade a luz, imunidade a trevas",
+    "hp": 650,
+    "sources": "Ameaças de Arton: 27"
+  },
+  {
+    "name": "Razza’Kham",
+    "nd": 17,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 16,
+    "defense": 54,
+    "resistances": "resistência a ácido 20, resistência a eletricidade 20, resistência a fogo 20, resistência a frio 20, redução de dano 15",
+    "hp": 1010,
+    "sources": "Ameaças de Arton: 309"
+  },
+  {
+    "name": "Soldado Superior",
+    "nd": 17,
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 26,
+    "defense": 50,
+    "resistances": "resistência a corte 15, resistência a impacto 15, resistência a perfuração 15",
+    "hp": 1080,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Avatar de Thwor",
+    "nd": 18,
+    "type": "Humanoide",
+    "tags": "Bugbear",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 23,
+    "defense": 56,
+    "resistances": "imunidade a cansaço, efeitos mentais e de metabolismo, paralisia e veneno, redução de dano 20/adamante, resistência a magia +10",
+    "hp": 1,
+    "sources": "Deuses de Arton"
+  },
+  {
+    "name": "Golem de Matéria Vermelha",
+    "nd": 18,
+    "type": "Construto",
+    "tags": "Lefeu",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 15,
+    "defense": 50,
+    "resistances": "imunidade a ácido, imunidade a eletricidade, imunidade a fogo, imunidade a frio, imunidade a luz, imunidade a trevas, redução de dano 20",
+    "hp": 900,
+    "sources": "Ameaças de Arton: 130"
+  },
+  {
+    "name": "Lefeu, Ezzayn (Batalhão Burodron)",
+    "nd": 18,
+    "type": "Monstro",
+    "tags": "Lefeu",
+    "size": "Enorme",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 15,
+    "defense": 46,
+    "resistances": "redução de dano 10, imunidade a ácido, imunidade a eletricidade, imunidade a fogo, imunidade a frio, imunidade a luz, imunidade a trevas",
+    "hp": 650,
+    "sources": "Ameaças de Arton: 27"
+  },
+  {
+    "name": "Lefeu, Ezzayn (Cavalaria Hurobakk)",
+    "nd": 18,
+    "type": "Monstro",
+    "tags": "Lefeu",
+    "size": "Enorme",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 15,
+    "defense": 46,
+    "resistances": "redução de dano 10, imunidade a ácido, imunidade a eletricidade, imunidade a fogo, imunidade a frio, imunidade a luz, imunidade a trevas",
+    "hp": 750,
+    "sources": "Ameaças de Arton: 27"
+  },
+  {
+    "name": "Lefeu, Ezzayn (Esquadrão Veridak)",
+    "nd": 18,
+    "type": "Monstro",
+    "tags": "Lefeu",
+    "size": "Enorme",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 15,
+    "defense": 46,
+    "resistances": "redução de dano 10, imunidade a ácido, imunidade a eletricidade, imunidade a fogo, imunidade a frio, imunidade a luz, imunidade a trevas",
+    "hp": 650,
+    "sources": "Ameaças de Arton: 27"
+  },
+  {
+    "name": "Lich de Aslothia",
+    "nd": 18,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 21,
+    "defense": 52,
+    "resistances": "redução de dano 20/mágico, resistência a magia +5, imunidade a eletricidade, imunidade a frio",
+    "hp": 800,
+    "sources": "Ameaças de Arton: 291"
+  },
+  {
+    "name": "Nastarrath",
+    "nd": 18,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Colossal",
+    "role": [
+      "Especial"
+    ],
+    "init": 15,
+    "defense": 56,
+    "resistances": "imunidade a corte, imunidade a perfuração, redução de dano 20",
+    "hp": 1150,
+    "sources": "Ameaças de Arton: 336"
+  },
+  {
+    "name": "Verme do Gelo Adulto",
+    "nd": 18,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Colossal",
+    "role": [
+      "Solo"
+    ],
+    "init": 37,
+    "defense": 59,
+    "resistances": "vulnerabilidade a fogo, imunidade a frio, redução de dano 10",
+    "hp": 1100,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Avatar de Thyatis",
+    "nd": 19,
+    "type": "Espírito",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 23,
+    "defense": 59,
+    "resistances": "evasão, imunidade a doenças, fogo e medo, maior que a morte, redução de dano 10/trevas",
+    "hp": 1,
+    "sources": "Deuses de Arton"
+  },
+  {
+    "name": "Enguia Rainha",
+    "nd": 19,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Colossal",
+    "role": [
+      "Solo"
+    ],
+    "init": 23,
+    "defense": 54,
+    "resistances": "redução de dano 15",
+    "hp": 1150,
+    "sources": "Ameaças de Arton: 317"
+  },
+  {
+    "name": "Kraken",
+    "nd": 19,
+    "type": "Monstro",
+    "tags": "",
+    "size": "Colossal",
+    "role": [
+      "Solo"
+    ],
+    "init": 22,
+    "defense": 59,
+    "resistances": "resistência a magia +5, redução de dano 20",
+    "hp": 1145,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Sangue do Ayrrak",
+    "nd": 19,
+    "type": "Humanoide",
+    "tags": "bugbear",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 33,
+    "defense": 59,
+    "resistances": "imunidade a efeitos  mentais e medo",
+    "hp": 1364,
+    "sources": "Ameaças de Arton"
+  },
+  {
+    "name": "Arquilich Ferren Asloth",
+    "nd": 20,
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 27,
+    "defense": 66,
+    "resistances": "redução de dano 20/mágico, resistência a magia +5, imunidade a eletricidade, imunidade a frio",
+    "hp": 2418,
+    "sources": "Ameaças de Arton: 292"
+  },
+  {
+    "name": "Avatar de Aharadak",
+    "nd": 20,
+    "type": "Monstro",
+    "tags": "Lefeu",
+    "size": "Colossal",
+    "role": [
+      "Solo"
+    ],
+    "init": 18,
+    "defense": 70,
+    "resistances": "imunidade a ácido, imunidade a eletricidade, imunidade a fogo, imunidade a frio, imunidade a luz, imunidade a trevas, redução de dano 20",
+    "hp": 2804,
+    "sources": "Deuses de Arton"
+  },
+  {
+    "name": "Avatar de Kallyadranoch",
+    "nd": 20,
+    "type": "Monstro",
+    "tags": "Dragão",
+    "size": "Colossal",
+    "role": [
+      "Solo"
+    ],
+    "init": 25,
+    "defense": 65,
+    "resistances": "Resistência a Magia +5, imunidade a ácido, imunidade a eletricidade, imunidade a essência, imunidade a fogo, imunidade a frio, imunidade a luz, imunidade a trevas, redução de dano 50",
+    "hp": 2500,
+    "sources": "Ameaças de Arton: 152"
+  },
+  {
+    "name": "Avatar de Valkaria",
+    "nd": 20,
+    "type": "Espírito",
+    "tags": "Humano",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 30,
+    "defense": 68,
+    "resistances": "imunidade a efeitos mentais e de movimento e a medo, maior que a morte, redução de dano 20, resistência a magia +5",
+    "hp": 3,
+    "sources": "Deuses de Arton"
+  },
+  {
+    "name": "Avatar de Wynna",
+    "nd": 20,
+    "type": "Humanoide",
+    "tags": "Espirito",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 24,
+    "defense": 63,
+    "resistances": "imunidade a efeitos mentais e itens mundanos, maior que a morte, redução de dano 10, resistência a magia +5",
+    "hp": 1800,
+    "sources": "Deuses de Arton"
+  },
+  {
+    "name": "Dragão Celestial Venerável",
+    "nd": 20,
+    "type": "Espírito",
+    "tags": "",
+    "size": "Enorme",
+    "role": [
+      "Solo"
+    ],
+    "init": 20,
+    "defense": 60,
+    "resistances": "resistência a magia +4, vulnerabilidade a ácido, imunidade a eletricidade, redução de dano 20",
+    "hp": 1300,
+    "sources": "Ameaças de Arton: 165"
+  },
+  {
+    "name": "Dragão-Rei",
+    "nd": 20,
+    "type": "Monstro",
+    "tags": "dragão",
+    "size": "Colossal",
+    "role": [
+      "Solo"
+    ],
+    "init": 19,
+    "defense": 62,
+    "resistances": "imunidade a fogo, redução de dano 20, resistência a magia +5, vulnerabilidade a frio",
+    "hp": 1400,
+    "sources": "Livro Básico: 310"
+  },
+  {
+    "name": "Kaiju",
+    "nd": 20,
+    "type": "Monstro",
+    "tags": "Kaiju",
+    "size": "Colossal",
+    "role": [
+      "Solo"
+    ],
+    "init": 22,
+    "defense": 62,
+    "resistances": "cura acelerada 50/kaiju, fortificação 75%, redução de dano 30",
+    "hp": 1500,
+    "sources": "Ameaças de Arton: 312"
+  },
+  {
+    "name": "Kishinauros",
+    "nd": 20,
+    "type": "Construto",
+    "tags": "o",
+    "size": "Colossal",
+    "role": [
+      "Solo"
+    ],
+    "init": 25,
+    "defense": 61,
+    "resistances": "resistência a magia +5, redução de dano 30",
+    "hp": 2450,
+    "sources": "Ameaças de Arton: 142"
+  },
+  {
+    "name": "Necrodraco Lich",
+    "nd": 20,
+    "type": "Humanoide",
+    "tags": "",
+    "size": "Colossal",
+    "role": [
+      "Especial"
+    ],
+    "init": 16,
+    "defense": 63,
+    "resistances": "vulnerabilidade a luz",
+    "hp": 1400,
+    "sources": "Ameaças de Arton: 291"
+  },
+  {
+    "name": "Rhandomm",
+    "nd": 20,
+    "type": "Espírito",
+    "tags": "",
+    "size": "Colossal",
+    "role": [
+      "Solo"
+    ],
+    "init": 20,
+    "defense": 63,
+    "resistances": "cura acelerada 100, resistência a magia +10",
+    "hp": 1300,
+    "sources": "Ameaças de Arton: 112"
+  },
+  {
+    "name": "Sckhar, Dragão-Rei do fogo",
+    "nd": 20,
+    "type": "Monstro",
+    "tags": "dragão",
+    "size": "Colossal",
+    "role": [
+      "Especial"
+    ],
+    "init": 23,
+    "defense": 71,
+    "resistances": "imunidade a encantamento, resistência a magia +5, vulnerabilidade a frio, redução de dano 20",
+    "hp": 4000,
+    "sources": "Ameaças de Arton: 76"
+  },
+  {
+    "name": "Bandido",
+    "nd": "1/4",
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 4,
+    "defense": 13,
+    "resistances": "",
+    "hp": 6,
+    "sources": "Livro Básico: 289"
+  },
+  {
+    "name": "Bandido Comum",
+    "nd": "1/4",
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 4,
+    "defense": 13,
+    "resistances": "",
+    "hp": 6,
+    "sources": "Ameaças de Arton: 42"
+  },
+  {
+    "name": "Bandido Ligeiro",
+    "nd": "1/2",
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 4,
+    "defense": 15,
+    "resistances": "",
+    "hp": 9,
+    "sources": "Ameaças de Arton: 42"
+  },
+  {
+    "name": "Bogum",
+    "nd": "1/2",
+    "type": "Construto",
+    "tags": "",
+    "size": "Minúsculo",
+    "role": [
+      "Especial"
+    ],
+    "init": 2,
+    "defense": 11,
+    "resistances": "",
+    "hp": 5,
+    "sources": "Ameaças de Arton: 190"
+  },
+  {
+    "name": "Capanga",
+    "nd": "1/2",
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 3,
+    "defense": 13,
+    "resistances": "",
+    "hp": 7,
+    "sources": "Ameaças de Arton: 43"
+  },
+  {
+    "name": "Cascavel",
+    "nd": "1/4",
+    "type": "Animal",
+    "tags": "",
+    "size": "Minúsculo",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 5,
+    "defense": 13,
+    "resistances": "",
+    "hp": 2,
+    "sources": "Livro Básico: 304"
+  },
+  {
+    "name": "Cavalo de Carga",
+    "nd": "1/2",
+    "type": "Animal",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 2,
+    "defense": 12,
+    "resistances": "",
+    "hp": 27,
+    "sources": "Ameaças de Arton: 212"
+  },
+  {
+    "name": "Cavalo de Montaria",
+    "nd": "1/2",
+    "type": "Animal",
+    "tags": "",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 3,
+    "defense": 13,
+    "resistances": "",
+    "hp": 25,
+    "sources": "Ameaças de Arton: 212"
+  },
+  {
+    "name": "Chibi-Kabuto",
+    "nd": "1/4",
+    "type": "Animal",
+    "tags": "",
+    "size": "Minúsculo",
+    "role": [
+      "Solo"
+    ],
+    "init": 4,
+    "defense": 13,
+    "resistances": "",
+    "hp": 8,
+    "sources": "Ameaças de Arton: 154"
+  },
+  {
+    "name": "Devoto de Hyninn Manhoso",
+    "nd": "1/2",
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 5,
+    "defense": 13,
+    "resistances": "imunidade a efeitos de movimento",
+    "hp": 12,
+    "sources": "Ameaças de Arton: 47"
+  },
+  {
+    "name": "Escudeiro",
+    "nd": "1/2",
+    "type": "Animal",
+    "tags": "",
+    "size": "Pequeno",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 3,
+    "defense": 15,
+    "resistances": "",
+    "hp": 14,
+    "sources": "Ameaças de Arton: 191"
+  },
+  {
+    "name": "Fofo",
+    "nd": "1/2",
+    "type": "Monstro",
+    "tags": "",
+    "size": "Minúsculo",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 4,
+    "defense": 10,
+    "resistances": "redução de dano 10",
+    "hp": 8,
+    "sources": "Ameaças de Arton: 192"
+  },
+  {
+    "name": "Gali-Gali",
+    "nd": "1/4",
+    "type": "Animal",
+    "tags": "",
+    "size": "Minúsculo",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 3,
+    "defense": 11,
+    "resistances": "",
+    "hp": 4,
+    "sources": "Ameaças de Arton: 247"
+  },
+  {
+    "name": "Gambá",
+    "nd": "1/2",
+    "type": "Animal",
+    "tags": "Gambá",
+    "size": "Minúsculo",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 2,
+    "defense": 10,
+    "resistances": "",
+    "hp": 8,
+    "sources": "Ameaças de Arton: 192"
+  },
+  {
+    "name": "Garra-Zumbi",
+    "nd": "1/4",
+    "type": "Morto-Vivo",
+    "tags": "",
+    "size": "Minúsculo",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 4,
+    "defense": 10,
+    "resistances": "",
+    "hp": 5,
+    "sources": "Ameaças de Arton: 233"
+  },
+  {
+    "name": "Gatzvalith,Lorde da Tormenta",
+    "nd": "S+",
+    "type": "Monstro",
+    "tags": "Lekael",
+    "size": "Grande",
+    "role": [
+      "Solo"
+    ],
+    "init": 28,
+    "defense": 69,
+    "resistances": "Cura acelerada 50, redução de dano 25, resistência a magia +10, imunidade a ácido, imunidade a eletricidade, imunidade a fogo, imunidade a frio, imunidade a luz, imunidade a trevas",
+    "hp": 3700,
+    "sources": "Ameaças de Arton: 28"
+  },
+  {
+    "name": "Glop",
+    "nd": "1/4",
+    "type": "Monstro",
+    "tags": "",
+    "size": "Pequeno",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 0,
+    "defense": 10,
+    "resistances": "imunidade a ácido",
+    "hp": 10,
+    "sources": "Livro Básico: 286"
+  },
+  {
+    "name": "Glop",
+    "nd": "1/4",
+    "type": "Monstro",
+    "tags": "",
+    "size": "Pequeno",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 0,
+    "defense": 10,
+    "resistances": "imunidade a ácido",
+    "hp": 10,
+    "sources": "Ameaças de Arton: 201"
+  },
+  {
+    "name": "Gnoll Capanga",
+    "nd": "1/2",
+    "type": "Humanoide",
+    "tags": "Gnoll",
+    "size": "Médio",
+    "role": [
+      "Solo"
+    ],
+    "init": 3,
+    "defense": 14,
+    "resistances": "",
+    "hp": 8,
+    "sources": "Ameaças de Arton: 115"
+  },
+  {
+    "name": "Goblin Salteador",
+    "nd": "1/4",
+    "type": "Humanoide",
+    "tags": "goblin",
+    "size": "Pequeno",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 5,
+    "defense": 13,
+    "resistances": "",
+    "hp": 4,
+    "sources": "Livro Básico: 302"
+  },
+  {
+    "name": "Guarda de Cidade",
+    "nd": "1/2",
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 4,
+    "defense": 12,
+    "resistances": "",
+    "hp": 8,
+    "sources": "Livro Básico: 292"
+  },
+  {
+    "name": "Jiboia",
+    "nd": "1/2",
+    "type": "Animal",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 5,
+    "defense": 14,
+    "resistances": "",
+    "hp": 14,
+    "sources": "Livro Básico: 304"
+  },
+  {
+    "name": "Kill’Bone",
+    "nd": "1/2",
+    "type": "Animal",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 5,
+    "defense": 14,
+    "resistances": "",
+    "hp": 8,
+    "sources": "Ameaças de Arton: 194"
+  },
+  {
+    "name": "Kobold Patrulheiro",
+    "nd": "1/2",
+    "type": "Monstro",
+    "tags": "kobold",
+    "size": "Pequeno",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 4,
+    "defense": 14,
+    "resistances": "",
+    "hp": 6,
+    "sources": "Ameaças de Arton: 180"
+  },
+  {
+    "name": "Lobo",
+    "nd": "1/2",
+    "type": "Animal",
+    "tags": "",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 5,
+    "defense": 14,
+    "resistances": "",
+    "hp": 14,
+    "sources": "Livro Básico: 292"
+  },
+  {
+    "name": "Malafex",
+    "nd": "1/2",
+    "type": "Animal",
+    "tags": "",
+    "size": "Minúsculo",
+    "role": [
+      "Especial"
+    ],
+    "init": 6,
+    "defense": 13,
+    "resistances": "",
+    "hp": 13,
+    "sources": "Ameaças de Arton: 196"
+  },
+  {
+    "name": "Orc Combatente",
+    "nd": "1/2",
+    "type": "Humanoide",
+    "tags": "orc",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 4,
+    "defense": 14,
+    "resistances": "",
+    "hp": 8,
+    "sources": "Livro Básico: 287"
+  },
+  {
+    "name": "Orc Combatente",
+    "nd": "1/2",
+    "type": "Humanoide",
+    "tags": "orc",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 4,
+    "defense": 14,
+    "resistances": "",
+    "hp": 8,
+    "sources": "Ameaças de Arton: 106"
+  },
+  {
+    "name": "Pirata",
+    "nd": "1/2",
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 6,
+    "defense": 14,
+    "resistances": "",
+    "hp": 8,
+    "sources": "Ameaças de Arton: 258"
+  },
+  {
+    "name": "Rato Gigante",
+    "nd": "1/4",
+    "type": "Animal",
+    "tags": "",
+    "size": "Pequeno",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 5,
+    "defense": 12,
+    "resistances": "",
+    "hp": 3,
+    "sources": "Livro Básico: 288"
+  },
+  {
+    "name": "Recruta Purista",
+    "nd": "1/2",
+    "type": "Humanoide",
+    "tags": "humano",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 3,
+    "defense": 11,
+    "resistances": "",
+    "hp": 10,
+    "sources": "Livro Básico: 294"
+  },
+  {
+    "name": "Rival Espelho",
+    "nd": "???",
+    "type": "Humanoide",
+    "tags": "???",
+    "size": "Médio",
+    "role": [
+      "Especial"
+    ],
+    "init": 0,
+    "defense": 10,
+    "resistances": "",
+    "hp": 0,
+    "sources": "Ameaças de Arton: 334"
+  },
+  {
+    "name": "Tarso, Dragão-Rei dos Mortos",
+    "nd": "S+",
+    "type": "Morto-Vivo",
+    "tags": "Dragão",
+    "size": "Colossal",
+    "role": [
+      "Solo"
+    ],
+    "init": 23,
+    "defense": 70,
+    "resistances": "resistência a magia +10, vulnerabilidade a luz, redução de dano 30",
+    "hp": 3800,
+    "sources": "Ameaças de Arton: 240"
+  },
+  {
+    "name": "Tentacute",
+    "nd": "1/2",
+    "type": "Animal",
+    "tags": "",
+    "size": "Minúsculo",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 9,
+    "defense": 14,
+    "resistances": "",
+    "hp": 8,
+    "sources": "Ameaças de Arton: 194"
+  },
+  {
+    "name": "Verilêmur",
+    "nd": "1/2",
+    "type": "Animal",
+    "tags": "",
+    "size": "Minúsculo",
+    "role": [
+      "Especial"
+    ],
+    "init": 4,
+    "defense": 13,
+    "resistances": "",
+    "hp": 12,
+    "sources": "Ameaças de Arton: 196"
+  },
+  {
+    "name": "Zumbi",
+    "nd": "1/4",
+    "type": "Humanoide",
+    "tags": "Morto-vivo",
+    "size": "Médio",
+    "role": [
+      "Lacaio"
+    ],
+    "init": 0,
+    "defense": 11,
+    "resistances": "",
+    "hp": 20,
+    "sources": "Livro Básico: 299"
+  }
+]

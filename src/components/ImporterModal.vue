@@ -1,7 +1,7 @@
 <template>
-  <Modal v-model:show="modals.importer" title="Import Custom Monsters">
+  <Modal v-model:show="modals.importer" title="Importar Monstros">
     <div class="my-3 sm:mt-0 w-full" v-show="step === 1">
-      <label for="importer_source">Import from</label>
+      <label for="importer_source">Importar de</label>
 
       <SelectInput
         v-model="importerSourceType"
@@ -10,7 +10,7 @@
         :options="Importer.types"
         :label="
           Importer.types.find((type) => type.key === importerSourceType)
-            .label ?? 'Loading...'
+            .label ?? 'Carregando...'
         "
         class="mb-4"
       >
@@ -33,13 +33,13 @@
       <AlertBox
         class="mb-3"
         v-if="importFailed"
-        heading="An error occurred while importing"
+        heading="Erro ao importar"
         role="danger"
       >
         {{ importFailureReason }}
       </AlertBox>
 
-      <div class="text-lg">New Sources</div>
+      <div class="text-lg">Novas Fontes</div>
 
       <div class="px-4 sm:px-6 lg:px-8">
         <div class="mt-2 flex flex-col">
@@ -57,19 +57,19 @@
                         scope="col"
                         class="py-3.5 px-3 text-left text-sm font-semibold uppercase text-gray-500 dark:text-gray-300 select-none group whitespace-nowrap w-64"
                       >
-                        Name
+                        Nome
                       </th>
                       <th
                         scope="col"
                         class="hidden px-3 py-3.5 text-left text-sm font-semibold uppercase text-gray-500 dark:text-gray-300 select-none sm:table-cell group whitespace-nowrap w-32"
                       >
-                        Type
+                        Tipo
                       </th>
                       <th
                         scope="col"
                         class="hidden px-3 py-3.5 text-left text-sm font-semibold uppercase text-gray-500 dark:text-gray-300 select-none lg:table-cell group whitespace-nowrap w-32"
                       >
-                        Short Name
+                        Abreviação
                       </th>
                       <th
                         scope="col"
@@ -111,7 +111,7 @@
         </div>
       </div>
 
-      <div class="text-lg mt-4">New Monsters (Preview)</div>
+      <div class="text-lg mt-4">Novos Monstros (Prévia)</div>
 
       <div class="px-4 sm:px-6 lg:px-8">
         <div class="mt-2 flex flex-col">
@@ -129,31 +129,31 @@
                         scope="col"
                         class="py-3.5 px-3 text-left text-sm font-semibold uppercase text-gray-500 dark:text-gray-300 select-none group whitespace-nowrap w-64"
                       >
-                        Name
+                        Nome
                       </th>
                       <th
                         scope="col"
                         class="px-3 py-3.5 text-left text-sm font-semibold uppercase text-gray-500 dark:text-gray-300 select-none table-cell group whitespace-nowrap w-32"
                       >
-                        Size
+                        Tamanho
                       </th>
                       <th
                         scope="col"
                         class="hidden px-3 py-3.5 text-left text-sm font-semibold uppercase text-gray-500 dark:text-gray-300 select-none sm:table-cell group whitespace-nowrap w-32"
                       >
-                        CR
+                        ND
                       </th>
                       <th
                         scope="col"
                         class="hidden px-3 py-3.5 text-left text-sm font-semibold uppercase text-gray-500 dark:text-gray-300 select-none lg:table-cell group whitespace-nowrap w-32"
                       >
-                        Type
+                        Tipo
                       </th>
                       <th
                         scope="col"
                         class="hidden px-3 py-3.5 text-left text-sm font-semibold uppercase text-gray-500 dark:text-gray-300 select-none lg:table-cell group whitespace-nowrap w-32"
                       >
-                        Alignment
+                        Papel
                       </th>
                     </tr>
                   </thead>
@@ -169,7 +169,7 @@
                       >
                         <span class="truncate" v-text="monster.name"></span>
                         <dl class="font-normal">
-                          <dt class="sr-only">Sources</dt>
+                          <dt class="sr-only">Fontes</dt>
                           <dd
                             class="mt-1 truncate text-gray-500 dark:text-gray-400"
                             v-text="monster.sources"
@@ -186,23 +186,23 @@
                       >
                         <span class="truncate" v-text="monster.size"></span>
                         <dl class="font-normal">
-                          <dt class="sr-only sm:hidden">CR</dt>
+                          <dt class="sr-only sm:hidden">ND</dt>
                           <dd
                             class="mt-1 truncate text-gray-500 dark:text-gray-400 sm:hidden"
                           >
-                            CR <span v-text="monster.cr"></span>
+                            ND <span v-text="monster.nd"></span>
                           </dd>
-                          <dt class="sr-only sm:hidden">Alignment</dt>
+                          <dt class="sr-only sm:hidden">Papel</dt>
                           <dd
                             class="mt-1 truncate text-gray-500 dark:text-gray-400 lg:hidden"
-                            v-text="monster.alignment"
+                            v-text="Array.isArray(monster.role) ? monster.role.join(', ') : monster.role"
                           ></dd>
                         </dl>
                       </td>
                       <td
                         class="hidden px-3 py-2 text-sm text-gray-500 dark:text-gray-300 sm:table-cell w-32"
                       >
-                        <span v-text="monster.cr"></span>
+                        <span v-text="monster.nd"></span>
                       </td>
                       <td
                         class="hidden px-3 py-2 text-sm text-gray-500 dark:text-gray-300 lg:table-cell w-32"
@@ -210,7 +210,7 @@
                       ></td>
                       <td
                         class="hidden px-3 py-2 text-sm text-gray-500 dark:text-gray-300 lg:table-cell w-32"
-                        v-text="monster.alignment"
+                        v-text="Array.isArray(monster.role) ? monster.role.join(', ') : monster.role"
                       ></td>
                     </tr>
 
@@ -222,8 +222,8 @@
                         colspan="5"
                         class="px-3 py-2 text-sm text-gray-500 dark:text-gray-300 table-cell text-center"
                       >
-                        And
-                        <span v-text="stagedMonsters.length - 6"></span> more.
+                        E
+                        <span v-text="stagedMonsters.length - 6"></span> mais.
                       </td>
                     </tr>
                   </tbody>
@@ -243,7 +243,7 @@
         class="button-primary-md"
         @click="startImport"
       >
-        Preview Import
+        Prévia
       </button>
 
       <div class="flex justify-end">
@@ -253,7 +253,7 @@
           class="button-danger-outline-md mr-2"
           @click="abortImport"
         >
-          Nope, go back!
+          Voltar
         </button>
         <button
           v-show="step === 2"
@@ -261,13 +261,13 @@
           :disabled="!canImport"
           @click="finishImport"
         >
-          Looks Good, Import Them!
+          Importar!
         </button>
       </div>
 
       <!--			Always shown			-->
       <button @click="cancelImport" type="button" class="button-secondary-md">
-        Cancel
+        Cancelar
       </button>
     </template>
   </Modal>
@@ -386,8 +386,8 @@ export default {
       this.stagedMonsters = [];
 
       useNotifications().notify({
-        title: "Import complete!",
-        body: "Your new source(s) have been imported",
+        title: "Importação concluída!",
+        body: "Fontes importadas com sucesso",
       });
 
       this.step = 1;

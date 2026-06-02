@@ -50,6 +50,14 @@ function stopRemoving() {
         }"
       ></i>
       <span class="truncate" v-text="source.name"></span>
+      <a
+        v-if="source.link"
+        :href="source.link"
+        target="_blank"
+        @click.stop
+        class="ml-1 opacity-60 hover:opacity-100"
+        title="Ver na loja"
+      ><i class="fa fa-external-link-alt text-xs"></i></a>
     </button>
 
     <button
@@ -75,7 +83,7 @@ function stopRemoving() {
       <i
         class="fa fa-exclamation-triangle pr-1 text-orange-500 dark:text-orange-700"
       ></i>
-      Are you sure?
+      Tem certeza?
     </div>
 
     <button

@@ -1,0 +1,58 @@
+[
+  {
+    "type": "Oficial",
+    "name": "Livro Básico",
+    "shortname": "T20(JdA)",
+    "link": "https://jamboeditora.com.br/produto/tormenta20-edicao-jogo-do-ano/",
+    "default": true
+  },
+  {
+    "type": "Oficial",
+    "name": "Ameaças de Arton",
+    "shortname": "AdA",
+    "link": "https://jamboeditora.com.br/produto/ameacas-de-arton/",
+    "default": true
+  },
+  {
+    "type": "Oficial",
+    "name": "Atlas de Arton",
+    "shortname": "AtdA",
+    "link": "https://jamboeditora.com.br/",
+    "default": true
+  },
+  {
+    "type": "Oficial",
+    "name": "Deuses de Arton",
+    "shortname": "DdA",
+    "link": "https://jamboeditora.com.br/produto/tormenta20-deuses-de-arton/",
+    "default": true
+  },
+  {
+    "type": "Oficial",
+    "name": "Guia de Deuses Menores",
+    "shortname": "GdDM",
+    "link": "https://jamboeditora.com.br/",
+    "default": true
+  },
+  {
+    "type": "Oficial",
+    "name": "Guia de NPC",
+    "shortname": "GdNPCs",
+    "link": "https://jamboeditora.com.br/produto/tormenta20-guia-de-npcs/",
+    "default": true
+  },
+  {
+    "type": "Oficial",
+    "name": "Dragão Brasil",
+    "shortname": "DB",
+    "link": "https://jamboeditora.com.br/",
+    "default": true
+  },
+  {
+    "type": "Oficial",
+    "name": "Heróis de Arton",
+    "shortname": "HdA",
+    "link": "https://jamboeditora.com.br/",
+    "default": true
+  }
+]

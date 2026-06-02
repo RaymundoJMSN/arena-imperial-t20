@@ -15,7 +15,7 @@ const searchBox = ref(null);
 onMounted(() => {
   hotkeys.register(
     "ctrl+k, command+k",
-    "Focus the search box",
+    "Focar na busca de monstros",
     () => {
       searchBox.value.focus();
       return false;
@@ -30,7 +30,7 @@ onMounted(() => {
     <label
       for="search"
       class="max-w-full block text-sm font-medium text-gray-700 sr-only"
-      >Search monsters</label
+      >Buscar monstros</label
     >
 
     <div class="px-4 sm:px-6 lg:px-8">
@@ -92,7 +92,7 @@ onMounted(() => {
                 :value="option"
                 :selected="filters.perPage === option"
               >
-                {{ option }} per page
+                {{ option }} por página
               </option>
             </select>
           </div>
@@ -120,7 +120,7 @@ onMounted(() => {
                   d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"
                 />
               </svg>
-              <span>Filter</span>
+              <span>Filtrar</span>
               <span
                 class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 dark:bg-gray-300 text-gray-800"
                 v-show="filters.activeCount > 0"

@@ -7,7 +7,7 @@ const filters = useFilters();
 const minCr = ref(filters.crValues[Math.round(filters.cr.min)].label);
 const maxCr = ref(filters.crValues[Math.round(filters.cr.max)].label);
 
-const defaultValue = ref([0, 33]);
+const defaultValue = ref([0, 23]);
 const sliderValue = ref([
     filters.cr.min,
     filters.cr.max
@@ -70,7 +70,7 @@ filters.$subscribe((mutation, state) => {
     <div
       class="flex justify-between font-medium text-gray-700 dark:text-gray-300 mb-1"
     >
-      Challenge Rating
+      Nível de Desafio
 
       <span
         @click="sliderValue = defaultValue"
@@ -96,7 +96,7 @@ filters.$subscribe((mutation, state) => {
       <div class="mb-4 mt-3 mx-2">
         <Slider
           :min="0"
-          :max="33"
+          :max="23"
           :format="resolveOptionLabel"
           :options="{ tooltips: [false, false], animate: true }"
           v-model="shadowSliderValue"
@@ -118,14 +118,14 @@ filters.$subscribe((mutation, state) => {
               v-for="option in filters.crValues"
               :value="option.value"
               v-text="option.label"
-              :disabled="parseInt(option.value) > parseInt(maxCr)"
+              :disabled="filters.crValues.findIndex(o => o.value === option.value) > filters.crValues.findIndex(o => o.value === maxCr)"
             ></option>
           </select>
         </div>
         <div
           class="grow text-center text-gray-500 dark:text-gray-400 user-select-none"
         >
-          &le; CR &le;
+          &le; ND &le;
         </div>
         <div class="grow">
           <select
@@ -139,7 +139,7 @@ filters.$subscribe((mutation, state) => {
               v-for="option in filters.crValues"
               :value="option.value"
               v-text="option.label"
-              :disabled="parseInt(option.value) < parseInt(minCr)"
+              :disabled="filters.crValues.findIndex(o => o.value === option.value) < filters.crValues.findIndex(o => o.value === minCr)"
             ></option>
           </select>
         </div>

@@ -1,11 +1,11 @@
 {
-	"short_name": "K+FC",
-	"name": "Kobold+ Fight Club",
+	"short_name": "ArenaT20",
+	"name": "Arena Imperial T20",
 	"icons": [
 		{
-			"src": "images/logo.png",
-			"sizes": "600x600",
-			"type": "image/png"
+			"src": "images/arena-logo.svg",
+			"sizes": "any",
+			"type": "image/svg+xml"
 		}
 	],
 	"start_url": "index.html",

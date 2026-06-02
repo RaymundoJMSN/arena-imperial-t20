@@ -9,30 +9,34 @@ import { useEncounter } from "../stores/encounter";
 import { useParty } from "../stores/party";
 import CONST from "../js/constants";
 import { useModals } from "../stores/modals";
+import { computed } from "vue";
 
 const encounter = useEncounter();
 const party = useParty();
 const modals = useModals();
+
+const encounterTypeOptions = computed(() => {
+  const types = encounter.encounterStrategy.encounterTypes;
+  if (types) {
+    return Object.values(types).map((t) => ({ key: t.key, label: t.name }));
+  }
+  return Object.entries(CONST.ENCOUNTER_TYPES).map(([k, v]) => ({ key: k, label: v.name }));
+});
+
 </script>
 
 <template>
   <div>
     <div class="border-t border-gray-200 dark:border-gray-700">
       <div class="flex pt-4 justify-between items-center mb-1">
-        <span class="text-gray-600 dark:text-gray-400">Encounter</span>
+        <span class="text-gray-600 dark:text-gray-400">Encontro</span>
 
         <div class="space-x-3">
           <a
             href="javascript:"
             class="primary-link text-sm"
             @click="modals.show('encounter')"
-          >History</a
-          >
-          <a
-            href="javascript:"
-            class="primary-link text-sm"
-            @click="modals.show('strategy')"
-          >Settings</a
+          >Histórico</a
           >
         </div>
       </div>
@@ -42,7 +46,7 @@ const modals = useModals();
       >
         <div class="grid gap-2 w-full place-items-end sm:grid-cols-8 grow">
           <div class="w-full col-span-1 sm:col-span-3">
-            <label id="difficulty-label" class="sr-only">Difficulty</label>
+            <label id="difficulty-label" class="sr-only">Dificuldade</label>
             <SelectInput
               v-model="encounter.difficulty"
               :label="
@@ -63,12 +67,8 @@ const modals = useModals();
           <div class="w-full col-span-1 sm:col-span-5">
             <SelectInput
               v-model="encounter.type"
-              :label="CONST.ENCOUNTER_TYPES[encounter.type].name"
-              :options="
-                Object.entries(CONST.ENCOUNTER_TYPES).map((entry) => {
-                  return { key: entry[0], label: entry[1].name };
-                })
-              "
+              :label="encounterTypeOptions.find(o => o.key === encounter.type)?.label ?? encounter.type"
+              :options="encounterTypeOptions"
             ></SelectInput>
           </div>
         </div>
@@ -81,7 +81,7 @@ const modals = useModals();
             @click="encounter.generateRandom()"
             class="button-primary-md w-full md:w-auto"
           >
-            <span class="md:hidden w-full text-center"> Generate </span>
+            <span class="md:hidden w-full text-center"> Gerar </span>
             <span class="hidden md:inline">
               <i class="fa fa-refresh"></i>
             </span>
@@ -109,7 +109,7 @@ const modals = useModals();
           @click="encounter.clear()"
           class="select-none text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200"
           href="javascript:"
-          ><i class="fa fa-times"></i> Clear encounter</a
+          ><i class="fa fa-times"></i> Limpar encontro</a
         >
       </div>
     </div>
@@ -119,7 +119,7 @@ const modals = useModals();
         @click="encounter.generateRandom()"
         icon="fa-solid fa-wand-sparkles"
       >
-        Generate an encounter
+        Gerar um encontro
       </EmptyStateButton>
     </div>
 
@@ -129,7 +129,7 @@ const modals = useModals();
       >
         <div class="flex items-center justify-between">
           <dt class="mt-1 text-sm text-gray-600 dark:text-gray-200">
-            <span class="block">Difficulty</span>
+            <span class="block">Dificuldade</span>
           </dt>
           <dd
             class="mt-1 text-sm font-medium text-gray-900 dark:text-gray-300 text-right"
@@ -142,31 +142,12 @@ const modals = useModals();
                 encounter.actualDifficulty.toLowerCase() !==
                   encounter.difficultyFeel.toLowerCase()
               "
-              v-text="'Feels ' + encounter.difficultyFeel"
+              v-text="'Parece ' + encounter.difficultyFeel"
             ></span>
           </dd>
         </div>
 
-        <div class="flex items-center justify-between">
-          <dt class="mt-1 text-sm text-gray-600 dark:text-gray-200">
-            Total XP
-          </dt>
-          <dd
-            class="mt-1 text-sm font-medium text-gray-900 dark:text-gray-300"
-            v-text="
-              encounter.totalExp > 0
-                ? helpers.formatNumber(encounter.totalExp) +
-                  ' (' +
-                  helpers.formatNumber(
-                    Math.round(encounter.totalExp / party.totalPlayersToGainXP)
-                  ) +
-                  '/player)'
-                : 'N/A'
-            "
-          ></dd>
-        </div>
-
-        <div
+<div
           class="flex items-center justify-between"
           v-for="secondaryMeasurement in encounter.secondaryMeasurements"
         >
@@ -183,7 +164,7 @@ const modals = useModals();
 
       <div class="mt-4 flex space-x-2">
         <ImprovedInitiativeButton>
-          Send to Improved Initiative
+          Enviar para Improved Initiative
         </ImprovedInitiativeButton>
 
         <button

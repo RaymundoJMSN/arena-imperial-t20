@@ -1,0 +1,49 @@
+name: Build Release (Tauri)
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Rust stable
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Rust cache
+        uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: ./src-tauri -> target
+
+      - name: Build and release Tauri app
+        uses: tauri-apps/tauri-action@v0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tagName: ${{ github.ref_name }}
+          releaseName: Arena Imperial T20 ${{ github.ref_name }}
+          releaseBody: |
+            ## Arena Imperial T20 ${{ github.ref_name }}
+
+            Gerador de encontros para Tormenta 20.
+
+            ### Instalação Windows
+            Baixe o arquivo `.msi` abaixo e execute. O instalador configura tudo automaticamente.
+
+            ### Também disponível como site
+            https://raynathus.github.io/arena-imperial-t20/
+          releaseDraft: false
+          prerelease: false

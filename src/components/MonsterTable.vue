@@ -102,7 +102,7 @@ const pagination = computed(() => {
 onBeforeMount(() => {
   hotkeys.register(
     "ctrl+[, command+[",
-    "Previous monsters search page",
+    "Página anterior de monstros",
     () => {
       currentPage.value--;
       return false;
@@ -112,7 +112,7 @@ onBeforeMount(() => {
 
   hotkeys.register(
     "ctrl+], command+]",
-    "Next monsters search page",
+    "Próxima página de monstros",
     () => {
       currentPage.value++;
       return false;
@@ -135,10 +135,10 @@ onBeforeMount(() => {
               scope="col"
               class="py-3.5 px-3 text-center text-sm font-semibold text-gray-900 sm:pl-6 w-8 max-w-8"
             >
-              <span class="sr-only">Add to encounter</span>
+              <span class="sr-only">Adicionar ao encontro</span>
             </th>
             <MonsterTableHeading
-              label="Name"
+              label="Nome"
               sorts-column="name"
               :sort-by="sortBy"
               :sort-by-desc="sortByDesc"
@@ -146,19 +146,19 @@ onBeforeMount(() => {
               @sort="setSortBy($event)"
             />
             <MonsterTableHeading
-              label="Alignment"
+              label="Papel"
               class="hidden xl:table-cell w-32 text-right pr-4"
             />
             <MonsterTableHeading
-              label="Size"
-              sorts-column="size"
+              label="Tamanho"
+              sorts-column="sizeOrder"
               :sort-by="sortBy"
               :sort-by-desc="sortByDesc"
               class="table-cell w-32"
               @sort="setSortBy($event)"
             />
             <MonsterTableHeading
-              label="Type"
+              label="Tipo"
               sorts-column="type"
               :sort-by="sortBy"
               :sort-by-desc="sortByDesc"
@@ -166,7 +166,7 @@ onBeforeMount(() => {
               @sort="setSortBy($event)"
             />
             <MonsterTableHeading
-              label="CR"
+              label="ND"
               sorts-column="cr.numeric"
               :sort-by="sortBy"
               :sort-by-desc="sortByDesc"
@@ -197,11 +197,11 @@ onBeforeMount(() => {
       v-show="!monsters.loading && sources.enabled.length === 0"
       class="w-full text-center text-lg my-4"
     >
-      No sources are enabled -
+      Nenhuma fonte habilitada -
       <span
         class="primary-link select-none cursor-pointer"
         @click="modals.show('sources')"
-        >enable some now</span
+        >habilite agora</span
       >
     </div>
     <div
@@ -213,11 +213,11 @@ onBeforeMount(() => {
       class="w-full text-center text-lg my-4"
       v-cloak
     >
-      No monsters found with the current filter -
+      Nenhum monstro encontrado com o filtro atual -
       <span
         class="primary-link select-none cursor-pointer"
         @click="filters.reset()"
-        >reset filters</span
+        >limpar filtros</span
       >
     </div>
 
@@ -247,7 +247,7 @@ onBeforeMount(() => {
               clip-rule="evenodd"
             />
           </svg>
-          <span class="hidden lg:inline">Previous</span>
+          <span class="hidden lg:inline">Anterior</span>
         </button>
       </div>
       <div class="hidden md:-mt-px md:flex">
@@ -272,7 +272,7 @@ onBeforeMount(() => {
           :disabled="currentPage === totalPages"
           class="border-t-2 border-transparent pt-4 px-2 lg:pr-1 lg:pl-0 inline-flex items-center text-sm font-medium text-gray-500 hover:text-gray-400 hover:border-gray-400 dark:hover:border-gray-500 dark:text-gray-400 dark:hover:text-gray-300 disabled:pointer-events-none disabled:opacity-40"
         >
-          <span class="hidden lg:inline">Next</span>
+          <span class="hidden lg:inline">Próximo</span>
           <!-- Heroicon name: solid/arrow-narrow-right -->
           <svg
             class="ml-3 h-5 w-5 text-gray-400"

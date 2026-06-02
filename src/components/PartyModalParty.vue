@@ -78,7 +78,7 @@ const editingMembership = ref(false);
         <button
           @click.stop="parties.deleteParty(index)"
           v-if="editingMembership"
-          :title="'Delete ' + party.name"
+          :title="'Excluir ' + party.name"
           type="button"
           class="button-danger-outline-md"
         >
@@ -86,7 +86,7 @@ const editingMembership = ref(false);
         </button>
         <button
           @click.stop="editingMembership = !editingMembership"
-          :title="'Edit membership of ' + party.name"
+          :title="'Editar ' + party.name"
           class="button-muted-outline-md"
         >
           <i class="fa fa-pencil"></i>
@@ -97,14 +97,14 @@ const editingMembership = ref(false);
     <div
       class="grid gap-2 grid-cols-[1fr_1fr_60px] md:grid-cols-[1fr_50px_75px_150px_60px] -mb-1 mt-2"
     >
-      <div>Name<span class="md:hidden">/Init.</span></div>
-      <div>Level<span class="md:hidden">/HP</span></div>
+      <div>Nome<span class="md:hidden">/Inic.</span></div>
+      <div>Nível<span class="md:hidden">/PV</span></div>
       <div class="hidden md:block md:order-6"></div>
-      <div class="hidden md:block">Initiative</div>
-      <div class="hidden md:block">HP</div>
+      <div class="hidden md:block">Iniciativa</div>
+      <div class="hidden md:block">PV</div>
       <div
         class="text-end"
-        v-text="editingMembership ? 'Delete' : 'Active'"
+        v-text="editingMembership ? 'Excluir' : 'Ativo'"
       ></div>
     </div>
 
@@ -122,7 +122,7 @@ const editingMembership = ref(false);
       class="button-primary-outline-md col-span-6 justify-center"
       :class="{ 'h-24': !party.players.length }"
     >
-      Create player
+      Adicionar jogador
     </button>
     <button
       v-show="!party.players.length"
@@ -130,7 +130,7 @@ const editingMembership = ref(false);
       type="button"
       class="button-danger-outline-md col-span-6 justify-center"
     >
-      Delete Party
+      Excluir Grupo
     </button>
   </div>
 </template>

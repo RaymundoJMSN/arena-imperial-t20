@@ -9,7 +9,7 @@ const modals = useModals();
 </script>
 
 <template>
-  <Modal v-model:show="modals.party" title="Manage your parties and players">
+  <Modal v-model:show="modals.party" title="Gerenciar grupos e jogadores">
     <div class="my-3 sm:mt-0 w-full">
       <div
         class="my-2 max-h-96 overflow-y-auto scrollbar scrollbar-dark overflow-x-hidden text-gray-700 dark:text-gray-300"
@@ -39,7 +39,7 @@ const modals = useModals();
         <span
           class="mt-2 block text-sm font-medium text-gray-900 dark:text-gray-200"
         >
-          Create player party
+          Criar grupo de jogadores
         </span>
       </button>
     </div>
@@ -50,14 +50,14 @@ const modals = useModals();
         type="button"
         class="button-primary-md"
       >
-        Close
+        Fechar
       </button>
       <button
         @click="parties.createParty"
         type="button"
         class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-emerald-700 dark:bg-emerald-100 dark:bg-transparent dark:text-emerald-500 dark:hover:bg-emerald-800 dark:hover:text-white hover:bg-emerald-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"
       >
-        <i class="fa fa-plus mr-1"></i> Create party
+        <i class="fa fa-plus mr-1"></i> Criar grupo
       </button>
     </template>
   </Modal>

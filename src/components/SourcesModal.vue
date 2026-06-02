@@ -15,12 +15,12 @@ function switchToImport() {
 </script>
 
 <template>
-  <Modal v-model:show="modals.sources" title="Select your sources">
+  <Modal v-model:show="modals.sources" title="Selecionar fontes">
     <button
       class="button-primary-outline-md absolute top-5 right-6 !py-1"
       @click="switchToImport"
     >
-      <i class="fa fa-plus mr-1 text-lg"></i> Import new
+      <i class="fa fa-plus mr-1 text-lg"></i> Importar nova
     </button>
     <div
       class="mt-2 max-h-96 overflow-y-auto px-1 scrollbar scrollbar-dark w-full"
@@ -38,7 +38,7 @@ function switchToImport() {
         type="button"
         class="button-primary-md"
       >
-        Done
+        Concluir
       </button>
     </template>
   </Modal>

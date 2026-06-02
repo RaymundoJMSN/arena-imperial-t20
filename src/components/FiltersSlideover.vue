@@ -1,6 +1,5 @@
 <script setup>
 import Multiselect from "@vueform/multiselect";
-import AlignmentGrid from "./AlignmentGrid.vue";
 import { useFilters } from "../stores/filters.js";
 import ChallengeRatingSlider from "./ChallengeRatingSlider.vue";
 import { useModals } from "../stores/modals";
@@ -72,7 +71,7 @@ defineProps({
                     class="text-lg font-medium text-gray-900 dark:text-gray-200"
                     id="slide-over-title"
                   >
-                    Filter monsters
+                    Filtrar monstros
                   </h2>
                   <div class="ml-3 flex h-7 items-center">
                     <button
@@ -109,7 +108,7 @@ defineProps({
                     @click="modals.show('sources')"
                     class="button-primary-md w-full"
                   >
-                    <span class="w-full text-center">Manage sources</span>
+                    <span class="w-full text-center">Gerenciar fontes</span>
                   </button>
 
                   <button
@@ -129,12 +128,12 @@ defineProps({
                   <div
                     class="block font-medium text-gray-700 dark:text-gray-300 mb-1"
                   >
-                    Size category
+                    Tamanho
                   </div>
 
                   <Multiselect
                     mode="tags"
-                    placeholder="Any size"
+                    placeholder="Qualquer tamanho"
                     v-model="filters.size"
                     :options="filters.sizeOptions"
                   ></Multiselect>
@@ -144,12 +143,12 @@ defineProps({
                   <div
                     class="block font-medium text-gray-700 dark:text-gray-300 mb-1"
                   >
-                    Creature type
+                    Tipo
                   </div>
 
                   <Multiselect
                     mode="tags"
-                    placeholder="Any type"
+                    placeholder="Qualquer tipo"
                     v-model="filters.type"
                     :options="filters.typeOptions"
                   ></Multiselect>
@@ -159,35 +158,16 @@ defineProps({
                   <div
                     class="block font-medium text-gray-700 dark:text-gray-300 mb-1"
                   >
-                    Native Environment
+                    Papel de Combate
                   </div>
 
                   <Multiselect
                     mode="tags"
-                    placeholder="Any Environment"
-                    noOptionsText="No monsters in active sources have environments"
-                    v-model="filters.environment"
-                    valueProp="valueProp"
-                    label="label"
-                    :options="filters.environmentOptions"
+                    placeholder="Qualquer papel"
+                    v-model="filters.role"
+                    :options="filters.roleOptions"
                   ></Multiselect>
                 </div>
-
-                <div>
-                  <div
-                    class="block font-medium text-gray-700 dark:text-gray-300 mb-1"
-                  >
-                    Legendary Status
-                  </div>
-
-                  <Multiselect
-                    mode="tags"
-                    placeholder="Any Legendary"
-                    v-model="filters.legendary"
-                    :options="filters.legendaryOptions"
-                  ></Multiselect>
-                </div>
-                <AlignmentGrid></AlignmentGrid>
               </div>
             </div>
           </div>

@@ -69,7 +69,7 @@ export default {
     setupHotkeys() {
       this.hotkeys.register(
         "ctrl+f, command+f",
-        "Toggle the filters sidebar",
+        "Alternar painel de filtros",
         () => {
           this.userWantsFilters = this.filtersTest()
             ? true
@@ -82,7 +82,7 @@ export default {
 
       this.hotkeys.register(
         "ctrl+s, command+s",
-        "Save the current encounter",
+        "Salvar encontro atual",
         () => {
           this.encounter.save();
           return false;
@@ -92,7 +92,7 @@ export default {
 
       this.hotkeys.register(
         "ctrl+g, command+g",
-        "Generate an encounter",
+        "Gerar um encontro",
         () => {
           this.encounter.generateRandom();
           return false;

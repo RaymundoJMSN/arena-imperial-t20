@@ -15,15 +15,15 @@ const modals = useModals();
   <div class="grid grid-cols-3 md:pr-2 md:grid-cols-5 pb-4 flex-col w-full">
     <div class="col-span-3 space-y-2">
       <div class="flex justify-between items-end items-center">
-        <div class="text-gray-600 dark:text-gray-400">Party</div>
+        <div class="text-gray-600 dark:text-gray-400">Grupo</div>
 
         <a
           class="primary-link text-sm"
           @click="modals.show('party')"
           href="javascript:"
         >
-          Manage
-        </a>
+          Gerenciar
+</a>
       </div>
 
       <div
@@ -54,9 +54,9 @@ const modals = useModals();
         class="w-full grid grid-rows-[18px_1fr] grid-cols-[1fr_40px_1fr_50px_36px] gap-y-2 align-center mb-2"
       >
         <label class="col-span-2 text-sm text-gray-700 dark:text-gray-300"
-          >Players</label
+          >Jogadores</label
         >
-        <label class="text-sm text-gray-700 dark:text-gray-300">Level</label>
+        <label class="text-sm text-gray-700 dark:text-gray-300">Nível</label>
         <label
           class="text-center text-sm text-gray-700 dark:text-gray-300"
           title="Determines whether these characters get a share of XP from the encounter."
@@ -116,7 +116,7 @@ const modals = useModals();
           type="button"
           class="button-primary-outline-md align-self-start w-full md:mt-4 md:mt-auto flex justify-center"
         >
-          <span> <i class="fas fa-plus mr-2"></i> Add Generic Group </span>
+          <span> <i class="fas fa-plus mr-2"></i> Adicionar Grupo </span>
         </button>
       </div>
 
@@ -129,7 +129,7 @@ const modals = useModals();
           type="button"
           class="button-primary-outline-md align-self-start w-full md:mt-4 md:mt-auto flex justify-center"
         >
-          <span> <i class="fas fa-plus mr-2"></i> Use Detailed Party </span>
+          <span> <i class="fas fa-plus mr-2"></i> Usar Grupo Detalhado </span>
         </button>
       </div>
     </div>

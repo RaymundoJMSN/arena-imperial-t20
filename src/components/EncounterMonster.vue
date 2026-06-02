@@ -18,7 +18,7 @@
       </div>
 
       <div
-        title="Shuffle monster"
+        title="Trocar monstro"
         @click="$emit('shuffle')"
         class="grid place-items-center text-gray-500 hover:text-gray-700 dark:text-gray-500 dark:hover:text-gray-200 cursor-pointer"
       >
@@ -30,7 +30,7 @@
       <div>
         <span
           class="text-sm"
-          v-text="'CR: ' + group.monster.cr.string"
+          v-text="'ND: ' + group.monster.cr.string"
         ></span>
         <span class="text-sm px-1">&bull;</span>
         <span
@@ -97,12 +97,12 @@
         <div
           class="absolute top-1 right-2"
           @click="showSources = false"
-          title="Dismiss"
+          title="Fechar"
         >
           <i class="fa fa-times text-gray-500 cursor-pointer text-xl"></i>
         </div>
 
-        <strong class="text-sm">Sources:</strong>
+        <strong class="text-sm">Fontes:</strong>
 
         <ul class="list-disc list-inside max-w-full ml-2">
           <li

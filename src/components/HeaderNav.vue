@@ -25,11 +25,11 @@ const menu = ref(false);
             <RouterLink :to="{ name: 'home' }" class="flex items-center">
               <img
                 class="h-8 w-auto"
-                src="/images/header_logo.png"
-                alt="Kobold Plus Fight Club"
+                src="/images/arena-logo.svg"
+                alt="Arena Imperial T20"
               />
               <span class="hidden md:inline pl-2 text-lg font-bold text-white"
-                >Kobold+ Fight Club</span
+                >Arena Imperial T20</span
               >
             </RouterLink>
           </div>
@@ -41,7 +41,7 @@ const menu = ref(false);
             @click="modals.show('keyboard')"
             href="javascript:"
             class="inline-flex items-center px-1 text-sm font-medium text-emerald-300 hover:text-white hover:border-gray-300"
-            >Keyboard Shortcuts
+            >Atalhos de Teclado
             <span
               class="inline-flex items-center px-1 py-0.5 rounded text-xs font-medium bg-emerald-800 text-emerald-100 ml-1"
               >Ctrl+/</span
@@ -51,18 +51,18 @@ const menu = ref(false);
             @click="modals.show('importer')"
             href="javascript:"
             class="inline-flex items-center px-1 text-sm font-medium text-emerald-300 hover:text-white hover:border-gray-300"
-            >Import Custom Monsters</a
+            >Importar Monstros</a
           >
           <a
-            target="_blank"
-            href="https://ko-fi.com/fantasycomputerworks"
+            href="javascript:"
+            @click="modals.show('doacao')"
             class="inline-flex items-center px-1 text-sm font-medium text-emerald-300 hover:text-white hover:border-gray-300"
-            >Donate</a
+            >Doar</a
           >
           <RouterLink
             to="about"
             class="inline-flex items-center px-1 text-sm font-medium text-emerald-300 hover:text-white hover:border-gray-300 h-full"
-            >About</RouterLink
+            >Sobre</RouterLink
           >
           <a
             title="News"
@@ -100,7 +100,7 @@ const menu = ref(false);
             class="inline-flex items-center justify-center p-2 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white relative"
             @click="menu = !menu"
           >
-            <span class="sr-only">Open main menu</span>
+            <span class="sr-only">Abrir menu</span>
             <svg
               class="block h-6 w-6"
               xmlns="http://www.w3.org/2000/svg"
@@ -150,11 +150,6 @@ const menu = ref(false);
     >
       <div class="pt-2 pb-3 space-y-1">
         <a
-          href="https://fantasy-calendar.com/"
-          class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-emerald-300 hover:text-white hover:border-gray-300"
-          >Fantasy Calendar</a
-        >
-        <a
           @click="
             () => {
               modals.show('importer');
@@ -163,29 +158,25 @@ const menu = ref(false);
           "
           href="javascript:"
           class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-emerald-300 hover:text-white hover:border-gray-300"
-          >Import Custom Monsters</a
+          >Importar Monstros</a
         >
         <RouterLink
           @click="menu = false"
           to="about"
           class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-emerald-300 hover:text-white hover:border-gray-300"
-          >About</RouterLink
+          >Sobre</RouterLink
         >
         <a
-          title="News"
+          title="Novidades"
           @click="() => {useNews().show(); menu = false;}"
           href="javascript:"
-          class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-emerald-300 hover:text-white hover:border-gray-300 relative"
+          class="flex items-center gap-2 pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-emerald-300 hover:text-white hover:border-gray-300"
         >
-          <span class="absolute flex h-3 w-3 top-3.5 left-16" v-if="useNews().hasUnread">
-            <span
-              class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-300 opacity-75"
-            ></span>
-            <span
-              class="relative inline-flex rounded-full h-3 w-3 bg-amber-300"
-            ></span>
+          <span>Novidades</span>
+          <span class="relative flex h-3 w-3 flex-shrink-0" v-if="useNews().hasUnread">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-300 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-amber-300"></span>
           </span>
-          <span>News</span>
         </a>
         <a
           title="Toggle light mode (ctrl+shift+\)"
@@ -194,7 +185,7 @@ const menu = ref(false);
           class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-emerald-300 hover:text-white hover:border-gray-300"
         >
           <i :class="theme === 'light' ? 'fa-moon' : 'fa-sun'" class="fa"></i>
-          <span class="ml-1">Toggle theme</span>
+          <span class="ml-1">Alternar tema</span>
         </a>
       </div>
     </div>

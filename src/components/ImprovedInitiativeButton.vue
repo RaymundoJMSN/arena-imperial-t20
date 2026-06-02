@@ -36,7 +36,7 @@ function sendToImprovedInitiative() {
         Name: monster.name,
         HP: { Value: monster.hp },
         InitiativeModifier: monster.init,
-        AC: { Value: monster.ac },
+        AC: { Value: monster.defense ?? monster.ac ?? 0 },
         Player: "npc",
       });
     }

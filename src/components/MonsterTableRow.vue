@@ -57,16 +57,16 @@ const encounter = useEncounter();
     </td>
     <td
       class="hidden px-3 pl-2 pr-4 text-sm text-gray-500 dark:text-gray-300 xl:table-cell w-32 text-right"
-      v-text="monster.alignment.string"
+      v-text="monster.role ? monster.role.join(', ') : monster.alignment.string"
     ></td>
     <td
       class="px-3 py-2 text-sm text-gray-500 dark:text-gray-300 table-cell w-32 max-w-32 truncate"
     >
       <span class="truncate" v-text="monster.size"></span>
       <dl class="font-normal">
-        <dt class="sr-only sm:hidden">CR</dt>
+        <dt class="sr-only sm:hidden">ND</dt>
         <dd class="mt-1 truncate text-gray-500 dark:text-gray-400 sm:hidden">
-          CR
+          ND
           <span
             v-text="monster.cr.string"
             class="pl-1"
@@ -76,7 +76,7 @@ const encounter = useEncounter();
         <dt class="sr-only sm:hidden">Alignment</dt>
         <dd
           class="mt-1 truncate text-gray-500 dark:text-gray-400 lg:hidden"
-          v-text="monster.alignment.string"
+          v-text="monster.role ? monster.role.join(', ') : monster.alignment.string"
         ></dd>
       </dl>
     </td>

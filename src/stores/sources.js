@@ -6,7 +6,7 @@ import { useMonsters } from "./monsters";
 export const useSources = defineStore("sources", {
   state: () => {
     return {
-      version: "2.2.5",
+      version: "3.0.0-t20",
       storedVersion: useLocalStorage("storedSourcesVersion", "2.2.5"),
 
       builtIn: useLocalStorage("sources", []),
@@ -25,19 +25,7 @@ export const useSources = defineStore("sources", {
       ) {
         let fetched = [];
 
-        await fetch("/json/se_sources.json")
-          .then((res) => res.json())
-          .then((data) => {
-            fetched = fetched.concat(data);
-          });
-
-        await fetch("/json/se_third_party_sources.json")
-          .then((res) => res.json())
-          .then((data) => {
-            fetched = fetched.concat(data);
-          });
-
-        await fetch("/json/se_community_sources.json")
+        await fetch("/json/t20_sources.json")
           .then((res) => res.json())
           .then((data) => {
             fetched = fetched.concat(data);
@@ -84,7 +72,7 @@ export const useSources = defineStore("sources", {
         return {
           success: false,
           message:
-            "All of the sources in this import already exist. You can either enable them under 'Manage Sources' or delete them to re-import.",
+            "Todas as fontes já existem. Ative-as em 'Gerenciar fontes' ou exclua para reimportar.",
         };
       }
 
@@ -92,7 +80,7 @@ export const useSources = defineStore("sources", {
 
       return {
         success: true,
-        message: "Successfully imported sources",
+        message: "Fontes importadas com sucesso.",
       };
     },
   },

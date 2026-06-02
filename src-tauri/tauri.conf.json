@@ -7,8 +7,8 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "Kobold+ Fight Club",
-    "version": "0.1.0"
+    "productName": "Arena Imperial T20",
+    "version": "1.0.0"
   },
   "tauri": {
     "allowlist": {
@@ -29,8 +29,8 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
-      "longDescription": "",
+      "identifier": "com.raynathus.arena-imperial-t20",
+      "longDescription": "Gerador de encontros para Tormenta 20, o RPG brasileiro da Jambô Editora.",
       "macOS": {
         "entitlements": null,
         "exceptionDomain": "",
@@ -56,10 +56,10 @@
     "windows": [
       {
         "fullscreen": false,
-        "height": 600,
+        "height": 800,
         "resizable": true,
-        "title": "Kobold+ Fight Club - Yip Yip!",
-        "width": 800
+        "title": "Arena Imperial T20 — Gerador de Encontros",
+        "width": 1280
       }
     ]
   }

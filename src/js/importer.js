@@ -6,9 +6,9 @@ export default class Importer {
 
   static types = [
     { key: "google-sheets", label: "Google Sheets" },
-    { key: "json-raw", label: "Raw JSON" },
-    { key: "json-file", label: "JSON File" },
-    { key: "csv-file", label: "CSV Files" },
+    { key: "json-raw", label: "JSON (texto)" },
+    { key: "json-file", label: "JSON (arquivo)" },
+    { key: "csv-file", label: "CSV (arquivos)" },
   ]
 
   static loaders = {
@@ -32,7 +32,7 @@ export default class Importer {
   }
 
   static sourcesRequiredHeaders = ["name", "type", ["shortname", "short name"], "link"];
-  static monstersRequiredHeaders = ["name", "cr", "size", "type", "tags", "section", "alignment", "environment", "ac", "hp", "init", ["lair", "lair?"], ["legendary", "legendary?"], ["unique", "unique?"], "sources"];
+  static monstersRequiredHeaders = ["name", "nd", "size", "type", "sources"];
 
   static _validateSources(sources) {
     for (let source of sources) {
@@ -40,10 +40,10 @@ export default class Importer {
       for (let key of this.sourcesRequiredHeaders) {
         if (Array.isArray(key)) {
           if (!key.find(option => sourceKeys.includes(option))) {
-            return [false, `Sources are missing the required header: '${key[0]}'`];
+            return [false, `Fontes sem coluna obrigatória: '${key[0]}'`];
           }
         } else if (!sourceKeys.includes(key)) {
-          return [false, `Sources are missing the required header: '${key}'`];
+          return [false, `Fontes sem coluna obrigatória: '${key}'`];
         }
       }
     }
@@ -56,17 +56,17 @@ export default class Importer {
       for (let key of this.monstersRequiredHeaders) {
         if (Array.isArray(key)) {
           if (!key.find(option => monsterKeys.includes(option))) {
-            return [false, `Monsters are missing the required header: '${key[0]}'`];
+            return [false, `Monstros sem coluna obrigatória: '${key[0]}'`];
           }
         } else if (!monsterKeys.includes(key)) {
-          return [false, `Monsters are missing the required header: '${key}'`];
+          return [false, `Monstros sem coluna obrigatória: '${key}'`];
         } else if (key === "sources") {
           const sourceSplit = new RegExp(": \\d+$", "g")
           const monsterSources = monster[key].split(", ").map(source => source.split(sourceSplit)[0]);
           for (const monsterSource of monsterSources) {
             const source = sources.find(source => source['name'] === monsterSource);
             if (!source) {
-              return [false, `Monster '${monster['name']}' has the source '${monsterSource}', but it is not defined in the sources!`];
+              return [false, `Monstro '${monster['name']}' tem a fonte '${monsterSource}', mas ela não está definida nas fontes!`];
             }
           }
         }
@@ -77,7 +77,7 @@ export default class Importer {
 
   static async _validateGoogleSheets(resourceLocator) {
     if (resourceLocator.length < 40) {
-      return [false, "Sheets IDs aren't that short"];
+      return [false, "ID de planilha inválido — muito curto"];
     }
 
     if (resourceLocator.toLowerCase().startsWith("https://docs.google.com/spreadsheets/d/")) {
@@ -95,17 +95,17 @@ export default class Importer {
       .then(response => response.json())
       .then(jsonifiedBody => {
         if (jsonifiedBody.error) {
-          return [false, `Google responded with an error: "${jsonifiedBody.error.message}"`];
+          return [false, `Erro do Google: "${jsonifiedBody.error.message}"`];
         }
 
-        const monsters = jsonifiedBody.sheets.find(sheet => sheet.properties.title === 'Monsters');
+        const monsters = jsonifiedBody.sheets.find(sheet => sheet.properties.title === 'Monstros');
         if (!monsters) {
-          return [false, "Your Google Sheets workbook must contain a sheet called 'Monsters'. Only found: '" + (jsonifiedBody.sheets.map(sheet => sheet.properties.title).join(', ')) + "'"];
+          return [false, "A planilha deve ter uma aba chamada 'Monstros'. Encontrado: '" + (jsonifiedBody.sheets.map(sheet => sheet.properties.title).join(', ')) + "'"];
         }
 
-        const sources = jsonifiedBody.sheets.find(sheet => sheet.properties.title === 'Sources');
+        const sources = jsonifiedBody.sheets.find(sheet => sheet.properties.title === 'Fontes');
         if (!sources) {
-          return [false, "Your Google Sheets workbook must contain a sheet called 'Sources'. Only found: '" + (jsonifiedBody.sheets.map(sheet => sheet.properties.title).join(', ')) + "'"];
+          return [false, "A planilha deve ter uma aba chamada 'Fontes'. Encontrado: '" + (jsonifiedBody.sheets.map(sheet => sheet.properties.title).join(', ')) + "'"];
         }
 
         return [true];
@@ -115,7 +115,7 @@ export default class Importer {
       return initialLoad;
     }
 
-    let sourcesValid = await fetch(`https://sheets.googleapis.com/v4/spreadsheets/${resourceLocator}/values/Sources?` + new URLSearchParams({
+    let sourcesValid = await fetch(`https://sheets.googleapis.com/v4/spreadsheets/${resourceLocator}/values/Fontes?` + new URLSearchParams({
       key: this.googleApiKey
     }))
       .then(response => response.json())
@@ -136,7 +136,7 @@ export default class Importer {
       return sourcesValid;
     }
 
-    let monstersValid = await fetch(`https://sheets.googleapis.com/v4/spreadsheets/${resourceLocator}/values/Monsters?` + new URLSearchParams({
+    let monstersValid = await fetch(`https://sheets.googleapis.com/v4/spreadsheets/${resourceLocator}/values/Monstros?` + new URLSearchParams({
       key: this.googleApiKey
     }))
       .then(response => response.json())
@@ -164,15 +164,15 @@ export default class Importer {
     let results = await this._importJson(resourceLocator);
 
     if (!results) {
-      return [false, "Couldn't resolve K+FC data, import source is probably invalid JSON."];
+      return [false, "JSON inválido ou malformado."];
     }
 
     if (!results.sources) {
-      return [false, "Your JSON must contain sources."];
+      return [false, "O JSON deve conter uma lista 'sources'."];
     }
 
     if (!results.monsters) {
-      return [false, "Your JSON has sources, but must also contain monsters."];
+      return [false, "O JSON tem 'sources', mas precisa também de 'monsters'."];
     }
 
     const validSources = this._validateSources(results.sources);
@@ -190,21 +190,21 @@ export default class Importer {
 
   static async _validateJsonFile(resourceLocator) {
     if (resourceLocator.type !== 'application/json') {
-      return [false, "The file you provided isn't a text file containing JSON."];
+      return [false, "O arquivo não é um JSON válido."];
     }
 
     let results = await this._importJsonFile(resourceLocator);
 
     if (!results) {
-      return [false, "Couldn't resolve K+FC data, import source is probably invalid JSON."];
+      return [false, "JSON inválido ou malformado."];
     }
 
     if (!results.sources) {
-      return [false, "Your JSON must contain sources."];
+      return [false, "O JSON deve conter uma lista 'sources'."];
     }
 
     if (!results.monsters) {
-      return [false, "Your JSON has sources, but must also contain monsters."];
+      return [false, "O JSON tem 'sources', mas precisa também de 'monsters'."];
     }
 
     const validSources = this._validateSources(results.sources);
@@ -223,17 +223,17 @@ export default class Importer {
   static async _validateCSV(resourceLocators) {
 
     if (!resourceLocators[0] || !resourceLocators[1]) {
-      return [false, 'Missing a file']
+      return [false, 'Arquivo faltando']
     }
 
     if (resourceLocators[0].type !== 'text/csv' || resourceLocators[1].type !== 'text/csv') {
-      return [false, "The files you provided aren't valid CSV text files."];
+      return [false, "Os arquivos precisam ser CSVs válidos."];
     }
 
     let results = await this._importCSV(resourceLocators);
 
     if (!results) {
-      return [false, "Couldn't resolve K+FC data, import source is probably an invalid CSV file."];
+      return [false, "CSV inválido ou malformado."];
     }
 
     const validSources = this._validateSources(results.sources);
@@ -252,24 +252,24 @@ export default class Importer {
 
   static importerTemplates = {
     'google-sheets': `
-                            <label class="mb-1" for="import_resource_locator">Insert a Google Sheet ID or link. To create your own, you can <a class="primary-link" target="_blank" href="https://docs.google.com/spreadsheets/d/1WtUjr2DosRHlbraFKEbUfQ0QwWfPlBv6sgF605RMoKQ/edit?usp=sharing">refer to this example.</a></label>
+                            <label class="mb-1" for="import_resource_locator">Insira o ID ou link de uma planilha Google Sheets. A planilha deve ter duas abas: <strong>Monstros</strong> e <strong>Fontes</strong>. <a class="primary-link" target="_blank" href="https://docs.google.com/spreadsheets/d/19R7j2m13LVWZBhFyhYRhv8MB85FqjCAC4mUER1QgSXw/edit?usp=sharing">Veja o modelo de exemplo.</a></label>
                             <input name="import_resource_locator" id="import_resource_locator" type="text" v-model="importerResourceLocator">
                         `,
         'json-raw': `
-                            <label class="mb-1" for="import_resource_locator">Input raw JSON or <a href="javascript:;" class="primary-link" @click="$emit('downloadExample')">download an example file to edit.</a></label>
+                            <label class="mb-1" for="import_resource_locator">Cole JSON diretamente ou <a href="javascript:;" class="primary-link" @click="$emit('downloadExample')">baixe um arquivo de exemplo para editar.</a></label>
                             <div class="mt-1">
                                 <textarea id="import_resource_locator" v-model="importerResourceLocator" rows="4" name="comment" class="border-gray-300 focus:ring-emerald-500 focus:border-emerald-500 block w-full rounded-md lg:rounded-r-none sm:text-sm disabled:text-gray-500 disabled:bg-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-400 text-gray-600"></textarea>
                             </div>
                         `,
         'json-file': `
-                            <label class="mb-1 block" id="file_input_label" for="import_resource_locator_file">Upload JSON text file below or <a class="primary-link" href="javascript:;" @click="$emit('downloadExample')">download an example file to edit.</a></label>                
+                            <label class="mb-1 block" id="file_input_label" for="import_resource_locator_file">Envie um arquivo JSON ou <a class="primary-link" href="javascript:;" @click="$emit('downloadExample')">baixe um exemplo para editar.</a></label>
                             <input accept="application/json" class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" @change="importerResourceLocator = $event.target.files[0]" aria-describedby="file_input_label" id="import_resource_locator_file" type="file">
                         `,
         'csv-file': `
-                            <label class="mb-1">Upload CSV text files below or <a class="primary-link" href="javascript:;" @click="$emit('downloadExample')">download example files to edit.</a></label>
-                            <div class="grid grid-cols-2 gap-2 mt-2">                
-                                <label class="" id="file_input_label_1" for="import_resource_locator_file_1">Sources CSV</label>                
-                                <label class="" id="file_input_label_2" for="import_resource_locator_file_2">Monsters CSV</label>                
+                            <label class="mb-1">Envie os arquivos CSV abaixo ou <a class="primary-link" href="javascript:;" @click="$emit('downloadExample')">baixe exemplos para editar.</a></label>
+                            <div class="grid grid-cols-2 gap-2 mt-2">
+                                <label class="" id="file_input_label_1" for="import_resource_locator_file_1">CSV de Fontes</label>
+                                <label class="" id="file_input_label_2" for="import_resource_locator_file_2">CSV de Monstros</label>
                                 <input accept="text/csv" class=" text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" @change="onFileUpdate('importerSourcesFile', $event.target.files)" aria-describedby="file_input_label" id="import_resource_locator_file_1" type="file">
                                 <input accept="text/csv" class=" text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" @change="onFileUpdate('importerMonstersFile', $event.target.files)" aria-describedby="file_input_label" id="import_resource_locator_file_2" type="file">
                             </div>
@@ -340,7 +340,7 @@ export default class Importer {
 
   static async canImport(resourceLocator, type) {
     if (!resourceLocator) {
-      return [false, "You must provide an import source."];
+      return [false, "Forneça uma fonte de importação."];
     }
 
     return this.validators[type].bind(this)(resourceLocator);
@@ -361,35 +361,33 @@ export default class Importer {
       }
     }
 
-    let monsters = await fetch(`https://sheets.googleapis.com/v4/spreadsheets/${resourceLocator}/values/Monsters?` + new URLSearchParams({
+    let monsters = await fetch(`https://sheets.googleapis.com/v4/spreadsheets/${resourceLocator}/values/Monstros?` + new URLSearchParams({
       key: this.googleApiKey
     }))
       .then(response => response.json())
       .then(jsonifiedBody => {
         let headers = jsonifiedBody.values.splice(0, 1)[0].map(str => str.toLowerCase());
+        const idx = (key) => headers.indexOf(key);
         return jsonifiedBody.values.map((item) => ({
-          "name": item[headers.indexOf("name")],
-          "cr": item[headers.indexOf("cr")],
-          "size": item[headers.indexOf("size")],
-          "type": item[headers.indexOf("type")],
-          "tags": item[headers.indexOf("tags")],
-          "section": item[headers.indexOf("section")],
-          "alignment": item[headers.indexOf("alignment")].toLowerCase(),
-          "environment": item[headers.indexOf("environment")].toLowerCase(),
-          "ac": item[headers.indexOf("ac")],
-          "hp": item[headers.indexOf("hp")],
-          "init": item[headers.indexOf("init")],
-          "lair": item[headers.indexOf("lair?")] || item[headers.indexOf("lair")],
-          "legendary": item[headers.indexOf("legendary?")] || item[headers.indexOf("legendary")],
-          "unique": item[headers.indexOf("unique")] || item[headers.indexOf("unique?")],
-          "sources": item[headers.indexOf("sources")],
+          "name": item[idx("name")] ?? "",
+          "nd": item[idx("nd")] ?? "",
+          "size": item[idx("size")] ?? "",
+          "type": item[idx("type")] ?? "",
+          "tags": item[idx("tags")] ?? "",
+          "section": item[idx("section")] ?? "",
+          "role": (item[idx("role")] ?? "").split(",").map(r => r.trim()).filter(Boolean),
+          "defense": item[idx("defense")] ? Number(item[idx("defense")]) : 0,
+          "resistances": item[idx("resistances")] ?? "",
+          "hp": item[idx("hp")] ? Number(item[idx("hp")]) : 0,
+          "init": item[idx("init")] ? Number(item[idx("init")]) : 0,
+          "sources": item[idx("sources")] ?? "",
         }));
       })
       .catch(
         err => console.error(err)
       );
 
-    let sources = await fetch(`https://sheets.googleapis.com/v4/spreadsheets/${resourceLocator}/values/Sources?` + new URLSearchParams({
+    let sources = await fetch(`https://sheets.googleapis.com/v4/spreadsheets/${resourceLocator}/values/Fontes?` + new URLSearchParams({
       key: this.googleApiKey
     }))
       .then(response => response.json())
@@ -435,57 +433,45 @@ export default class Importer {
     const jsonExample = {
       "sources": [
         {
-          "name": "Custom Source",
+          "name": "Fonte Customizada",
           "type": "Custom",
-          "shortname": "CS",
+          "shortname": "FC",
           "link": ""
-        },
-        {
-          "name": "Another Custom Source",
-          "type": "Third-Party",
-          "shortname": "ACS",
-          "link": "https://google.com/"
         },
       ],
       "monsters": [
         {
-          "name": "Zombie",
-          "cr": "1/4",
-          "size": "Medium",
-          "type": "Undead",
-          "tags": "",
-          "section": "Zombies",
-          "alignment": "neutral evil",
-          "environment": "aquatic, arctic, cave, coast, desert, dungeon, forest, grassland, mountain, ruins, swamp, underground, urban",
-          "ac": 8,
+          "name": "Goblin",
+          "nd": 1,
+          "size": "Pequeno",
+          "type": "Humanoide",
+          "tags": "goblin",
+          "section": "Goblins",
+          "role": [],
+          "defense": 13,
+          "resistances": "",
           "hp": 22,
-          "init": -2,
-          "lair": "",
-          "legendary": "",
-          "unique": "",
-          "sources": "Custom Source: 5"
+          "init": 3,
+          "sources": "Fonte Customizada: 5"
         },
         {
-          "name": "Bigger Zombie",
-          "cr": "1/2",
-          "size": "Large",
-          "type": "Undead",
-          "tags": "",
-          "section": "Zombies",
-          "alignment": "neutral evil",
-          "environment": "my custom place",
-          "ac": 10,
-          "hp": 41,
-          "init": -2,
-          "lair": "lair",
-          "legendary": "legendary",
-          "unique": "unique",
-          "sources": "Another Custom Source: 32"
+          "name": "Chefe Goblin",
+          "nd": 3,
+          "size": "Pequeno",
+          "type": "Humanoide",
+          "tags": "goblin",
+          "section": "Goblins",
+          "role": ["Especial"],
+          "defense": 16,
+          "resistances": "resistência a veneno",
+          "hp": 65,
+          "init": 5,
+          "sources": "Fonte Customizada: 7"
         },
       ]
     };
 
-    helpers.downloadFile("example.json", JSON.stringify(jsonExample, null, 4), "application/json");
+    helpers.downloadFile("exemplo.json", JSON.stringify(jsonExample, null, 4), "application/json");
 
   }
 
@@ -515,16 +501,15 @@ export default class Importer {
   static _downloadExampleCSV() {
 
     let sources = "name,type,shortname,link\n";
-    sources += "Custom Source,Custom,CS,\n"
-    sources += "Another Custom Source,Third-Party,ACS,https://google.com/"
+    sources += "Fonte Customizada,Custom,FC,\n";
 
-    helpers.downloadFile("example_sources.csv", sources, "text/csv");
+    helpers.downloadFile("exemplo_fontes.csv", sources, "text/csv");
 
-    let monsters = "name,cr,size,type,tags,section,alignment,environment,ac,hp,init,lair,legendary,unique,sources\n";
-    monsters += `Zombie,1/4,Medium,Undead,,Zombies,neutral evil,"aquatic, arctic, cave, coast, desert, dungeon, forest, grassland, mountain, ruins, swamp, underground, urban",8,22, -2,,,,Custom Source: 5\n`
-    monsters += `Bigger Zombie,1/2,Large,Undead,,Zombies,neutral evil,my custom place,10,41,-2,lair,legendary,unique,Another Custom Source: 32`
+    let monsters = "name,nd,size,type,tags,section,role,defense,resistances,hp,init,sources\n";
+    monsters += `Goblin,1,Pequeno,Humanoide,goblin,Goblins,,13,,22,3,Fonte Customizada: 5\n`;
+    monsters += `Chefe Goblin,3,Pequeno,Humanoide,goblin,Goblins,Especial,16,resistência a veneno,65,5,Fonte Customizada: 7`;
 
-    helpers.downloadFile("example_monsters.csv", monsters, "text/csv");
+    helpers.downloadFile("exemplo_monstros.csv", monsters, "text/csv");
 
   }
 

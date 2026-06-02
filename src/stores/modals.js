@@ -9,6 +9,7 @@ export const useModals = defineStore("modals", {
       sources: false,
       party: false,
       keyboard: false,
+      doacao: false,
     };
   },
   actions: {
@@ -22,7 +23,7 @@ export const useModals = defineStore("modals", {
       this[modalName] = !this[modalName];
     },
     closeAll() {
-      ["importer", "encounter", "sources", "strategy", "party", "keyboard"].forEach(
+      ["importer", "encounter", "sources", "strategy", "party", "keyboard", "doacao"].forEach(
         (modal) => {
           this.hide(modal);
         });

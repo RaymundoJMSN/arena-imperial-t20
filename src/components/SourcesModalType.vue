@@ -40,7 +40,7 @@ function toggleAll() {
         <div class="primary-link cursor-pointer">
           <span
             @click="toggleAll"
-            v-text="anyEnabled ? 'Disable all' : 'Enable all'"
+            v-text="anyEnabled ? 'Desativar todas' : 'Ativar todas'"
           ></span>
         </div>
       </div>

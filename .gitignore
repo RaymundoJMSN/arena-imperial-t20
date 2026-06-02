@@ -17,6 +17,12 @@ coverage
 /cypress/videos/
 /cypress/screenshots/
 
+# Claude Code
+.claude/
+
+# Foundry VTT raw source data (converted to public/json/t20_monsters.json)
+Foundry/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

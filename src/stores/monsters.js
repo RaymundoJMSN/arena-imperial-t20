@@ -2,12 +2,13 @@ import { acceptHMRUpdate, defineStore } from "pinia";
 import { useFilters } from "./filters";
 import { useLocalStorage } from "@vueuse/core/index";
 import Monster from "../js/monster";
+import MonsterT20 from "../js/monster-t20";
 import { versionCompare } from "../js/helpers";
 
 export const useMonsters = defineStore("monsters", {
   state: () => {
     return {
-      version: "2.2.5",
+      version: "3.4.0-t20",
       storedVersion: useLocalStorage("storedMonstersVersion", "2.2.5"),
 
       debugMonsters: useLocalStorage("debugMonsters", false),
@@ -29,19 +30,7 @@ export const useMonsters = defineStore("monsters", {
         versionCompare(this.version, this.storedVersion) !== 0
       ) {
         try {
-          await fetch("/json/se_monsters.json")
-            .then((res) => res.json())
-            .then((data) => {
-              fetched = fetched.concat(data);
-            });
-
-          await fetch("/json/se_third_party_monsters.json")
-            .then((res) => res.json())
-            .then((data) => {
-              fetched = fetched.concat(data);
-            });
-
-          await fetch("/json/se_community_monsters.json")
+          await fetch("/json/t20_monsters.json")
             .then((res) => res.json())
             .then((data) => {
               fetched = fetched.concat(data);
@@ -72,7 +61,7 @@ export const useMonsters = defineStore("monsters", {
     },
 
     includeMonster(monster) {
-      monster = new Monster(monster);
+      monster = monster.nd !== undefined ? new MonsterT20(monster) : new Monster(monster);
       if (this.lookup[monster.slug]) {
         return false;
       }
@@ -88,7 +77,7 @@ export const useMonsters = defineStore("monsters", {
       if (!instancedMonsters.length) {
         return {
           success: false,
-          message: "Monster import only contained duplicates",
+          message: "Importação continha apenas duplicatas.",
         };
       }
 
@@ -97,7 +86,7 @@ export const useMonsters = defineStore("monsters", {
 
       return {
         success: true,
-        message: "Successfully imported monsters",
+        message: "Monstros importados com sucesso.",
       };
     },
 

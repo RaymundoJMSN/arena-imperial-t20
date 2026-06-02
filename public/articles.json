@@ -1,20 +1,33 @@
 {
 	"articles": [
 		{
-			"title": "Flee, Mortals! Support",
-			"text": "MCDM's <a href='https://shop.mcdmproductions.com/collections/flee-mortals-the-mcdm-monster-book' target='_blank'>Flee, Mortals!</a> encounter generation and monsters are now supported in K+FC. This can be found in the settings above the encounter panel.",
-			"action": "Give it a try",
-			"action_type": "source",
-			"source": "mcdm",
-			"date": "2023-08-19"
+			"title": "Arena Imperial T20",
+			"text": "Bem-vindo ao <strong>Arena Imperial T20</strong> — gerador de encontros para Tormenta 20. Monte seu grupo, adicione monstros e calcule o ND do encontro automaticamente.",
+			"date": "2026-06-02"
 		},
 		{
-			"title": "D&D5e 2024 Support",
-			"text": "D&D5e 2024's <a href='https://www.dndbeyond.com/sources/dnd/free-rules/combat' target='_blank'>encounter generation rules</a> are now available in in K+FC. This can be found in the settings above the encounter panel.",
-			"action": "Give it a try",
-			"action_type": "source",
-			"source": "dnd2024",
-			"date": "2025-03-04"
+			"title": "Fichas de Nimb",
+			"text": "<strong>Fichas de Nimb</strong> é uma plataforma online com diversas ferramentas para Tormenta 20 — criação de fichas de personagens e monstros, recompensas, e muito mais. Vale a pena conferir!",
+			"action": "Acessar Fichas de Nimb",
+			"action_type": "link",
+			"action_url": "https://fichasdenimb.com.br/",
+			"date": "2026-06-02"
+		},
+		{
+			"title": "Jambô Editora — Loja Oficial",
+			"text": "Adquira os livros oficiais de Tormenta 20: <a href='https://jamboeditora.com.br/produto/tormenta20-edicao-jogo-do-ano/' target='_blank'>Livro Básico (JdA)</a>, <a href='https://jamboeditora.com.br/produto/ameacas-de-arton/' target='_blank'>Ameaças de Arton</a>, <a href='https://jamboeditora.com.br/produto/tormenta20-deuses-de-arton/' target='_blank'>Deuses de Arton</a> e <a href='https://jamboeditora.com.br/produto/tormenta20-guia-de-npcs/' target='_blank'>Guia de NPCs</a>.",
+			"action": "Ver loja Jambô",
+			"action_type": "link",
+			"action_url": "https://jamboeditora.com.br/",
+			"date": "2026-06-02"
+		},
+		{
+			"title": "Campanhas no Catarse",
+			"text": "Acompanhe e apoie as campanhas de financiamento coletivo da Jambô Editora para novos produtos de Tormenta 20.",
+			"action": "Ver campanhas",
+			"action_type": "link",
+			"action_url": "https://www.catarse.com.br/jamboeditora/campaigns",
+			"date": "2026-06-02"
 		}
 	]
 }

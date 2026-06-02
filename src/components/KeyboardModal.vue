@@ -20,7 +20,7 @@ function formatHotkey(hotkey) {
 onBeforeMount(() => {
   hotkeys.register(
     "ctrl+/, command+/",
-    "Displays this help window",
+    "Exibe esta janela de atalhos",
     () => {
       modals.toggle("keyboard");
 
@@ -32,7 +32,7 @@ onBeforeMount(() => {
 </script>
 
 <template>
-  <Modal v-model:show="modals.keyboard" title="Keyboard Shortcuts">
+  <Modal v-model:show="modals.keyboard" title="Atalhos de Teclado">
     <div class="my-3 sm:mt-0 w-full">
       <div
         class="my-2 max-h-96 overflow-y-auto overflow-x-hidden text-gray-700 dark:text-gray-300"
@@ -57,7 +57,7 @@ onBeforeMount(() => {
         type="button"
         class="button-primary-md"
       >
-        Close
+        Fechar
       </button>
     </template>
   </Modal>

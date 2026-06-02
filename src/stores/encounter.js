@@ -18,13 +18,13 @@ export const useEncounter = defineStore("encounter", {
       difficulty: helpers.migrateLocalStorage(
         "encounterDifficulty",
         "difficulty",
-        "moderate"
+        "moderado"
       ),
-      type: helpers.migrateLocalStorage(
-        "encounterGenerateType",
-        "encounterType",
-        "random"
-      ),
+      type: (() => {
+        const val = helpers.migrateLocalStorage("encounterGenerateType", "encounterType", "aleatorio");
+        const t20Types = ["aleatorio", "solo", "lacaios", "lider_lacaios", "bando", "enxame"];
+        return t20Types.includes(val) ? val : "aleatorio";
+      })(),
       history: helpers.migrateLocalStorage(
         "encounterGenerateHistory",
         "encounterHistory",
@@ -36,13 +36,17 @@ export const useEncounter = defineStore("encounter", {
         []
       ),
       availableStrategies: strategies,
-      strategy: useLocalStorage("strategy", "dnd2024"),
+      strategy: useLocalStorage("strategy", "t20"),
     };
   },
   actions: {
     setStrategy(strategy) {
       this.strategy = strategy;
       this.difficulty = strategies[strategy].defaultDifficulty;
+      const types = strategies[strategy].encounterTypes;
+      if (types && !types[this.type]) {
+        this.type = strategies[strategy].defaultEncounterType ?? Object.keys(types)[0];
+      }
     },
 
     getDifficultyFromCr(cr) {
@@ -148,7 +152,7 @@ export const useEncounter = defineStore("encounter", {
         this.saved = [...this.saved, encounter];
       }
       useNotifications().notify({
-        title: "Encounter saved",
+        title: "Encontro salvo",
       });
     },
 
@@ -158,7 +162,7 @@ export const useEncounter = defineStore("encounter", {
       this.history.push(encounter);
       this.load(encounter);
       useNotifications().notify({
-        title: "Encounter loaded",
+        title: "Encontro carregado",
         body: this.groups
           .map((group) => `${group.monster.name} x${group.count}`)
           .join(", "),
@@ -184,7 +188,7 @@ export const useEncounter = defineStore("encounter", {
       this.loadedIndex = index;
       this.load(this.saved[index]);
       useNotifications().notify({
-        title: "Encounter loaded",
+        title: "Encontro carregado",
         body: this.groups
           .map((group) => `${group.monster.name} x${group.count}`)
           .join(", "),
@@ -197,7 +201,7 @@ export const useEncounter = defineStore("encounter", {
         this.clear();
       }
       this.saved.splice(index, 1);
-      useNotifications().notify({ title: "Encounter deleted" });
+      useNotifications().notify({ title: "Encontro excluído" });
     },
 
     clear() {
@@ -244,7 +248,7 @@ export const useEncounter = defineStore("encounter", {
     },
 
     encounterStrategy() {
-      return this.availableStrategies[this.strategy];
+      return this.availableStrategies[this.strategy] ?? this.availableStrategies["t20"];
     }
   },
 });

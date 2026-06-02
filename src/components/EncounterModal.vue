@@ -26,9 +26,9 @@ function generateNew() {
           name="tabs"
           class="text-center border-gray-300 shadow-sm focus:ring-emerald-500 focus:border-emerald-500 block w-full p-1.5 pr-0 sm:text-sm disabled:text-gray-500 disabled:bg-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-400 text-gray-600 rounded-md"
         >
-          <option value="history" selected>Encounter History</option>
+          <option value="history" selected>Histórico de Encontros</option>
 
-          <option value="saved">Saved Encounters</option>
+          <option value="saved">Encontros Salvos</option>
         </select>
       </div>
       <div class="hidden w-full sm:block">
@@ -48,7 +48,7 @@ function generateNew() {
               }"
               class="inline-block whitespace-nowrap py-4 px-1 border-b-2 font-medium"
             >
-              <i class="fa fa-history pr-2"></i> Encounter History
+              <i class="fa fa-history pr-2"></i> Histórico de Encontros
             </a>
 
             <a
@@ -61,7 +61,7 @@ function generateNew() {
               }"
               class="inline-block whitespace-nowrap py-4 px-1 border-b-2 font-medium"
             >
-              <i class="fa fa-save pr-2"></i> Saved Encounters
+              <i class="fa fa-save pr-2"></i> Encontros Salvos
             </a>
           </nav>
         </div>
@@ -127,7 +127,7 @@ function generateNew() {
                 "
                 class="text-emerald-600 h-full flex items-center justify-center"
               >
-                <i class="fa fa-check-circle pr-1"></i> Loaded
+                <i class="fa fa-check-circle pr-1"></i> Carregado
               </div>
               <div
                 v-show="
@@ -136,13 +136,13 @@ function generateNew() {
                 "
                 class="items-center h-full justify-center cursor-pointer select-none hidden group-hover:flex text-gray-700 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100"
               >
-                <i class="pr-1 fas fa-upload"></i> Load
+                <i class="pr-1 fas fa-upload"></i> Carregar
               </div>
               <div
                 class="items-center justify-center h-full cursor-pointer select-none hidden group-hover:flex text-red-700 dark:text-red-400 hover:text-red-900 dark:hover:text-red-600"
                 @click.stop="encounter.deleteSaved(index)"
               >
-                <i class="pr-1 fas fa-times"></i> Delete
+                <i class="pr-1 fas fa-times"></i> Excluir
               </div>
             </div>
           </div>
@@ -157,7 +157,7 @@ function generateNew() {
         <span
           class="mt-2 block text-sm font-medium text-gray-900 dark:text-gray-200"
         >
-          You have no encounters saved
+          Nenhum encontro salvo
         </span>
       </div>
     </div>
@@ -223,7 +223,7 @@ function generateNew() {
                 <div
                   class="hidden group-hover:block text-gray-900 dark:text-gray-100"
                 >
-                  Load <i class="fa fa-arrow-right"></i>
+                  Carregar <i class="fa fa-arrow-right"></i>
                 </div>
                 <div
                   v-show="
@@ -253,7 +253,7 @@ function generateNew() {
         <span
           class="mt-2 block text-sm font-medium text-gray-900 dark:text-gray-200"
         >
-          Roll for history
+          Rolar histórico
         </span>
       </button>
     </div>
@@ -264,7 +264,7 @@ function generateNew() {
         type="button"
         class="button-primary-md"
       >
-        Close
+        Fechar
       </button>
       <button
         v-show="tab === 'history'"
@@ -272,7 +272,7 @@ function generateNew() {
         type="button"
         class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-emerald-700 dark:bg-emerald-100 dark:bg-transparent dark:text-emerald-500 dark:hover:bg-emerald-800 dark:hover:text-white hover:bg-emerald-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"
       >
-        <i class="fa fa-times mr-1"></i> Clear History
+        <i class="fa fa-times mr-1"></i> Limpar Histórico
       </button>
     </template>
   </Modal>
