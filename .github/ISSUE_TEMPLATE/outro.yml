@@ -1,0 +1,19 @@
+name: Outro problema / sugestão
+description: Bug no site, sugestão de melhoria ou qualquer outra coisa
+labels: ["outro"]
+body:
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Descrição
+      placeholder: Descreva o problema ou sugestão...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproducao
+    attributes:
+      label: Como reproduzir (se for bug)
+      placeholder: Passos para reproduzir o problema...
+    validations:
+      required: false

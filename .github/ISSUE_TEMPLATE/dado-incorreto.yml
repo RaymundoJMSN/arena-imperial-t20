@@ -1,0 +1,49 @@
+name: Dado incorreto
+description: Reportar ND, tipo, tamanho, papel ou outro dado errado de um monstro
+labels: ["dado-incorreto"]
+body:
+  - type: input
+    id: nome
+    attributes:
+      label: Nome do monstro
+      placeholder: ex. Trog Guerreiro
+    validations:
+      required: true
+
+  - type: input
+    id: livro
+    attributes:
+      label: Livro / Fonte
+      placeholder: ex. Ameaças de Arton
+    validations:
+      required: true
+
+  - type: dropdown
+    id: campo
+    attributes:
+      label: Qual campo está errado?
+      options:
+        - ND
+        - Tipo
+        - Tamanho
+        - Papel de Combate
+        - Subtipo / Tag
+        - Outro
+    validations:
+      required: true
+
+  - type: input
+    id: valor-atual
+    attributes:
+      label: Valor atual no app
+      placeholder: ex. ND 3
+    validations:
+      required: true
+
+  - type: input
+    id: valor-correto
+    attributes:
+      label: Valor correto (conforme o livro)
+      placeholder: ex. ND 4
+    validations:
+      required: true

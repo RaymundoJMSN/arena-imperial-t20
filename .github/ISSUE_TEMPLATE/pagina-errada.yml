@@ -1,0 +1,35 @@
+name: Página incorreta
+description: Reportar um monstro com número de página errado no livro
+labels: ["pagina-errada"]
+body:
+  - type: input
+    id: nome
+    attributes:
+      label: Nome do monstro
+      placeholder: ex. Goblin
+    validations:
+      required: true
+
+  - type: input
+    id: livro
+    attributes:
+      label: Livro / Fonte
+      placeholder: ex. Ameaças de Arton
+    validations:
+      required: true
+
+  - type: input
+    id: pagina-atual
+    attributes:
+      label: Página exibida no app
+      placeholder: ex. 45
+    validations:
+      required: true
+
+  - type: input
+    id: pagina-correta
+    attributes:
+      label: Página correta no livro
+      placeholder: ex. 47
+    validations:
+      required: true

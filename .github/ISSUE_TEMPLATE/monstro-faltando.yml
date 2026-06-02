@@ -1,0 +1,43 @@
+name: Monstro faltando
+description: Reportar um monstro que deveria estar no banco de dados mas não está
+labels: ["monstro-faltando"]
+body:
+  - type: input
+    id: nome
+    attributes:
+      label: Nome do monstro
+      placeholder: ex. Dragão Ancião do Caos
+    validations:
+      required: true
+
+  - type: input
+    id: livro
+    attributes:
+      label: Livro / Fonte
+      placeholder: ex. Ameaças de Arton, Livro Básico, Deuses de Arton...
+    validations:
+      required: true
+
+  - type: input
+    id: pagina
+    attributes:
+      label: Página
+      placeholder: ex. 47
+    validations:
+      required: false
+
+  - type: input
+    id: nd
+    attributes:
+      label: ND do monstro
+      placeholder: ex. 8, 1/2, S
+    validations:
+      required: false
+
+  - type: textarea
+    id: notas
+    attributes:
+      label: Informações adicionais
+      placeholder: Tipo, tamanho, papel de combate, etc.
+    validations:
+      required: false
