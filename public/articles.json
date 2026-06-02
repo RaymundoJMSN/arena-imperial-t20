@@ -1,11 +1,6 @@
 {
 	"articles": [
 		{
-			"title": "Versão 1.0.2 — Novo ícone",
-			"text": "Atualização <strong>1.0.2</strong> disponível com o ícone da Arena Imperial corrigido no app desktop. Se você baixou a versão anterior, o app deve notificar automaticamente.",
-			"date": "2026-06-02"
-		},
-		{
 			"title": "Arena Imperial T20",
 			"text": "Bem-vindo ao <strong>Arena Imperial T20</strong> — gerador de encontros para Tormenta 20. Monte seu grupo, adicione monstros e calcule o ND do encontro automaticamente.",
 			"date": "2026-06-02"

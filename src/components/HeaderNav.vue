@@ -28,9 +28,8 @@ const menu = ref(false);
                 src="/images/arena-logo.svg"
                 alt="Arena Imperial T20"
               />
-              <span class="hidden md:inline pl-2 text-lg font-bold text-white"
-                >Arena Imperial T20</span
-              >
+              <span class="hidden md:inline pl-2 text-lg font-bold text-white">Arena Imperial T20</span>
+              <span class="hidden md:inline pl-1.5 text-xs text-emerald-300 font-mono">v{{ __APP_VERSION__ }}</span>
             </RouterLink>
           </div>
         </div>

@@ -7,6 +7,11 @@ Vue 3 + Vite + Pinia + TailwindCSS + Tauri v1 (desktop Windows)
 
 Sempre commitar com mensagem em PT-BR descrevendo o que mudou.
 
+## Novidades (articles.json)
+
+**NUNCA** adicionar artigos anunciando novas versões do app. O app já mostra a versão no header e notifica atualizações via Tauri updater.
+Novidades são apenas para: ferramentas externas, loja Jambô, campanhas, conteúdo de T20.
+
 ## Ao fazer release (quando usuário pedir deploy/publicar/lançar versão)
 
 **Sempre** executar estes passos em ordem:
