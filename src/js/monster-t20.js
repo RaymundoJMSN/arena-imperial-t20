@@ -104,6 +104,10 @@ export default class MonsterT20 {
     return this.sources.find((source) => source.actual_source.enabled);
   }
 
+  get subtype() {
+    return this.tags;
+  }
+
   get isUnique() {
     return this.role.includes("Solo");
   }
@@ -138,9 +142,9 @@ export default class MonsterT20 {
     const val = (this[key] ?? "").toString().toLowerCase();
     const positiveFilters = filters.filter((f) => !f.startsWith("not-"));
     const negativeFilters = filters.filter((f) => f.startsWith("not-"));
-    let result = positiveFilters.length ? positiveFilters.includes(val) : true;
+    let result = positiveFilters.length ? positiveFilters.map((f) => f.toLowerCase()).includes(val) : true;
     if (negativeFilters.length) {
-      result = result && !negativeFilters.map((f) => f.split("-")[1]).includes(val);
+      result = result && !negativeFilters.map((f) => f.split("-")[1].toLowerCase()).includes(val);
     }
     return result;
   }

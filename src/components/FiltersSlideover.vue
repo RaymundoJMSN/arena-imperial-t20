@@ -158,6 +158,22 @@ defineProps({
                   <div
                     class="block font-medium text-gray-700 dark:text-gray-300 mb-1"
                   >
+                    Subtipo
+                  </div>
+
+                  <Multiselect
+                    mode="tags"
+                    placeholder="Qualquer subtipo"
+                    v-model="filters.subtype"
+                    :options="filters.subtypeOptions"
+                    :searchable="true"
+                  ></Multiselect>
+                </div>
+
+                <div>
+                  <div
+                    class="block font-medium text-gray-700 dark:text-gray-300 mb-1"
+                  >
                     Papel de Combate
                   </div>
 

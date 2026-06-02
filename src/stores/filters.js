@@ -11,6 +11,7 @@ export const useFilters = defineStore("filters", {
         size: [],
         role: [],
         type: [],
+        subtype: [],
         cr: {
           min: 0,
           max: 23,
@@ -40,6 +41,7 @@ export const useFilters = defineStore("filters", {
         { value: "Bando",    label: "Bando" },
       ],
       type: helpers.migrateLocalStorage("filtersType", "type", []),
+      subtype: helpers.migrateLocalStorage("filtersSubtype", "subtype", []),
       typeOptions: [
         { value: "Animal",     label: "Animal" },
         { value: "Construto",  label: "Construto" },
@@ -120,6 +122,7 @@ export const useFilters = defineStore("filters", {
           size: this.size,
           role: this.role,
           type: this.type,
+          subtype: this.subtype,
           minCr: this.minCr,
           maxCr: this.maxCr,
         }),
@@ -127,7 +130,7 @@ export const useFilters = defineStore("filters", {
       });
     },
     getNonDefault(state = this) {
-      return ["search", "size", "role", "type", "cr"]
+      return ["search", "size", "role", "type", "subtype", "cr"]
         .filter(
           (field) =>
             JSON.stringify(state[field]) !==
@@ -144,11 +147,29 @@ export const useFilters = defineStore("filters", {
           size: (monster) => monster.filter("size", state.size),
           role: (monster) => monster.filter("role", state.role),
           type: (monster) => monster.filter("type", state.type),
+          subtype: (monster) => monster.filter("subtype", state.subtype),
           cr: (monster) =>
             monster.cr.numeric >= state.minCr &&
             monster.cr.numeric <= state.maxCr,
         };
       };
+    },
+    subtypeOptions() {
+      const monsters = useMonsters();
+      const seen = new Map();
+      for (const m of monsters.all) {
+        for (const tag of (m.tags ?? [])) {
+          if (!tag || tag === "???") continue;
+          const key = tag.toLowerCase();
+          if (!seen.has(key)) {
+            const label = tag.charAt(0).toUpperCase() + tag.slice(1);
+            seen.set(key, { value: label, label });
+          }
+        }
+      }
+      return [...seen.values()].sort((a, b) =>
+        a.label.localeCompare(b.label, "pt")
+      );
     },
     active() {
       return this.getNonDefault();
