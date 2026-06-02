@@ -4,7 +4,7 @@ Gerador de encontros para **Tormenta 20** — o RPG brasileiro da Jambô Editora
 
 Baseado no [Kobold+ Fight Club](https://github.com/fantasycalendar/kobold-plus-fight-club) (MIT License) por Fantasy Computerworks / Ian Toltz.
 
-🌐 **Site**: https://raymundojmsn.github.io/arena-imperial-t20/
+🌐 **Site**: https://arena.raynathus.com.br
 
 ---
 

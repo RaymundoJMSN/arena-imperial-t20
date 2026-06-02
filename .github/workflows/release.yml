@@ -44,6 +44,6 @@ jobs:
             Baixe o arquivo `.msi` abaixo e execute. O instalador configura tudo automaticamente.
 
             ### Também disponível como site
-            https://raynathus.github.io/arena-imperial-t20/
+            https://arena.raynathus.com.br
           releaseDraft: false
           prerelease: false
