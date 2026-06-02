@@ -59,3 +59,23 @@ jobs:
           releaseDraft: false
           prerelease: false
           includeUpdaterJson: true
+
+      - name: Patch latest.json para usar NSIS (evita loop de update MSI)
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p ./update-patch
+          gh release download ${{ github.ref_name }} --repo ${{ github.repository }} --pattern latest.json -D ./update-patch
+          python3 -c "
+          import json
+          with open('./update-patch/latest.json') as f:
+              d = json.load(f)
+          plat = d['platforms']
+          if 'windows-x86_64-nsis' in plat:
+              plat['windows-x86_64'] = plat['windows-x86_64-nsis']
+          with open('./update-patch/latest.json', 'w') as f:
+              json.dump(d, f, indent=2)
+          print('Patched: windows-x86_64 agora aponta para NSIS')
+          "
+          gh release upload ${{ github.ref_name }} --repo ${{ github.repository }} ./update-patch/latest.json --clobber
