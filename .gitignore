@@ -20,6 +20,10 @@ coverage
 # Claude Code
 .claude/
 
+# Tauri signing keys (NUNCA commitar a chave privada)
+tauri-update.key
+tauri-update.key.pub
+
 # Foundry VTT raw source data (converted to public/json/t20_monsters.json)
 Foundry/
 
