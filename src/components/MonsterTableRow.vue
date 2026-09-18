@@ -1,5 +1,6 @@
 <script setup>
 import {useEncounter} from "../stores/encounter";
+import {useModals} from "../stores/modals";
 import Monster from "../js/monster";
 import Badge from "./Badge.vue";
 
@@ -10,6 +11,7 @@ const props = defineProps({
 });
 
 const encounter = useEncounter();
+const modals = useModals();
 </script>
 
 <template>
@@ -29,7 +31,7 @@ const encounter = useEncounter();
     <td
       class="w-full max-w-0 py-2 px-3 text-sm font-medium text-gray-900 dark:text-gray-100 w-64 max-w-64 truncate"
     >
-      <span class="truncate" v-text="monster.name"></span>
+      <span class="truncate cursor-pointer hover:underline decoration-dotted underline-offset-2" title="Ver ficha completa" @click="modals.showSheet(monster)" v-text="monster.name"></span>
       <span v-show="monster.tags.length" class="inline-flex space-x-1 ml-2">
         <Badge v-for="tag in monster.tags">
           {{ tag.toLowerCase() }}

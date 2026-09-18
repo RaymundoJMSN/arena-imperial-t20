@@ -6,7 +6,8 @@
           :title="group.monster.name"
           data-tippy-placement="top-start"
           data-tippy-delay="1000"
-          class="pr-1 font-semibold max-w-full overflow-ellipsis truncate"
+          class="pr-1 font-semibold max-w-full overflow-ellipsis truncate cursor-pointer hover:underline decoration-dotted underline-offset-2"
+          @click="verFicha"
           v-text="group.monster.name"
         ></span>
         <button
@@ -124,6 +125,7 @@
 
 <script>
 import * as helpers from "../js/helpers";
+import { useModals } from "../stores/modals";
 import Badge from "./Badge.vue";
 
 export default {
@@ -142,6 +144,9 @@ export default {
   methods: {
     formatNumber(number) {
       return helpers.formatNumber(number);
+    },
+    verFicha() {
+      useModals().showSheet(this.group.monster);
     },
   },
 };

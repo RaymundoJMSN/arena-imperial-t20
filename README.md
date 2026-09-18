@@ -15,7 +15,7 @@ Baseado no [Kobold+ Fight Club](https://github.com/fantasycalendar/kobold-plus-f
 - Calcula o **ND do Grupo** automaticamente a partir dos níveis dos personagens
 - Suporta dificuldades: Fácil, Moderado, Difícil
 - Gera encontros por tipo: Aleatório, Solo, Lacaios, Líder + Lacaios, Bando, Enxame
-- **525 monstros** do Bestiário de Arton e Livro Básico com páginas de referência
+- **638 monstros (610 com a ficha completa do Arsenal)** do Bestiário de Arton e Livro Básico com páginas de referência
 - Filtros por ND, Tamanho, Tipo, Subtipo e Papel de Combate
 - Importação de monstros personalizados via Google Sheets ou CSV
 - App desktop com **atualização automática** (Windows)

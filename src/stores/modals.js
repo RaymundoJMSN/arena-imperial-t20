@@ -10,11 +10,17 @@ export const useModals = defineStore("modals", {
       party: false,
       keyboard: false,
       doacao: false,
+      ficha: false,
+      sheet: null, // monstro cuja ficha completa está aberta
     };
   },
   actions: {
     show(modalName) {
       this[modalName] = true;
+    },
+    showSheet(monster) {
+      this.sheet = monster;
+      this.ficha = true;
     },
     hide(modalName) {
       this[modalName] = false;
@@ -23,7 +29,7 @@ export const useModals = defineStore("modals", {
       this[modalName] = !this[modalName];
     },
     closeAll() {
-      ["importer", "encounter", "sources", "strategy", "party", "keyboard", "doacao"].forEach(
+      ["importer", "encounter", "sources", "strategy", "party", "keyboard", "doacao", "ficha"].forEach(
         (modal) => {
           this.hide(modal);
         });

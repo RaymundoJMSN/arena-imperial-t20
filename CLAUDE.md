@@ -91,10 +91,21 @@ O auto-update usa `tauri-update.key` (chave privada guardada fora do repo) + `TA
 
 ## Banco de monstros
 
-- **525 monstros** convertidos do Foundry VTT
-- Fontes: Livro Básico/JdA (64), Ameaças de Arton (253), Deuses de Arton (restante)
+- **638 monstros**: 525 convertidos do Foundry VTT + 113 que só existem no Arsenal
+  (Guia de NPCs, aspectos dos deuses, NPCs do Deuses de Arton)
+- Fontes: Livro Básico/JdA (64), Ameaças de Arton (253), Deuses de Arton, Guia de NPCs
 - Páginas mapeadas para AdA e LB via scripts `map-toc.js` e `map-toc-livrobasico.js`
 - Campos: `name`, `nd`, `size`, `type`, `role[]`, `tags[]`, `defense`, `hp`, `init`, `resistances`, `section`, `sources`
+- **`ficha`** (2026-09-18, em 610 monstros): a ficha completa do
+  [Arsenal](https://github.com/nicholemos/arsenal) do Nicholas Lemos — `img` (imgur),
+  iniciativa/percepção/defesa/fort/ref/von/pv/pm/desl, `atributos`, `ataques[]`,
+  `habilidades[]`, perícias, equipamento, tesouro, observação. `scripts/merge-arsenal.js`
+  casa por nome normalizado com `../arsenal/ameacas/ameacas_db.js` e acrescenta os que faltam
+  (`role: []` — a estratégia cai no "qualquer papel"; ND `-`/`?` é pulado). Rodar de novo
+  quando o arsenal atualizar. **Sempre subir `version` em `src/stores/monsters.js`** ao mexer
+  no JSON: o navegador guarda a lista no localStorage por versão e não refaz o fetch.
+- Clique no nome do monstro (tabela ou encontro) abre `MonsterSheetModal.vue`
+  (`modals.showSheet(monster)`; estado `ficha`/`sheet` em `stores/modals.js`).
 
 ## Filtros disponíveis
 

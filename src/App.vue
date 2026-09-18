@@ -8,6 +8,7 @@ import KeyboardModal from "./components/KeyboardModal.vue";
 import SourcesModal from "./components/SourcesModal.vue";
 import PartyModal from "./components/PartyModal.vue";
 import EncounterModal from "./components/EncounterModal.vue";
+import MonsterSheetModal from "./components/MonsterSheetModal.vue";
 import NewsSlideover from "./components/NewsSlideover.vue";
 
 import NotificationArea from "./components/NotificationArea.vue";
@@ -79,6 +80,7 @@ onMounted(async () => {
     <SourcesModal />
     <PartyModal />
     <EncounterModal />
+    <MonsterSheetModal />
     <NewsSlideover />
 
     <NotificationArea />
