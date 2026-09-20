@@ -49,6 +49,9 @@ Sempre commitar com mensagem em PT-BR descrevendo o que mudou.
 | `release.yml` | push de tag `v*` | EXE Windows (.exe NSIS) nas Releases |
 
 **Importante**: o instalador é NSIS (`.exe`), **não MSI**. MSI foi removido porque não substitui versões anteriores corretamente no Windows, causando loop no auto-update.
+**`bundle.targets` tem que ser `["nsis", "updater"]`**: quando o MSI saiu, o `updater` foi junto e
+o CI parou de gerar `latest.json`/`.sig` (avisa só num Warn no log) — 1.0.3 e 1.1.0 saíram sem
+auto-update; consertado na 1.1.1 (2026-09-20).
 
 O auto-update usa `tauri-update.key` (chave privada guardada fora do repo) + `TAURI_PRIVATE_KEY` no GitHub Secrets. O `latest.json` é gerado automaticamente pelo `tauri-apps/tauri-action@v0` e publicado nas releases.
 
