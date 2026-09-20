@@ -47,16 +47,15 @@ export default class MonsterT20 {
     this.unique = this.role.includes("Solo");
     this.special = this.role.includes("Especial");
 
-    this.searchable = [
-      attributes.name,
-      attributes.type,
-      attributes.size,
-      this.cr.string,
-    ]
-      .concat(this.tags)
-      .concat(this.role)
-      .join("|")
-      .toLowerCase();
+    // sem acento e sem hífen: "morto vivo" acha Morto-Vivo, "espirito" acha Espírito
+    this.searchable = helpers.semAcento(
+      [attributes.name, attributes.type, attributes.size, this.cr.string]
+        .concat(this.tags)
+        .concat(this.role)
+        .concat((attributes.ficha?.habilidades ?? []).map((h) => h.nome))
+        .concat((attributes.ficha?.ataques ?? []).map((h) => h.nome))
+        .join("|")
+    );
 
     const sources = useSources();
     this.sources = attributes.sources.split(", ").map((str) => {

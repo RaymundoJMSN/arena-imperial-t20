@@ -19,6 +19,24 @@ const lista = (x) => x == null ? "" : Array.isArray(x)
 const numero = (s) => { const n = parseInt(String(s ?? "").replace(/[^\d-]/g, ""), 10); return isNaN(n) ? 0 : n; };
 const TAMANHOS = ["Minúsculo", "Pequeno", "Médio", "Grande", "Enorme", "Colossal"];
 const TIPOS = { humanoide: "Humanoide", monstro: "Monstro", animal: "Animal", espirito: "Espírito", mortovivo: "Morto-Vivo", construto: "Construto" };
+const COLETIVOS = { bando: "Bando", enxame: "Enxame" }; // subtipo no livro, mas o app filtra como papel de combate
+
+// "Morto-vivo (bando) Grande" → { type, tags, size, coletivo }. Fonte da verdade pra tipo/subtipo/tamanho:
+// o compêndio do Foundry trazia raça no lugar do tipo (Zumbi = "Humanoide"), lixo ("o", "???") e caixa mista.
+function parseTipo(tipoStr) {
+  const m = String(tipoStr || "").trim().match(/^([^\s(]+(?:\s[^\s(]+)*?)\s*(?:\(([^)]*)\))?\s*(Minúsculo|Pequeno|Médio|Grande|Enorme|Colossal)?$/);
+  if (!m) return null;
+  const type = TIPOS[Object.keys(TIPOS).find((k) => norm(m[1]).startsWith(k))];
+  if (!type) return null;
+  const subs = (m[2] || "").split(/\s*,\s*/).map((x) => x.trim().toLowerCase()).filter(Boolean);
+  return {
+    type, size: m[3] || null,
+    tags: subs.filter((x) => !COLETIVOS[x]).join(", "),
+    roles: subs.map((x) => COLETIVOS[x]).filter(Boolean),
+  };
+}
+const limparTags = (tags) => String(tags || "").split(/\s*,\s*/).map((x) => x.trim().toLowerCase()).filter((x) => x.length > 1 && x !== "???").join(", ");
+
 
 function ficha(a) {
   const img = a.imagem || a.img || "";
@@ -39,21 +57,30 @@ function ficha(a) {
 }
 
 const porNome = new Map(monsters.map((m) => [norm(m.name), m]));
-let casados = 0, novos = 0, pulados = [];
+let casados = 0, novos = 0, pulados = [], naoParseados = [];
 for (const a of db) {
   if (!a.nome) continue;
   const m = porNome.get(norm(a.nome));
-  if (m) { m.ficha = ficha(a); casados++; continue; }
   const tipoStr = String(a.tipo || "").trim();
-  const base = norm(tipoStr.split(/\s+/)[0]);
-  const tipo = TIPOS[Object.keys(TIPOS).find((k) => base.startsWith(k))] || "Monstro";
+  const t = parseTipo(tipoStr);
+  if (!t) naoParseados.push(`${a.nome}: "${tipoStr}"`);
+  // habilidade "Enxame"/"Bando" é a mecânica de verdade (Nuvem de Estirges, Horda Goblin não trazem o subtipo)
+  for (const h of [...(a.habilidades || []), ...(a.habilities || [])]) { const r = COLETIVOS[norm(h?.nome)]; if (r && t && !t.roles.includes(r)) t.roles.push(r); }
+  if (m) {
+    m.ficha = ficha(a); casados++;
+    if (t) { m.type = t.type; m.tags = t.tags; if (t.size) m.size = t.size; }
+    else m.tags = limparTags(m.tags);
+    m.role = [...new Set([...(m.role || []).filter((r) => !COLETIVOS[r.toLowerCase()]), ...(t?.roles || [])])];
+    continue;
+  }
+  const tipo = t?.type || "Monstro";
   const ndStr = String(a.nd ?? "").trim();
   const nd = /^\d+$/.test(ndStr) ? Number(ndStr) : ndStr;
   if (typeof nd !== "number" && !["S", "S+", "1/4", "1/2"].includes(nd)) { pulados.push(`${a.nome} (ND ${ndStr || "?"})`); continue; }
   const novo = {
-    name: a.nome, nd, type: tipo, tags: (tipoStr.match(/\(([^)]+)\)/) || [])[1] || "",
-    size: TAMANHOS.find((t) => tipoStr.endsWith(t)) || "Médio",
-    role: [], // papel de combate não vem do arsenal; a estratégia cai no "qualquer papel"
+    name: a.nome, nd, type: tipo, tags: t ? t.tags : limparTags((tipoStr.match(/\(([^)]+)\)/) || [])[1]),
+    size: t?.size || TAMANHOS.find((x) => tipoStr.endsWith(x)) || "Médio",
+    role: t?.roles || [], // solo/lacaio/especial é ícone no livro e não vem do arsenal; a estratégia cai no "qualquer papel"
     init: numero(a.iniciativa), defense: numero(a.defesa), resistances: texto(a.defesaObs), hp: numero(a.pv),
     sources: a.fonte || "Ameaças de Arton", ficha: ficha(a),
   };
@@ -61,5 +88,6 @@ for (const a of db) {
   porNome.set(norm(a.nome), novo);
   novos++;
 }
+for (const m of monsters) if (!m.ficha) m.tags = limparTags(m.tags); // sem arsenal: só tira lixo
 fs.writeFileSync(out, JSON.stringify(monsters, null, 1) + "\n");
 console.log(`ficha completa em ${casados} monstros, ${novos} novos, total ${monsters.length}` + (pulados.length ? `\npulados (ND inválido): ${pulados.join("; ")}` : ""));

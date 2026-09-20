@@ -103,7 +103,7 @@ export const useFilters = defineStore("filters", {
     searchFor(searchable) {
       return this.isRegex
         ? searchable.match(this.regex)
-        : searchable.includes(this.search.toLowerCase());
+        : searchable.includes(helpers.semAcento(this.search));
     },
     reset() {
       return Object.entries(this.defaults).forEach(

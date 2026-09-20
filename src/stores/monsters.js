@@ -8,7 +8,7 @@ import { versionCompare } from "../js/helpers";
 export const useMonsters = defineStore("monsters", {
   state: () => {
     return {
-      version: "3.5.0-t20", // subir sempre que t20_monsters.json mudar: o navegador guarda a lista no localStorage por versão
+      version: "3.6.0-t20", // subir sempre que t20_monsters.json mudar: o navegador guarda a lista no localStorage por versão
       storedVersion: useLocalStorage("storedMonstersVersion", "2.2.5"),
 
       debugMonsters: useLocalStorage("debugMonsters", false),

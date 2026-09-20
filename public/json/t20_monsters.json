@@ -904,7 +904,7 @@
   "name": "Enxame Larval",
   "nd": 1,
   "type": "Monstro",
-  "tags": "Kobold",
+  "tags": "kobold",
   "size": "Médio",
   "role": [
    "Solo"
@@ -1132,7 +1132,7 @@
   "name": "Gnoll Saqueador",
   "nd": 1,
   "type": "Humanoide",
-  "tags": "Gnoll",
+  "tags": "gnoll",
   "size": "Médio",
   "role": [
    "Lacaio"
@@ -1465,7 +1465,7 @@
   "name": "Kappa Brigão",
   "nd": 1,
   "type": "Espírito",
-  "tags": "Kappa",
+  "tags": "kappa",
   "size": "Médio",
   "role": [
    "Solo"
@@ -1942,7 +1942,7 @@
   "name": "Nezumi Capanga",
   "nd": 1,
   "type": "Humanoide",
-  "tags": "Nezumi",
+  "tags": "nezumi",
   "size": "Pequeno",
   "role": [
    "Lacaio"
@@ -2216,7 +2216,7 @@
   "name": "Sahuagin Predador",
   "nd": 1,
   "type": "Humanoide",
-  "tags": "Sahuagin",
+  "tags": "sahuagin",
   "size": "Médio",
   "role": [
    "Lacaio"
@@ -2360,7 +2360,7 @@
   "name": "Slark",
   "nd": 1,
   "type": "Humanoide",
-  "tags": "Slark",
+  "tags": "slark",
   "size": "Médio",
   "role": [
    "Lacaio"
@@ -2928,7 +2928,7 @@
   "name": "Trog Combatente",
   "nd": 1,
   "type": "Monstro",
-  "tags": "Trog",
+  "tags": "trog",
   "size": "Médio",
   "role": [
    "Lacaio"
@@ -3871,7 +3871,7 @@
  {
   "name": "Corcel do Deserto",
   "nd": 2,
-  "type": "Animal",
+  "type": "Monstro",
   "tags": "",
   "size": "Grande",
   "role": [
@@ -3937,7 +3937,7 @@
   "name": "Diabrete",
   "nd": 2,
   "type": "Espírito",
-  "tags": "Abissal",
+  "tags": "abissal",
   "size": "Minúsculo",
   "role": [
    "Lacaio"
@@ -4008,7 +4008,7 @@
   "name": "Elemental do Veneno Pequeno",
   "nd": 2,
   "type": "Espírito",
-  "tags": "Elemental",
+  "tags": "elemental",
   "size": "Pequeno",
   "role": [
    "Solo"
@@ -4085,7 +4085,7 @@
   "name": "Elfo-do-Mar Pescador",
   "nd": 2,
   "type": "Humanoide",
-  "tags": "Elfo-do-Mar",
+  "tags": "elfo-do-mar",
   "size": "Médio",
   "role": [
    "Lacaio"
@@ -4150,11 +4150,12 @@
  {
   "name": "Enxame Kobold",
   "nd": 2,
-  "type": "Humanoide",
+  "type": "Monstro",
   "tags": "kobold",
   "size": "Médio",
   "role": [
-   "Solo"
+   "Solo",
+   "Enxame"
   ],
   "init": 6,
   "defense": 17,
@@ -4213,8 +4214,8 @@
  {
   "name": "Esqueleto",
   "nd": 2,
-  "type": "Humanoide",
-  "tags": "Morto-vivo",
+  "type": "Morto-Vivo",
+  "tags": "",
   "size": "Médio",
   "role": [
    "Lacaio"
@@ -4728,7 +4729,7 @@
   "name": "Gnoll Filibusteiro",
   "nd": 2,
   "type": "Humanoide",
-  "tags": "Gnoll",
+  "tags": "gnoll",
   "size": "Médio",
   "role": [
    "Solo"
@@ -4794,7 +4795,7 @@
   "name": "Gnoll Xamã de Allihanna",
   "nd": 2,
   "type": "Humanoide",
-  "tags": "Gnoll",
+  "tags": "gnoll",
   "size": "Médio",
   "role": [
    "Especial"
@@ -4877,7 +4878,7 @@
   "name": "Goblin de Sombreiro",
   "nd": 2,
   "type": "Humanoide",
-  "tags": "Goblin",
+  "tags": "goblin",
   "size": "Pequeno",
   "role": [
    "Lacaio"
@@ -5210,7 +5211,7 @@
   "name": "Kobold Veterano",
   "nd": 2,
   "type": "Monstro",
-  "tags": "Kobold",
+  "tags": "kobold",
   "size": "Pequeno",
   "role": [
    "Lacaio"
@@ -6176,7 +6177,7 @@
   "name": "Pteros Ceifador",
   "nd": 2,
   "type": "Humanoide",
-  "tags": "Pteros",
+  "tags": "pteros",
   "size": "Médio",
   "role": [
    "Lacaio"
@@ -6241,7 +6242,7 @@
   "name": "Purificado",
   "nd": 2,
   "type": "Humanoide",
-  "tags": "Hynne",
+  "tags": "hynne",
   "size": "Pequeno",
   "role": [
    "Lacaio"
@@ -6304,7 +6305,7 @@
   "name": "Raposa Bucaneira",
   "nd": 2,
   "type": "Humanoide",
-  "tags": "Moreau",
+  "tags": "moreau",
   "size": "Médio",
   "role": [
    "Especial"
@@ -6388,7 +6389,7 @@
   "name": "Sacerdote de Hyninn",
   "nd": 2,
   "type": "Humanoide",
-  "tags": "Goblin",
+  "tags": "goblin",
   "size": "Pequeno",
   "role": [
    "Especial"
@@ -6613,7 +6614,7 @@
   "name": "Soterrado vagante",
   "nd": 2,
   "type": "Morto-Vivo",
-  "tags": "Morto-vivo",
+  "tags": "",
   "size": "Médio",
   "role": [
    "Lacaio"
@@ -6683,8 +6684,8 @@
  {
   "name": "Trog Caçador",
   "nd": 2,
-  "type": "Humanoide",
-  "tags": "Trog",
+  "type": "Monstro",
+  "tags": "trog",
   "size": "Médio",
   "role": [
    "Lacaio"
@@ -6832,11 +6833,12 @@
  {
   "name": "Turba Zumbi",
   "nd": 2,
-  "type": "Humanoide",
-  "tags": "bando",
+  "type": "Morto-Vivo",
+  "tags": "",
   "size": "Grande",
   "role": [
-   "Lacaio"
+   "Lacaio",
+   "Bando"
   ],
   "init": 1,
   "defense": 11,
@@ -6897,8 +6899,8 @@
  {
   "name": "Yidishan Bugbear",
   "nd": 2,
-  "type": "Humanoide",
-  "tags": "",
+  "type": "Construto",
+  "tags": "yidishan",
   "size": "Médio",
   "role": [
    "Especial"
@@ -6969,7 +6971,7 @@
   "name": "Acólito de Kally",
   "nd": 3,
   "type": "Humanoide",
-  "tags": "Humano",
+  "tags": "humano",
   "size": "Médio",
   "role": [
    "Especial"
@@ -7247,7 +7249,7 @@
   "name": "Capanga Minotauro",
   "nd": 3,
   "type": "Humanoide",
-  "tags": "Minotauro",
+  "tags": "minotauro",
   "size": "Médio",
   "role": [
    "Lacaio"
@@ -7483,7 +7485,7 @@
   "name": "Ceratops Guerreiro",
   "nd": 3,
   "type": "Humanoide",
-  "tags": "Ceratops",
+  "tags": "ceratops",
   "size": "Grande",
   "role": [
    "Especial"
@@ -7878,7 +7880,7 @@
   "nd": 3,
   "type": "Monstro",
   "tags": "dragão",
-  "size": "Médio",
+  "size": "Grande",
   "role": [
    "Solo"
   ],
@@ -8435,7 +8437,7 @@
   "name": "Guerreiro de Chifres",
   "nd": 3,
   "type": "Espírito",
-  "tags": "demônio",
+  "tags": "abissal",
   "size": "Médio",
   "role": [
    "Solo"
@@ -8773,8 +8775,8 @@
  {
   "name": "Iniciada de Sszzaas",
   "nd": 3,
-  "type": "Humanoide",
-  "tags": "Medusa",
+  "type": "Monstro",
+  "tags": "medusa",
   "size": "Médio",
   "role": [
    "Especial"
@@ -8875,7 +8877,7 @@
   "name": "Iniciado da Agonia",
   "nd": 3,
   "type": "Humanoide",
-  "tags": "Humano",
+  "tags": "humano",
   "size": "Médio",
   "role": [
    "Lacaio"
@@ -8934,7 +8936,7 @@
   "name": "Kappa Yokozuna",
   "nd": 3,
   "type": "Espírito",
-  "tags": "Kappa",
+  "tags": "kappa",
   "size": "Médio",
   "role": [
    "Solo"
@@ -9017,7 +9019,7 @@
   "name": "Kobold Xamã",
   "nd": 3,
   "type": "Monstro",
-  "tags": "Kobold",
+  "tags": "kobold",
   "size": "Pequeno",
   "role": [
    "Especial"
@@ -9204,7 +9206,7 @@
   "name": "Mashin Monge",
   "nd": 3,
   "type": "Construto",
-  "tags": "Golem",
+  "tags": "golem",
   "size": "Médio",
   "role": [
    "Solo"
@@ -9276,7 +9278,7 @@
   "name": "Mercenário de Aslothia",
   "nd": 3,
   "type": "Monstro",
-  "tags": "Lefou",
+  "tags": "lefou",
   "size": "Médio",
   "role": [
    "Lacaio"
@@ -9412,7 +9414,7 @@
   "name": "Nagah Dormente",
   "nd": 3,
   "type": "Humanoide",
-  "tags": "Nagah",
+  "tags": "nagah",
   "size": "Médio",
   "role": [
    "Lacaio"
@@ -9569,7 +9571,7 @@
   "name": "Nezumi Ninja",
   "nd": 3,
   "type": "Humanoide",
-  "tags": "Nezumi",
+  "tags": "nezumi",
   "size": "Pequeno",
   "role": [
    "Especial"
@@ -9719,7 +9721,7 @@
   "name": "Sahuagin Metamorfo",
   "nd": 3,
   "type": "Humanoide",
-  "tags": "Sahuagin",
+  "tags": "sahuagin",
   "size": "Médio",
   "role": [
    "Solo"
@@ -10089,7 +10091,7 @@
   "name": "Tabrachi Campeão",
   "nd": 3,
   "type": "Humanoide",
-  "tags": "Tabrachi",
+  "tags": "tabrachi",
   "size": "Médio",
   "role": [
    "Solo"
@@ -10550,7 +10552,7 @@
   "name": "Arcano de Guerra Adepto",
   "nd": 4,
   "type": "Humanoide",
-  "tags": "Humano",
+  "tags": "humano",
   "size": "Médio",
   "role": [
    "Especial"
@@ -10784,7 +10786,7 @@
   "name": "Capelão de Guerra",
   "nd": 4,
   "type": "Humanoide",
-  "tags": "Humano",
+  "tags": "humano",
   "size": "Médio",
   "role": [
    "Especial"
@@ -11319,7 +11321,7 @@
   "name": "Diabrete Negociante",
   "nd": 4,
   "type": "Espírito",
-  "tags": "Abissal",
+  "tags": "abissal",
   "size": "Pequeno",
   "role": [
    "Especial"
@@ -11467,8 +11469,8 @@
  {
   "name": "Esqueleto de Elite",
   "nd": 4,
-  "type": "Humanoide",
-  "tags": "Morto-vivo",
+  "type": "Morto-Vivo",
+  "tags": "",
   "size": "Médio",
   "role": [
    "Lacaio"
@@ -11650,7 +11652,7 @@
   "name": "Harpia Saqueadora",
   "nd": 4,
   "type": "Monstro",
-  "tags": "Harpia",
+  "tags": "harpia",
   "size": "Médio",
   "role": [
    "Lacaio"
@@ -11722,7 +11724,7 @@
   "name": "Homem-Piranha Imediato",
   "nd": 4,
   "type": "Humanoide",
-  "tags": "Humano",
+  "tags": "humano",
   "size": "Médio",
   "role": [
    "Especial"
@@ -11811,7 +11813,7 @@
   "name": "Imediato",
   "nd": 4,
   "type": "Morto-Vivo",
-  "tags": "Osteon",
+  "tags": "osteon",
   "size": "Médio",
   "role": [
    "Solo"
@@ -11882,7 +11884,7 @@
   "name": "Irukanjin",
   "nd": 4,
   "type": "Humanoide",
-  "tags": "Irukanjin",
+  "tags": "irukanjin",
   "size": "Médio",
   "role": [
    "Solo"
@@ -11953,7 +11955,7 @@
   "name": "Kobold Bruto",
   "nd": 4,
   "type": "Monstro",
-  "tags": "Kobold",
+  "tags": "kobold",
   "size": "Grande",
   "role": [
    "Solo"
@@ -12108,7 +12110,7 @@
   "name": "Nezumi Brutamontes",
   "nd": 4,
   "type": "Humanoide",
-  "tags": "Nezumi",
+  "tags": "nezumi",
   "size": "Pequeno",
   "role": [
    "Solo"
@@ -12195,7 +12197,7 @@
   "name": "Ogro",
   "nd": 4,
   "type": "Humanoide",
-  "tags": "Gigante",
+  "tags": "gigante",
   "size": "Grande",
   "role": [
    "Especial"
@@ -12260,7 +12262,7 @@
   "name": "Patrulha Kobold",
   "nd": 4,
   "type": "Monstro",
-  "tags": "Kobold",
+  "tags": "kobold",
   "size": "Médio",
   "role": [
    "Lacaio"
@@ -12390,7 +12392,7 @@
  {
   "name": "Tatu-Montanha",
   "nd": 4,
-  "type": "Animal",
+  "type": "Monstro",
   "tags": "",
   "size": "Enorme",
   "role": [
@@ -12761,7 +12763,7 @@
   "name": "Velocis Caçador",
   "nd": 4,
   "type": "Humanoide",
-  "tags": "Velocis",
+  "tags": "velocis",
   "size": "Médio",
   "role": [
    "Lacaio"
@@ -12850,8 +12852,8 @@
  {
   "name": "Aparição",
   "nd": 5,
-  "type": "Humanoide",
-  "tags": "Morto-vivo",
+  "type": "Morto-Vivo",
+  "tags": "",
   "size": "Médio",
   "role": [
    "Solo"
@@ -13304,7 +13306,8 @@
   "tags": "",
   "size": "Médio",
   "role": [
-   "Lacaio"
+   "Lacaio",
+   "Enxame"
   ],
   "init": 9,
   "defense": 23,
@@ -13363,8 +13366,8 @@
  {
   "name": "Fanático Lefou",
   "nd": 5,
-  "type": "Humanoide",
-  "tags": "Lefou",
+  "type": "Monstro",
+  "tags": "lefou",
   "size": "Médio",
   "role": [
    "Lacaio"
@@ -13607,7 +13610,8 @@
   "tags": "goblin",
   "size": "Grande",
   "role": [
-   "Solo"
+   "Solo",
+   "Enxame"
   ],
   "init": 5,
   "defense": 20,
@@ -13959,7 +13963,7 @@
   "name": "Gnoll Líder de Alcateia",
   "nd": 5,
   "type": "Humanoide",
-  "tags": "Gnoll",
+  "tags": "gnoll",
   "size": "Médio",
   "role": [
    "Solo"
@@ -14031,7 +14035,7 @@
   "name": "Gnoll Xamã de Megalokk",
   "nd": 5,
   "type": "Humanoide",
-  "tags": "Gnoll",
+  "tags": "gnoll",
   "size": "Médio",
   "role": [
    "Especial"
@@ -14121,7 +14125,7 @@
   "nd": 5,
   "type": "Humanoide",
   "tags": "goblin",
-  "size": "Pequeno",
+  "size": "Médio",
   "role": [
    "Especial"
   ],
@@ -14393,7 +14397,7 @@
   "name": "Hynne Dormente",
   "nd": 5,
   "type": "Humanoide",
-  "tags": "Hynne",
+  "tags": "hynne",
   "size": "Pequeno",
   "role": [
    "Especial"
@@ -14639,7 +14643,7 @@
   "name": "Mashin Samurai",
   "nd": 5,
   "type": "Construto",
-  "tags": "Mashin",
+  "tags": "golem",
   "size": "Médio",
   "role": [
    "Solo"
@@ -14929,7 +14933,7 @@
   "name": "Nagah Sacerdotisa",
   "nd": 5,
   "type": "Humanoide",
-  "tags": "Nagah",
+  "tags": "nagah",
   "size": "Médio",
   "role": [
    "Especial"
@@ -15049,7 +15053,7 @@
   "name": "Ninhada de Dragões Filhotes",
   "nd": 5,
   "type": "Monstro",
-  "tags": "Dragão",
+  "tags": "dragão",
   "size": "Grande",
   "role": [
    "Solo"
@@ -15514,7 +15518,7 @@
  {
   "name": "Pliorex",
   "nd": 5,
-  "type": "Humanoide",
+  "type": "Animal",
   "tags": "",
   "size": "Enorme",
   "role": [
@@ -15586,7 +15590,7 @@
   "name": "Protetor-Refém",
   "nd": 5,
   "type": "Humanoide",
-  "tags": "Anão",
+  "tags": "",
   "size": "Médio",
   "role": [
    "Lacaio"
@@ -15652,7 +15656,7 @@
   "name": "Pteros do Céu Infinito",
   "nd": 5,
   "type": "Humanoide",
-  "tags": "Pteros",
+  "tags": "pteros",
   "size": "Médio",
   "role": [
    "Especial"
@@ -15893,7 +15897,7 @@
   "name": "Súcubo",
   "nd": 5,
   "type": "Espírito",
-  "tags": "Abissal",
+  "tags": "abissal",
   "size": "Médio",
   "role": [
    "Especial"
@@ -16072,8 +16076,8 @@
  {
   "name": "Trog Rei dos Túneis",
   "nd": 5,
-  "type": "Humanoide",
-  "tags": "Trog",
+  "type": "Monstro",
+  "tags": "trog",
   "size": "Grande",
   "role": [
    "Solo"
@@ -16360,7 +16364,7 @@
   "name": "Vrakoll",
   "nd": 5,
   "type": "Monstro",
-  "tags": "",
+  "tags": "variante de troll",
   "size": "Grande",
   "role": [
    "Solo"
@@ -16498,7 +16502,7 @@
   "name": "Armeiro de Tenebra Devoto",
   "nd": 6,
   "type": "Humanoide",
-  "tags": "Anão",
+  "tags": "anão",
   "size": "Médio",
   "role": [
    "Solo"
@@ -16588,7 +16592,7 @@
   "name": "Aucharai",
   "nd": 6,
   "type": "Espírito",
-  "tags": "Abissal",
+  "tags": "abissal",
   "size": "Médio",
   "role": [
    "Solo"
@@ -16743,7 +16747,7 @@
   "name": "Bruxo da Tormenta",
   "nd": 6,
   "type": "Humanoide",
-  "tags": "Humano",
+  "tags": "humano",
   "size": "Médio",
   "role": [
    "Especial"
@@ -16808,7 +16812,7 @@
   "name": "Búfalo Paladino de Bullton",
   "nd": 6,
   "type": "Humanoide",
-  "tags": "Moreau",
+  "tags": "moreau",
   "size": "Médio",
   "role": [
    "Solo"
@@ -17189,7 +17193,7 @@
   "name": "Elfo-do-Mar Chefe",
   "nd": 6,
   "type": "Humanoide",
-  "tags": "Elfo-do-Mar",
+  "tags": "elfo-do-mar",
   "size": "Médio",
   "role": [
    "Solo"
@@ -17595,7 +17599,7 @@
   "name": "Gnoll Xamã de Marah",
   "nd": 6,
   "type": "Humanoide",
-  "tags": "Gnoll",
+  "tags": "gnoll",
   "size": "Médio",
   "role": [
    "Especial"
@@ -17676,7 +17680,7 @@
   "name": "Górgona",
   "nd": 6,
   "type": "Monstro",
-  "tags": "Medusa",
+  "tags": "medusa",
   "size": "Médio",
   "role": [
    "Solo"
@@ -17850,7 +17854,7 @@
   "name": "Kaijin Capanga",
   "nd": 6,
   "type": "Monstro",
-  "tags": "Kaijin",
+  "tags": "kaijin",
   "size": "Médio",
   "role": [
    "Lacaio"
@@ -17909,7 +17913,7 @@
   "name": "Kallyanach Bárbaro",
   "nd": 6,
   "type": "Monstro",
-  "tags": "Kallyanach",
+  "tags": "kallyanach",
   "size": "Médio",
   "role": [
    "Solo"
@@ -17975,7 +17979,7 @@
   "name": "Líder Goblin de Sombreiro",
   "nd": 6,
   "type": "Humanoide",
-  "tags": "Goblin",
+  "tags": "goblin",
   "size": "Pequeno",
   "role": [
    "Solo"
@@ -18075,7 +18079,7 @@
   "nd": 6,
   "type": "Monstro",
   "tags": "",
-  "size": "Médio",
+  "size": "Grande",
   "role": [
    "Solo"
   ],
@@ -18399,7 +18403,7 @@
   "name": "Nagah Mística",
   "nd": 6,
   "type": "Humanoide",
-  "tags": "Nagah",
+  "tags": "nagah",
   "size": "Médio",
   "role": [
    "Especial"
@@ -18899,7 +18903,7 @@
   "name": "Tengu Bandoleiro",
   "nd": 6,
   "type": "Espírito",
-  "tags": "Tengu",
+  "tags": "tengu",
   "size": "Médio",
   "role": [
    "Especial"
@@ -18970,7 +18974,7 @@
   "name": "Xamã de Sarana",
   "nd": 6,
   "type": "Humanoide",
-  "tags": "Velocis",
+  "tags": "velocis",
   "size": "Médio",
   "role": [
    "Especial"
@@ -19276,7 +19280,7 @@
   "name": "Capitão Pirata",
   "nd": 7,
   "type": "Morto-Vivo",
-  "tags": "Osteon",
+  "tags": "osteon",
   "size": "Médio",
   "role": [
    "Solo"
@@ -19655,7 +19659,7 @@
   "name": "Ceratops Chefe da Tribo",
   "nd": 7,
   "type": "Humanoide",
-  "tags": "Ceratops",
+  "tags": "ceratops",
   "size": "Grande",
   "role": [
    "Solo"
@@ -19826,7 +19830,7 @@
   "name": "Cultista de Sszzaas",
   "nd": 7,
   "type": "Monstro",
-  "tags": "Medusa",
+  "tags": "medusa",
   "size": "Médio",
   "role": [
    "Especial"
@@ -20500,7 +20504,7 @@
   "name": "Homem-Piranha Capitão",
   "nd": 7,
   "type": "Monstro",
-  "tags": "Lefou",
+  "tags": "lefou",
   "size": "Médio",
   "role": [
    "Solo"
@@ -20643,7 +20647,7 @@
   "name": "Nagah Defensor",
   "nd": 7,
   "type": "Humanoide",
-  "tags": "Nagah",
+  "tags": "nagah",
   "size": "Médio",
   "role": [
    "Lacaio"
@@ -20727,7 +20731,7 @@
   "name": "Nagah Encantadora",
   "nd": 7,
   "type": "Humanoide",
-  "tags": "Nagah",
+  "tags": "nagah",
   "size": "Médio",
   "role": [
    "Especial"
@@ -20918,7 +20922,7 @@
   "name": "Ogro Caçador",
   "nd": 7,
   "type": "Humanoide",
-  "tags": "Gigante",
+  "tags": "gigante",
   "size": "Grande",
   "role": [
    "Solo"
@@ -21184,7 +21188,7 @@
   "name": "Rhayrivel",
   "nd": 7,
   "type": "Espírito",
-  "tags": "Abissal",
+  "tags": "abissal",
   "size": "Médio",
   "role": [
    "Solo"
@@ -21385,8 +21389,8 @@
   "name": "Alto Sacerdote de Hyninn",
   "nd": 8,
   "type": "Humanoide",
-  "tags": "goblin",
-  "size": "Pequeno",
+  "tags": "humano",
+  "size": "Médio",
   "role": [
    "Especial"
   ],
@@ -21468,7 +21472,7 @@
   "name": "Armeiro de Tenebra Clérigo",
   "nd": 8,
   "type": "Humanoide",
-  "tags": "Anão",
+  "tags": "anão",
   "size": "Médio",
   "role": [
    "Especial"
@@ -22059,7 +22063,7 @@
   "name": "Capitão do Conclave Pirata",
   "nd": 8,
   "type": "Humanoide",
-  "tags": "Humano",
+  "tags": "humano",
   "size": "Médio",
   "role": [
    "Solo"
@@ -22161,7 +22165,7 @@
   "name": "Cavaleiro de Kally",
   "nd": 8,
   "type": "Humanoide",
-  "tags": "Humano",
+  "tags": "humano",
   "size": "Médio",
   "role": [
    "Solo"
@@ -22251,7 +22255,7 @@
   "name": "Centauro Chefe",
   "nd": 8,
   "type": "Humanoide",
-  "tags": "Centauro",
+  "tags": "centauro",
   "size": "Grande",
   "role": [
    "Solo"
@@ -22514,7 +22518,7 @@
   "name": "Daitengu",
   "nd": 8,
   "type": "Espírito",
-  "tags": "Tengu",
+  "tags": "tengu",
   "size": "Médio",
   "role": [
    "Especial"
@@ -22680,7 +22684,7 @@
   "name": "Elemental do Veneno Médio",
   "nd": 8,
   "type": "Espírito",
-  "tags": "Elemental",
+  "tags": "elemental",
   "size": "Médio",
   "role": [
    "Solo"
@@ -22828,10 +22832,11 @@
   "name": "Enxame Infernal",
   "nd": 8,
   "type": "Monstro",
-  "tags": "Lefeu",
+  "tags": "lefeu",
   "size": "Grande",
   "role": [
-   "Solo"
+   "Solo",
+   "Enxame"
   ],
   "init": 9,
   "defense": 33,
@@ -22961,11 +22966,12 @@
  {
   "name": "Falange",
   "nd": 8,
-  "type": "Humanoide",
-  "tags": "bando",
+  "type": "Morto-Vivo",
+  "tags": "",
   "size": "Grande",
   "role": [
-   "Lacaio"
+   "Lacaio",
+   "Bando"
   ],
   "init": 12,
   "defense": 19,
@@ -23021,7 +23027,7 @@
   "name": "Gnoll Caçador de Cabeças",
   "nd": 8,
   "type": "Humanoide",
-  "tags": "Gnoll",
+  "tags": "gnoll",
   "size": "Médio",
   "role": [
    "Solo"
@@ -23106,7 +23112,7 @@
   "nd": 8,
   "type": "Humanoide",
   "tags": "goblin",
-  "size": "Pequeno",
+  "size": "Grande",
   "role": [
    "Solo"
   ],
@@ -23253,7 +23259,7 @@
   "name": "Lefeu, Veridak",
   "nd": 8,
   "type": "Monstro",
-  "tags": "Lefeu",
+  "tags": "lefeu",
   "size": "Grande",
   "role": [
    "Lacaio"
@@ -23345,8 +23351,8 @@
  {
   "name": "Líder Fanático Lefou",
   "nd": 8,
-  "type": "Humanoide",
-  "tags": "",
+  "type": "Monstro",
+  "tags": "lefou",
   "size": "Médio",
   "role": [
    "Especial"
@@ -23522,7 +23528,7 @@
   "nd": 8,
   "type": "Morto-Vivo",
   "tags": "",
-  "size": "Médio",
+  "size": "Enorme",
   "role": [
    "Solo"
   ],
@@ -23933,7 +23939,7 @@
   "name": "Trio de Carvarel",
   "nd": 8,
   "type": "Espírito",
-  "tags": "Abissal",
+  "tags": "abissal",
   "size": "Grande",
   "role": [
    "Solo"
@@ -23999,7 +24005,7 @@
   "name": "Trog Anão Eremita",
   "nd": 8,
   "type": "Monstro",
-  "tags": "Trog",
+  "tags": "trog",
   "size": "Médio",
   "role": [
    "Especial"
@@ -24232,7 +24238,7 @@
   "name": "Voracis Caçadora",
   "nd": 8,
   "type": "Humanoide",
-  "tags": "Voracis",
+  "tags": "voracis",
   "size": "Médio",
   "role": [
    "Lacaio"
@@ -24317,7 +24323,7 @@
  {
   "name": "Wisphago",
   "nd": 8,
-  "type": "Humanoide",
+  "type": "Morto-Vivo",
   "tags": "",
   "size": "Grande",
   "role": [
@@ -24395,7 +24401,7 @@
   "name": "Aka Oni",
   "nd": 9,
   "type": "Espírito",
-  "tags": "Lefeu",
+  "tags": "lefeu",
   "size": "Médio",
   "role": [
    "Solo"
@@ -24485,7 +24491,7 @@
  {
   "name": "Cardume de Selakos",
   "nd": 9,
-  "type": "Humanoide",
+  "type": "Animal",
   "tags": "",
   "size": "Enorme",
   "role": [
@@ -24687,7 +24693,7 @@
   "name": "Forjador Litúrgico",
   "nd": 9,
   "type": "Humanoide",
-  "tags": "Humano",
+  "tags": "humano",
   "size": "Médio",
   "role": [
    "Especial"
@@ -24888,7 +24894,7 @@
   "name": "Kallyanach Morte Glacial",
   "nd": 9,
   "type": "Monstro",
-  "tags": "Kallyanach",
+  "tags": "kallyanach",
   "size": "Médio",
   "role": [
    "Solo"
@@ -25037,7 +25043,7 @@
   "name": "Lefeu, Hurobakk",
   "nd": 9,
   "type": "Monstro",
-  "tags": "Lefeu",
+  "tags": "lefeu",
   "size": "Grande",
   "role": [
    "Solo"
@@ -25052,7 +25058,7 @@
   "name": "Morgue’raz",
   "nd": 9,
   "type": "Morto-Vivo",
-  "tags": "Criar",
+  "tags": "",
   "size": "Grande",
   "role": [
    "Solo"
@@ -25440,7 +25446,7 @@
   "name": "Aspecto de Aharadak",
   "nd": 10,
   "type": "Monstro",
-  "tags": "Lefeu",
+  "tags": "lefeu",
   "size": "Grande",
   "role": [
    "Especial"
@@ -25691,7 +25697,7 @@
   "name": "Centauro Xamã de Megalokk",
   "nd": 10,
   "type": "Humanoide",
-  "tags": "Centauro",
+  "tags": "centauro",
   "size": "Grande",
   "role": [
    "Especial"
@@ -25782,7 +25788,7 @@
   "name": "Coletor de Arsenal",
   "nd": 10,
   "type": "Humanoide",
-  "tags": "Humano",
+  "tags": "humano",
   "size": "Médio",
   "role": [
    "Especial"
@@ -25890,7 +25896,7 @@
   "name": "Coruja Druida",
   "nd": 10,
   "type": "Humanoide",
-  "tags": "Moreau",
+  "tags": "moreau",
   "size": "Médio",
   "role": [
    "Especial"
@@ -26183,7 +26189,7 @@
   "name": "Elfo-do-Mar Druida",
   "nd": 10,
   "type": "Humanoide",
-  "tags": "Elfo-do-mar",
+  "tags": "elfo-do-mar",
   "size": "Médio",
   "role": [
    "Especial"
@@ -26375,7 +26381,7 @@
  {
   "name": "Golem de Barro",
   "nd": 10,
-  "type": "Humanoide",
+  "type": "Construto",
   "tags": "",
   "size": "Grande",
   "role": [
@@ -26611,7 +26617,7 @@
   "name": "Jhumariel",
   "nd": 10,
   "type": "Espírito",
-  "tags": "Abissal",
+  "tags": "abissal",
   "size": "Grande",
   "role": [
    "Solo"
@@ -26626,7 +26632,7 @@
   "name": "Jhumariel",
   "nd": 10,
   "type": "Espírito",
-  "tags": "Abissal",
+  "tags": "abissal",
   "size": "Grande",
   "role": [
    "Solo"
@@ -27010,7 +27016,7 @@
   "name": "Tirano do Terceiro",
   "nd": 10,
   "type": "Humanoide",
-  "tags": "Humano",
+  "tags": "humano",
   "size": "Médio",
   "role": [
    "Solo"
@@ -27537,7 +27543,7 @@
   "name": "Bando de Pamgras",
   "nd": 11,
   "type": "Espírito",
-  "tags": "",
+  "tags": "elemental",
   "size": "Grande",
   "role": [
    "Solo"
@@ -27609,7 +27615,7 @@
   "nd": 11,
   "type": "Humanoide",
   "tags": "goblin",
-  "size": "Médio",
+  "size": "Pequeno",
   "role": [
    "Especial"
   ],
@@ -28193,7 +28199,7 @@
   "name": "Kaijin Bruto",
   "nd": 11,
   "type": "Monstro",
-  "tags": "Kaijin",
+  "tags": "kaijin",
   "size": "Grande",
   "role": [
    "Solo"
@@ -28278,7 +28284,7 @@
   "name": "Lefeu, Burodron",
   "nd": 11,
   "type": "Monstro",
-  "tags": "Lefeu",
+  "tags": "lefeu",
   "size": "Enorme",
   "role": [
    "Solo"
@@ -28293,7 +28299,7 @@
   "name": "Matrona Gnoll",
   "nd": 11,
   "type": "Humanoide",
-  "tags": "Gnoll",
+  "tags": "gnoll",
   "size": "Médio",
   "role": [
    "Especial"
@@ -28453,7 +28459,7 @@
   "name": "Ogro Capanga",
   "nd": 11,
   "type": "Humanoide",
-  "tags": "Gigante",
+  "tags": "gigante",
   "size": "Grande",
   "role": [
    "Lacaio"
@@ -28838,7 +28844,7 @@
   "name": "Chapéu-Preto",
   "nd": 12,
   "type": "Humanoide",
-  "tags": "Meio-Orc",
+  "tags": "meio-orc",
   "size": "Médio",
   "role": [
    "Solo"
@@ -29006,7 +29012,7 @@
   "name": "Elemental do Veneno Grande",
   "nd": 12,
   "type": "Espírito",
-  "tags": "Elemental",
+  "tags": "elemental",
   "size": "Grande",
   "role": [
    "Solo"
@@ -29402,7 +29408,7 @@
   "name": "Kobold-Mãe",
   "nd": 12,
   "type": "Monstro",
-  "tags": "Kobold",
+  "tags": "kobold",
   "size": "Grande",
   "role": [
    "Especial"
@@ -29554,7 +29560,7 @@
   "name": "Nagah Retalhador",
   "nd": 12,
   "type": "Humanoide",
-  "tags": "Nagah",
+  "tags": "nagah",
   "size": "Médio",
   "role": [
    "Solo"
@@ -29657,7 +29663,7 @@
   "nd": 12,
   "type": "Morto-Vivo",
   "tags": "",
-  "size": "Médio",
+  "size": "Enorme",
   "role": [
    "Solo"
   ],
@@ -29895,7 +29901,7 @@
   "name": "Reishid Líder de Culto",
   "nd": 12,
   "type": "Monstro",
-  "tags": "Lefeu",
+  "tags": "lefeu",
   "size": "Médio",
   "role": [
    "Especial"
@@ -30074,8 +30080,8 @@
  {
   "name": "Vampiro",
   "nd": 12,
-  "type": "Humanoide",
-  "tags": "Morto-vivo",
+  "type": "Morto-Vivo",
+  "tags": "",
   "size": "Médio",
   "role": [
    "Solo"
@@ -30165,7 +30171,7 @@
   "name": "Alto Clérigo de Kally",
   "nd": 13,
   "type": "Monstro",
-  "tags": "Kallyanach",
+  "tags": "kallyanach",
   "size": "Médio",
   "role": [
    "Especial"
@@ -30362,7 +30368,7 @@
   "name": "Concílio Forjador",
   "nd": 13,
   "type": "Humanoide",
-  "tags": "Humano",
+  "tags": "humano",
   "size": "Grande",
   "role": [
    "Especial"
@@ -30490,7 +30496,7 @@
   "name": "Kaijin Ninja",
   "nd": 13,
   "type": "Monstro",
-  "tags": "Kaijin",
+  "tags": "kaijin",
   "size": "Médio",
   "role": [
    "Especial"
@@ -30597,7 +30603,7 @@
  {
   "name": "Kishin",
   "nd": 13,
-  "type": "Humanoide",
+  "type": "Construto",
   "tags": "",
   "size": "Enorme",
   "role": [
@@ -30766,7 +30772,7 @@
   "name": "Lefeu, Morgadrel",
   "nd": 13,
   "type": "Monstro",
-  "tags": "Lefeu",
+  "tags": "lefeu",
   "size": "Enorme",
   "role": [
    "Solo"
@@ -30996,7 +31002,7 @@
   "name": "Arquibruxo da Tormenta",
   "nd": 14,
   "type": "Monstro",
-  "tags": "Lefou",
+  "tags": "lefou",
   "size": "Médio",
   "role": [
    "Especial"
@@ -31245,7 +31251,7 @@
   "name": "Dracomante Superior do Fogo",
   "nd": 14,
   "type": "Humanoide",
-  "tags": "Elfo",
+  "tags": "elfo",
   "size": "Médio",
   "role": [
    "Especial"
@@ -31339,8 +31345,8 @@
  {
   "name": "Fantasma Ancestral",
   "nd": 14,
-  "type": "Humanoide",
-  "tags": "Morto-vivo",
+  "type": "Morto-Vivo",
+  "tags": "",
   "size": "Médio",
   "role": [
    "Especial"
@@ -31423,7 +31429,7 @@
   "name": "Górgona Matriarca",
   "nd": 14,
   "type": "Monstro",
-  "tags": "Medusa",
+  "tags": "medusa",
   "size": "Médio",
   "role": [
    "Especial"
@@ -31521,7 +31527,8 @@
   "tags": "goblin",
   "size": "Colossal",
   "role": [
-   "Solo"
+   "Solo",
+   "Enxame"
   ],
   "init": 28,
   "defense": 42,
@@ -31761,7 +31768,7 @@
   "name": "Margharon",
   "nd": 14,
   "type": "Espírito",
-  "tags": "Abissal",
+  "tags": "abissal",
   "size": "Enorme",
   "role": [
    "Especial"
@@ -33515,7 +33522,7 @@
   "name": "Gnoll Vuul’rak",
   "nd": 16,
   "type": "Humanoide",
-  "tags": "Gnoll",
+  "tags": "gnoll",
   "size": "Grande",
   "role": [
    "Solo"
@@ -33838,7 +33845,7 @@
   "name": "Lobo do Mar",
   "nd": 16,
   "type": "Humanoide",
-  "tags": "Humano",
+  "tags": "meio-orc",
   "size": "Médio",
   "role": [
    "Solo"
@@ -33937,7 +33944,8 @@
   "tags": "",
   "size": "Enorme",
   "role": [
-   "Lacaio"
+   "Lacaio",
+   "Enxame"
   ],
   "init": 19,
   "defense": 51,
@@ -34003,7 +34011,7 @@
   "name": "Senhor do Gigante Rubro Forma Final",
   "nd": 16,
   "type": "Monstro",
-  "tags": "Lefeu",
+  "tags": "lefeu",
   "size": "Grande",
   "role": [
    "Solo"
@@ -34408,7 +34416,7 @@
   "name": "Lefeu, Ezzayn",
   "nd": 17,
   "type": "Monstro",
-  "tags": "Lefeu",
+  "tags": "lefeu",
   "size": "Enorme",
   "role": [
    "Lacaio"
@@ -34578,7 +34586,7 @@
   "name": "Avatar de Thwor",
   "nd": 18,
   "type": "Humanoide",
-  "tags": "Bugbear",
+  "tags": "bugbear",
   "size": "Enorme",
   "role": [
    "Solo"
@@ -34667,7 +34675,7 @@
   "name": "Golem de Matéria Vermelha",
   "nd": 18,
   "type": "Construto",
-  "tags": "Lefeu",
+  "tags": "lefeu",
   "size": "Enorme",
   "role": [
    "Solo"
@@ -34750,7 +34758,7 @@
   "name": "Lefeu, Ezzayn (Batalhão Burodron)",
   "nd": 18,
   "type": "Monstro",
-  "tags": "Lefeu",
+  "tags": "lefeu",
   "size": "Enorme",
   "role": [
    "Lacaio"
@@ -34765,7 +34773,7 @@
   "name": "Lefeu, Ezzayn (Cavalaria Hurobakk)",
   "nd": 18,
   "type": "Monstro",
-  "tags": "Lefeu",
+  "tags": "lefeu",
   "size": "Enorme",
   "role": [
    "Lacaio"
@@ -34780,7 +34788,7 @@
   "name": "Lefeu, Ezzayn (Esquadrão Veridak)",
   "nd": 18,
   "type": "Monstro",
-  "tags": "Lefeu",
+  "tags": "lefeu",
   "size": "Enorme",
   "role": [
    "Lacaio"
@@ -35716,7 +35724,7 @@
   "name": "Avatar de Aharadak",
   "nd": 20,
   "type": "Monstro",
-  "tags": "Lefeu",
+  "tags": "lefeu",
   "size": "Colossal",
   "role": [
    "Solo"
@@ -35812,7 +35820,7 @@
   "name": "Avatar de Kallyadranoch",
   "nd": 20,
   "type": "Monstro",
-  "tags": "Dragão",
+  "tags": "dragão",
   "size": "Colossal",
   "role": [
    "Solo"
@@ -35920,7 +35928,7 @@
   "name": "Avatar de Valkaria",
   "nd": 20,
   "type": "Espírito",
-  "tags": "Humano",
+  "tags": "humano",
   "size": "Médio",
   "role": [
    "Solo"
@@ -36009,7 +36017,7 @@
   "name": "Avatar de Wynna",
   "nd": 20,
   "type": "Humanoide",
-  "tags": "Espirito",
+  "tags": "espirito",
   "size": "Médio",
   "role": [
    "Solo"
@@ -36344,7 +36352,7 @@
   "name": "Kaiju",
   "nd": 20,
   "type": "Monstro",
-  "tags": "Kaiju",
+  "tags": "kaiju",
   "size": "Colossal",
   "role": [
    "Solo"
@@ -36447,7 +36455,7 @@
   "name": "Kishinauros",
   "nd": 20,
   "type": "Construto",
-  "tags": "o",
+  "tags": "",
   "size": "Colossal",
   "role": [
    "Solo"
@@ -36588,8 +36596,8 @@
  {
   "name": "Necrodraco Lich",
   "nd": 20,
-  "type": "Humanoide",
-  "tags": "",
+  "type": "Morto-Vivo",
+  "tags": "dragão",
   "size": "Colossal",
   "role": [
    "Especial"
@@ -37743,7 +37751,7 @@
   "name": "Gambá",
   "nd": "1/2",
   "type": "Animal",
-  "tags": "Gambá",
+  "tags": "",
   "size": "Minúsculo",
   "role": [
    "Lacaio"
@@ -37873,7 +37881,7 @@
   "name": "Gatzvalith,Lorde da Tormenta",
   "nd": "S+",
   "type": "Monstro",
-  "tags": "Lekael",
+  "tags": "lekael",
   "size": "Grande",
   "role": [
    "Solo"
@@ -38078,7 +38086,7 @@
   "name": "Gnoll Capanga",
   "nd": "1/2",
   "type": "Humanoide",
-  "tags": "Gnoll",
+  "tags": "gnoll",
   "size": "Médio",
   "role": [
    "Solo"
@@ -38841,8 +38849,8 @@
  {
   "name": "Rival Espelho",
   "nd": "???",
-  "type": "Humanoide",
-  "tags": "???",
+  "type": "Construto",
+  "tags": "",
   "size": "Médio",
   "role": [
    "Especial"
@@ -38913,7 +38921,7 @@
   "name": "Tarso, Dragão-Rei dos Mortos",
   "nd": "S+",
   "type": "Morto-Vivo",
-  "tags": "Dragão",
+  "tags": "dragão",
   "size": "Colossal",
   "role": [
    "Solo"
@@ -39192,8 +39200,8 @@
  {
   "name": "Zumbi",
   "nd": "1/4",
-  "type": "Humanoide",
-  "tags": "Morto-vivo",
+  "type": "Morto-Vivo",
+  "tags": "",
   "size": "Médio",
   "role": [
    "Lacaio"
@@ -42588,7 +42596,9 @@
   "type": "Monstro",
   "tags": "lefeu",
   "size": "Enorme",
-  "role": [],
+  "role": [
+   "Enxame"
+  ],
   "init": 15,
   "defense": 46,
   "resistances": "redução de dano 10",
@@ -42675,7 +42685,9 @@
   "type": "Monstro",
   "tags": "lefeu",
   "size": "Enorme",
-  "role": [],
+  "role": [
+   "Enxame"
+  ],
   "init": 9,
   "defense": 42,
   "resistances": "redução de dano 10",
@@ -42762,7 +42774,9 @@
   "type": "Monstro",
   "tags": "lefeu",
   "size": "Enorme",
-  "role": [],
+  "role": [
+   "Enxame"
+  ],
   "init": 16,
   "defense": 35,
   "resistances": "redução de dano 10",
@@ -42856,7 +42870,9 @@
   "type": "Monstro",
   "tags": "lefeu",
   "size": "Enorme",
-  "role": [],
+  "role": [
+   "Enxame"
+  ],
   "init": 20,
   "defense": 34,
   "resistances": "redução de dano 5",

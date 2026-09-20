@@ -201,3 +201,7 @@ function decimalToFraction(_decimal) {
     display    : (top / x) + '/' + (bottom / x)
   };
 };
+
+export function semAcento(str) {
+  return String(str ?? "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/-/g, " ");
+}
